@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router,Route,hashHistory} from 'react-router';
+import { Router} from 'react-router';
 import createBrowserHistory from "history/lib/createBrowserHistory";
 import routes from '../config/routes';
 

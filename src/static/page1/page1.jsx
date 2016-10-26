@@ -3,10 +3,6 @@ import ReactDOM from 'react-dom';
 import {Link} from 'react-router';
 
 var Page1  = React.createClass({
-  // ask for `router` from context
-  contextTypes: {
-    router: React.PropTypes.isRequired
-  },
   onhandle:function(){
     // browserHistory.push('/page2');
     this.props.history.push('/page2');

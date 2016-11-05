@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+require('../common/common.css');
 import Header from './header';
 import Footer from './footer';
 class Home extends React.Component {
@@ -8,8 +9,7 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Header />
+      <div class='main-content'>
         {this.props.children}
         <Footer />
       </div>

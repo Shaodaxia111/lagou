@@ -1,0 +1,36 @@
+#ct .footer-content{
+	min-width: 1024px;
+	width:100%;
+    clear: both;
+    height: 220px;
+	background:url('../../img/footer_bg.jpg') 0 120px no-repeat;
+	background-size:100% 100px;
+}
+#ct .inner{
+	width:1024px;
+	height:220px;
+    margin:0 auto;
+}
+#ct ul{
+	float:left;
+    margin-right: 50px;
+}
+#ct ul li{
+	margin-bottom:12px;
+}
+#ct .footer-content .inner a {
+    font-size: 14px;
+    color: #484848;
+}
+#ct .footer-content .link-tit {
+    color: #333333;
+    font-weight:bold;
+    font-size:14px;
+    line-height:25px;
+}
+#ct ul li .times{
+	color:#999;
+	font-size:12px;
+}
+
+

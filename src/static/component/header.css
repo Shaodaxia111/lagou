@@ -1,0 +1,38 @@
+#lg_tnav{
+	min-width: 1024px;
+    height: 54px;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fafafa;
+}
+#lg_tnav .inner {
+    width: 1024px;
+    margin: 0 auto;
+}
+#lg_tnav .lg_tnav_l {
+    float: left;
+    width: 260px;
+    overflow: hidden;
+}
+#lg_tnav .lg_tnav_l .lg_logo{
+	display:block;
+	width:97px;
+	height:36px;
+    margin-top:9px;
+	background:url('../../img/logo.png') 0 0 no-repeat;
+	background-size:97px 36px;
+}
+#lg_tnav .lg_tnav_wrap{
+	float: left;
+}
+#lg_tnav .lg_tnav_wrap li{
+    display: inline-block;
+    margin: 0 16px;
+    position: relative;
+}
+#lg_tnav .lg_tnav_wrap li a{
+    font-size: 18px;
+    color: #999;
+    line-height: 53px;
+    padding: 0 5px;
+}

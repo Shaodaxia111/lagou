@@ -12,11 +12,11 @@
 	height:220px;
     margin:0 auto;
 }
-#ct ul{
+#ct .inner ul{
 	float:left;
     margin-right: 50px;
 }
-#ct ul li{
+#ct .inner ul li{
 	margin-bottom:12px;
 }
 #ct .footer-content .inner a {
@@ -29,7 +29,7 @@
     font-size:14px;
     line-height:25px;
 }
-#ct ul li .times{
+#ct .inner ul li .times{
 	color:#999;
 	font-size:12px;
 }

@@ -14,10 +14,16 @@
 }
 #ct .inner ul{
 	float:left;
-    margin-right: 50px;
+    margin-right:48px;
 }
 #ct .inner ul li{
 	margin-bottom:12px;
+}
+#ct .inner ul li.erweima{
+    width:100px;
+    height:100px;
+    background:url('../../../img/erweima.jpg') 0 0 no-repeat;
+    background-size:100px 100px;
 }
 #ct .footer-content .inner a {
     font-size: 14px;

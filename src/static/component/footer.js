@@ -50,6 +50,10 @@ var Footer  = React.createClass({
                 <li><a>电话:4006-2828-35<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="times">(9:00 -18:00)</span></a></li>
                 <li><a>邮箱: gogo@lagou.com</a></li>
               </ul>
+               <ul className="quick-link">
+                <li><p className="link-tit">帮助与支持</p></li>
+                <li className="erweima"></li>
+              </ul>
             </div>
        
         </div>

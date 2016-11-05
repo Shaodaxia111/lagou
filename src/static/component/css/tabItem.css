@@ -1,0 +1,72 @@
+#ct .item-content{
+	width:330px;
+	height:200px;
+	border-radius:3px;
+	background:#fff;
+	position:relative;
+	cursor:pointer;
+}
+#ct .item-content .icon{
+	width:170px;
+	height:45px;
+	line-height:45px;
+	display:block;
+	position:absolute;
+	top:0;
+	left:1px;
+	background:url('../../../img/item_bg.png') 0 0 no-repeat;
+	background-size:170px 45px;
+	color:#fff;
+	padding-left:15px;
+	font-style:normal;
+	font-size:16px;
+}
+#ct .item-content .go-arrow{
+	line-height:20px;
+	height:20px;
+	color:#00b38a;
+	font-size:16px;
+	position:absolute;
+	padding-left:20px;
+	bottom:20px;
+	right:20px;
+}
+#ct .item-content .go-arrow:after{
+	content: "";
+	display:block;
+	float:right;
+	width:10px;
+	height:20px;
+	background:url('../../../img/go_arrow.png') 0 6px no-repeat;
+	background-size:10px 10px;
+}
+#ct .item-content .content{
+	position:absolute;
+	width:270px;
+	height:105px;
+	line-height:105px;
+	top:45px;
+	left:30px;
+	color:#333333;
+	font-size:18px;
+	border-bottom:1px solid #f2f2f2;
+}
+#ct .item-content .hover-content{
+	width:330px;
+	height:200px;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(../../../img/hoverContent_bg.png) 0 0 no-repeat;
+	background-size:330px 200px;
+}
+#ct .item-content .hover-content span{
+	display:block;
+	width:270px;
+	height:40px;
+	margin:0 auto;
+	margin-top:80px;
+	line-height:20px;
+	color:#fff;
+	font-size:16px;
+}

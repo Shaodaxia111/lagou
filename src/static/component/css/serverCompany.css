@@ -1,0 +1,129 @@
+#ct .server-list{
+	width:100%;
+	height:660px;
+}
+#ct .server-tit{
+	text-align:center;
+	margin-top:75px;
+}
+#ct .server-tit .tit-main{
+	font-size:30px;
+	color:#333333;
+}
+#ct .server-tit .tit-intro{
+	font-size:12px;
+	line-height:40px;
+	color:#999999;
+}
+#ct .server-list .list{
+	width:980px;
+	margin:0 auto;
+}
+#ct .server-list .list ul{
+	float:left;
+	margin-right:40px;
+}
+#ct .server-list .list ul:last-child{
+	margin-right:0;
+}
+#ct .server-list .list ul li{
+	width:130px;
+	height:40px;
+	margin-top:60px;
+}
+#ct .server-list .list ul .campany_01{
+	background:url(../../../img/campany_01.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_02{
+	background:url(../../../img/campany_02.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_03{
+	background:url(../../../img/campany_03.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_04{
+	background:url(../../../img/campany_04.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_05{
+	background:url(../../../img/campany_05.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_06{
+	background:url(../../../img/campany_06.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_07{
+	background:url(../../../img/campany_07.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_08{
+	background:url(../../../img/campany_08.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_09{
+	background:url(../../../img/campany_09.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_10{
+	background:url(../../../img/campany_10.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_11{
+	background:url(../../../img/campany_11.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_12{
+	background:url(../../../img/campany_12.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_13{
+	background:url(../../../img/campany_13.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_14{
+	background:url(../../../img/campany_14.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_15{
+	background:url(../../../img/campany_15.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_16{
+	background:url(../../../img/campany_16.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_17{
+	background:url(../../../img/campany_17.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_18{
+	background:url(../../../img/campany_18.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_19{
+	background:url(../../../img/campany_19.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_20{
+	background:url(../../../img/campany_20.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_21{
+	background:url(../../../img/campany_21.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_22{
+	background:url(../../../img/campany_22.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_23{
+	background:url(../../../img/campany_23.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}
+#ct .server-list .list ul .campany_24{
+	background:url(../../../img/campany_24.jpg) 0 0 no-repeat;
+	background-size:130px 40px;
+}

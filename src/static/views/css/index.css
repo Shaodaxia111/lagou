@@ -5,7 +5,7 @@
 	width:100%;
 	height:500px;
 	position:relative;
-	background:url(../../img/index_banner.jpg) 0 0 no-repeat;
+	background:url(../../../img/index_banner.jpg) 0 0 no-repeat;
 	background-size:100% 500px;
 }
 #ct .banner-content{
@@ -69,7 +69,7 @@
 	font-size:18px;
 }
 #ct .index-tab li.on{
-	background:url('../../img/tab-arrow.png') 75px 0 no-repeat;
+	background:url('../../../img/tab-arrow.png') 75px 0 no-repeat;
 	background-size:20px 12px;
 	border-bottom:1px solid #00b38a;
 }
@@ -77,43 +77,26 @@
 	color:#00b38a;
 }
 #ct .index-tab .zhaopin.on i{
-	background:url('../../img/zhaopin-on.png') 0 0 no-repeat;
+	background:url('../../../img/zhaopin-on.png') 0 0 no-repeat;
 	background-size:40px 40px;
 }
 #ct .index-tab .jianshe.on i{
-	background:url('../../img/jianshe-on.png') 0 0 no-repeat;
+	background:url('../../../img/jianshe-on.png') 0 0 no-repeat;
 	background-size:40px 40px;
 }
 #ct .index-tab .guanli.on i{
-	background:url('../../img/guanli-on.png') 0 0 no-repeat;
+	background:url('../../../img/guanli-on.png') 0 0 no-repeat;
 	background-size:40px 40px;
 }
 #ct .index-tab .zhaopin.off i{
-	background:url('../../img/zhaopin-off.png') 0 0 no-repeat;
+	background:url('../../../img/zhaopin-off.png') 0 0 no-repeat;
 	background-size:40px 40px;
 }
 #ct .index-tab .jianshe.off i{
-	background:url('../../img/jianshe-off.png') 0 0 no-repeat;
+	background:url('../../../img/jianshe-off.png') 0 0 no-repeat;
 	background-size:40px 40px;
 }
 #ct .index-tab .guanli.off i{
-	background:url('../../img/guanli-off.png') 0 0 no-repeat;
+	background:url('../../../img/guanli-off.png') 0 0 no-repeat;
 	background-size:40px 40px;
-}
-#ct .server-list{
-	width:100%;
-	height:660px;
-}
-#ct .server-tit{
-	text-align:center;
-	margin-top:75px;
-}
-#ct .server-tit .tit-main{
-	font-size:30px;
-	color:#333333;
-}
-#ct .server-tit .tit-intro{
-	font-size:12px;
-	line-height:40px;
-	color:#999999;
 }

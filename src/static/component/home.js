@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './header';
+import Footer from './footer';
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -7,9 +9,9 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-      	<span>home</span>
+        <Header />
         {this.props.children}
-        <span>home</span>
+        <Footer />
       </div>
     )
   }

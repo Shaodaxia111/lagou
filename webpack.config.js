@@ -14,7 +14,7 @@ var isProduction = process.env.NODE_ENV ==='production' ? true : false;
 //配置模板目录
 var plugins = [];
 var entryJs={
-    'index' : STATIC_PATH + '/entry/index.js'
+    'index' : STATIC_PATH + '/index.js'
 };
 var conf = {
     template: './src/template/index.html',
@@ -59,9 +59,9 @@ module.exports={
 	//项目输出的文件配置
 	output:{
 		path:DIST_PATH,
-		filename : isProduction ? '[name]/[name].[hash].js' : '[name]/[name].js',
+		filename : isProduction ? '[name].[hash].js' : '[name].js',
     	publicPath:isProduction ? '/dist/':'/dist/',
-        chunkFilename: isProduction ? '[name]/[name].[hash].js' : '[name]/[name].js'
+        chunkFilename: isProduction ? '[name].[hash].js' : '[name].js'
 	},
 	module: {
 	    loaders: [
@@ -100,7 +100,6 @@ module.exports={
             $: "jquery",
         }),
 	].concat(plugins),
-    devtool: 'hidden-source-map',
     devServer:{//webpack热服务
         historyApiFallback: true,
         hot: true,

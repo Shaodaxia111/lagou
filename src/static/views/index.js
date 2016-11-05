@@ -37,6 +37,15 @@ var Index  = React.createClass({
               </li>
             </ul>
          </div>
+         <div className="server-list">
+            <div className="server-tit">
+              <p className="tit-main">服务案例</p>
+              <p className="tit-intro">* 部分合作伙伴，排名不分先后</p>
+            </div>
+            <div className="list">
+
+            </div>
+         </div>
       </div>
     )
   }

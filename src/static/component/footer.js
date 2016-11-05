@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-require('./footer.css');
+require('./css/footer.css');
 var Footer  = React.createClass({
   // onhandle:function(){
   //   // browserHistory.push('/page2');

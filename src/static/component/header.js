@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-require('./header.css');
+require('./css/header.css');
 
 var Header  = React.createClass({
   // onhandle:function(){

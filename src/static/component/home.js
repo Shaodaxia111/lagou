@@ -9,7 +9,7 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <div class='main-content'>
+      <div className='main-content'>
         {this.props.children}
         <Footer />
       </div>

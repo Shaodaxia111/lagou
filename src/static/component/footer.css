@@ -3,6 +3,7 @@
 	width:100%;
     clear: both;
     height: 220px;
+    margin-top:30px;
 	background:url('../../img/footer_bg.jpg') 0 120px no-repeat;
 	background-size:100% 100px;
 }

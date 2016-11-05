@@ -14,5 +14,7 @@ html,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form,
 a{
  cursor:pointer;
 }
-
+#ct{
+	min-width: 1024px;
+}
 

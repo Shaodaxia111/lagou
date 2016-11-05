@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+require("./index.css");
 var Index  = React.createClass({
   // onhandle:function(){
   //   // browserHistory.push('/page2');
@@ -8,7 +9,11 @@ var Index  = React.createClass({
   // },
   render:function() {
     return (
-      <div><span>dasgdjsgfsdf</span></div>
+      <div className="index-content">
+         <div className="index-banner">
+            <div className="banner-content"></div>
+         </div>
+      </div>
     )
   }
 })

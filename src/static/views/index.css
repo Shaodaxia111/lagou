@@ -1,0 +1,16 @@
+#ct .index-content{
+	width:100%;
+}
+#ct .index-banner{
+	width:100%;
+	height:250px;
+	position:relative;
+	background:url(../../img/index_banner.jpg) 0 0 no-repeat;
+	background-size:100% 250px;
+}
+#ct .banner-content{
+	width:100%;
+	height:250px;
+	position:absolute;
+	background:red;
+}

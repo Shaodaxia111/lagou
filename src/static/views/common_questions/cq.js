@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Banner from '../../component/commonBanner'
 
 require("./cq.css");
+// 常见问题
 class CommonQuestions extends React.Component{
     constructor(props) {
         super(props);

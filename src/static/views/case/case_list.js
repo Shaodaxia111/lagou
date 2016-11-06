@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Banner from '../../component/commonBanner'
 
 require("./case_list.css");
+// 成功案例列表
 class CaseList extends React.Component {
     constructor(props) {
         super(props);

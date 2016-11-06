@@ -1,0 +1,53 @@
+#ct .leftMenu{
+	width:125px;
+	background:#fff;
+	z-index: 101;
+	border:1px solid #d8dae1;
+}
+#ct .leftMenu .p-menu{
+	width:106px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	margin:0 auto;
+	color:#333333;
+	font-size:16px;
+	border-top:1px dashed #d8dae1;
+	cursor:pointer;
+}
+#ct .leftMenu .p-menu:first-child{
+	border-top:none;
+}
+#ct .leftMenu .p-menu.on{
+	color:#00b38a;
+}
+#ct .leftMenu .p-menu.on:after{
+	content: "";
+	display:inline-block;
+	width:0px;
+	height:0px;
+	margin-left:3px;
+	border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 7px solid #00b38a;
+}
+#ct .leftMenu .p-menu.off:after{
+	content: "";
+	display:inline-block;
+	width:0px;
+	height:0px;
+	margin-left:3px;
+	border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 7px solid #333333;
+}
+#ct .leftMenu .c-menu li{
+	width:106px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	margin:0 auto;
+	color:#333333;
+	font-size:14px;
+	cursor:pointer;
+}

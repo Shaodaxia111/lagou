@@ -36,6 +36,94 @@ button{
 	border-radius:2px;
 	border:1px solid #f2f2f2;
 }
+#ct .fixed-box .fixed-ul{
+	width:40px;
+	margin:0 auto;
+}
+#ct .fixed-box .fixed-ul li{
+	width:40px;
+	height:50px;
+	position:relative;
+	border-bottom:1px dashed #f2f2f2;
+	margin:0 auto;
+	cursor:pointer;
+}
+#ct .fixed-box .fixed-ul li:last-child{
+	border-style:none;
+}
+#ct .fixed-box .fixed-ul  .baoming.off{
+	background:url('../../img/fixed_off.png') 0 12px no-repeat;
+}
+#ct .fixed-box .fixed-ul  .phone.off{
+	background:url('../../img/fixed_off.png') 0 -40px no-repeat;
+}
+#ct .fixed-box .fixed-ul  .gohome.off{
+	background:url('../../img/fixed_off.png') 0 -95px no-repeat;
+}
+#ct .fixed-box .fixed-ul  .gotop.off{
+	background:url('../../img/fixed_off.png') 0 -145px no-repeat;
+}
+#ct .fixed-box .fixed-ul  .baoming.on{
+	background:url('../../img/fixed_on.png') 0 12px no-repeat;
+}
+#ct .fixed-box .fixed-ul  .phone.on{
+	background:url('../../img/fixed_on.png') 0 -40px no-repeat;
+}
+#ct .fixed-box .fixed-ul  .gohome.on{
+	background:url('../../img/fixed_on.png') 0 -95px no-repeat;
+}
+#ct .fixed-box .fixed-ul  .gotop.on{
+	background:url('../../img/fixed_on.png') 0 -145px no-repeat;
+}
+#ct .fixed-box .fixed-ul  .baoming .baoming-content{
+	width:100px;
+	height:40px;
+	line-height: 40px;
+	text-align:center;
+	color:#777777;
+	font-size:14px;
+	background:#fff;
+	border:1px solid #f2f2f2;
+	border-radius:2px;
+	position:absolute;
+	right:40px;
+	top:-20px;
+}
+#ct .fixed-box .fixed-ul  .phone .phone-content{
+	width:100px;
+	height:50px;
+	padding-left:10px;
+	background-color:#fff;
+	border:1px solid #f2f2f2;
+	border-right:none;
+	border-top-left-radius:2px;
+	border-bottom-left-radius:2px;
+	position:absolute;
+	right:49px;
+}
+#ct .fixed-box .fixed-ul  .phone .phone-content:after{
+	content:"";
+	display:block;
+	position:absolute;
+	right:-12px;
+	top:20px;
+	width:12px;
+	height:10px;
+	background-image:url(../../img/fixed_arrow.png);
+	background-repeat:no-repeat;
+}
+#ct .fixed-box .fixed-ul  .phone .phone-content .phone-tit{
+	color:#777777;
+	font-size:12px;
+	line-height:18px;
+	margin-top:10px;
+}
+#ct .fixed-box .fixed-ul  .phone .phone-content .phone-number{
+	color:#333333;
+	font-size:14px;
+	line-height:18px;
+}
+
 
 
 

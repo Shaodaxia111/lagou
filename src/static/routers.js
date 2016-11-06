@@ -21,6 +21,15 @@ const RootRoute ={
 		    }, 'index')
 		  }
 		},
+		// common questions page
+		{
+		  path: 'cq',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/common_questions/cq'))
+		    }, 'cq')
+		  }
+		},
 		{//路由不匹配的时候
 		  path: '*',
           onEnter: (_, replaceState) => replaceState(null, "/")

@@ -1,0 +1,23 @@
+.employ-box {
+    width: 800px;
+    font-size: 18px;
+    margin: 0 auto;
+    background: url(../../../img/employ.jpg) no-repeat top 45px left;
+    border-bottom: 1px solid #cccaca;
+    padding-bottom: 30px;
+    margin-bottom: 250px
+}
+
+.employ-box .title {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 300px;
+}
+
+.employ-box .paragraph {
+    display: block;
+    color: #777777;
+    font-size: 14px;
+    line-height: 20px;
+}

@@ -58,6 +58,15 @@ const RootRoute ={
 		    }, 'case_detail')
 		  }
 		},
+		// 按需雇佣
+		{
+		  path: 'employ',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/employ/employ'))
+		    }, 'employ')
+		  }
+		},
 		// 常见问题
 		{
 		  path: 'cq',
@@ -66,7 +75,6 @@ const RootRoute ={
 		      cb(null, require('./views/common_questions/cq'))
 		    }, 'cq')
 		  }
-			
 		},
 		{//路由不匹配的时候
 		  path: '*',

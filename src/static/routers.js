@@ -31,6 +31,15 @@ const RootRoute ={
 		    }, 'recruit')
 		  }
 		},
+		//完善企业主业
+		{
+		  path: 'trends',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/trends/trends'))
+		    }, 'trends')
+		  }
+		},
 		// common questions page
 		{
 		  path: 'cq',

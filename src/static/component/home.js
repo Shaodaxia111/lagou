@@ -12,6 +12,9 @@ class Home extends React.Component {
       <div className='main-content'>
         {this.props.children}
         <Footer />
+        <div className="fixed-box">
+            
+        </div>
       </div>
     )
   }

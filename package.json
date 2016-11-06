@@ -45,6 +45,7 @@
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-router": "^2.8.1",
+    "react-swipe": "^5.0.5",
     "reflux": "^0.4.1"
   }
 }

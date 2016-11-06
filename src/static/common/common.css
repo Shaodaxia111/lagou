@@ -23,5 +23,15 @@ button{
 #ct{
 	min-width: 1024px;
 }
+#ct .fixed-box{
+	width:55px;
+	height:210px;
+	position:fixed;
+	right:25px;
+	bottom:100px;
+	background:#ffffff;
+	border-radius:2px;
+	border:1px solid #f2f2f2;
+}
 
 

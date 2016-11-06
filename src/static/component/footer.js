@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 require('./css/footer.css');
 var Footer  = React.createClass({
   // onhandle:function(){

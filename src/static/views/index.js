@@ -3,7 +3,6 @@ import IndexBanner from '../component/indexBanner';
 import IndexTab from '../component/indexTab';
 import ServerCompany from '../component/serverCompany';
 import Good from '../component/good';
-require("./css/index.css");
 var Index  = React.createClass({
   // onhandle:function(){
   //   // browserHistory.push('/page2');

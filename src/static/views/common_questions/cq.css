@@ -1,3 +1,52 @@
-#ct .index-content{
-	width:100%;
-}
+        .banner-cq {
+            width: 100%;
+            height: 180px;
+            line-height: 180px;
+            text-align: center;
+            font-size: 48px;
+            color: #fff;
+            background: url(../../../img/common-question/banner.jpg) 0 0 no-repeat;
+            background-size: 100% 180px;
+            margin-bottom: 57px;
+        }
+        
+        .middle-box {
+            width: 475px;
+            font-size: 18px;
+            margin: 0 auto;
+        }
+        
+        .middle-box .question-box {
+            margin-bottom: 10px;
+        }
+        
+        .question-box .question-item {
+            border: 1px solid #cccaca;
+            height: 72px;
+            line-height: 72px;
+            text-indent: 50px;
+            margin-bottom: 18px;
+            background: url(../../../img/common/arrow-gray-right.png) no-repeat right 30px center;
+        }
+        
+        .middle-box .question-box .green {
+            color: #00b38a;
+            background: url(../../../img/common/arrow-green-right.png) no-repeat right 30px center;
+        }
+        
+        .customer-tips {
+            height: 44px;
+            padding-top: 44px;
+            background: url(../../../img/common-question/halving-line.png) no-repeat top 10px left 0px;
+        }
+        
+        .customer-tips a {
+            display: block;
+            height: 28px;
+            line-height: 28px;
+            background: url(../../../img/common/customer.png) 110px 0 no-repeat;
+            font-size: 14px;
+            color: #00b38a;
+            text-align: center;
+            text-decoration: none;
+        }

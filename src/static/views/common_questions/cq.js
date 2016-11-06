@@ -1,21 +1,66 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Banner from '../../component/commonBanner'
+
 require("./cq.css");
+class CommonQuestions extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            questions: {
+                item1: {
+                    text: "人才招聘问题招聘",
+                    url: "",
+                    onHover: false,
+                },
+                item2: {
+                    text: "简招常见问题",
+                    url: "",
+                    onHover: false,
+                },
+                item3: {
+                    text: "人拉钩云常见问题",
+                    url: "",
+                    onHover: false,
+                },
+                item4: {
+                    text: "大鲲常见问题",
+                    url: "",
+                    onHover: false,
+                },
+                item5: {
+                    text: "拉钩+常见问题",
+                    url: "",
+                    onHover: false,
+                }
+            }
+        }
+    }
 
-var CommonQuestions = React.createClass({
+    handleClick (ele) {
 
-    render: function() {
+    }
+
+    render() {
+        let questions = this.state.questions
+        let questionListDom = []
+        let _this = this
+        for (let ele in questions) {
+            let item = questions[ele]
+            questionListDom.push(<li className = "question-item" data-url = {item.url}
+                onClick = {_this.handleClick.bind(this, ele.url)} key = {ele}>
+                    {item.text}
+                </li>
+            )
+        }
+
         return ( 
             < div >
-                <header className = "banner-cq">常见问题</header>
-                <div className = 'middle-box'>
+                <Banner backgroundImage = '/src/img/banner-common-question.jpg' title = '常见问题' />
+                <div className = 'common-question-box'>
                     <ul className = "question-box">
-                        <li className = "question-item" data-url = "">人才招聘问题招聘</li>
-                        <li className = "question-item" data-url = "">简招常见问题</li>
-                        <li className = "question-item green" data-url = "">人拉钩云常见问题</li>
-                        <li className = "question-item" data-url = "">大鲲常见问题</li>
-                        <li className = "question-item" data-url = "">拉钩+常见问题</li>
+                        {questionListDom}
                     </ul>
                     <div className = "customer-tips">
                         <a href = "" >咨询在线客服，实时为您解答</a>
@@ -24,5 +69,5 @@ var CommonQuestions = React.createClass({
             < /div>
         )
     }
-})
-module.exports = CommonQuestions;
+}
+module.exports = CommonQuestions

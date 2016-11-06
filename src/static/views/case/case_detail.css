@@ -1,0 +1,41 @@
+.case-detail-box {
+    width: 800px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.case-detail-box .title {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.case-detail-box .paragrapy {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 23px;
+}
+
+.case-detail-box img {
+    margin-bottom: 20px;
+}
+
+.case-detail-box .article {
+    border-bottom: 1px solid #cccaca;
+    margin-bottom: 50px;
+}
+
+.case-detail-box .btn-go-index {
+    width: 113px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background: #00b38a;
+    margin: 0 auto 140px;
+    cursor: pointer;
+}

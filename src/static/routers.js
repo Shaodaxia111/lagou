@@ -40,7 +40,25 @@ const RootRoute ={
 		    }, 'trends')
 		  }
 		},
-		// common questions page
+		// 成功案例列表 
+		{
+		  path: 'case_list',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/case/case_list'))
+		    }, 'case_list')
+		  }
+		},
+		// 成功案例详情 
+		{
+		  path: 'case_detail',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/case/case_detail'))
+		    }, 'case_detail')
+		  }
+		},
+		// 常见问题
 		{
 		  path: 'cq',
 		  getComponent(nextState, cb) {
@@ -48,6 +66,7 @@ const RootRoute ={
 		      cb(null, require('./views/common_questions/cq'))
 		    }, 'cq')
 		  }
+			
 		},
 		{//路由不匹配的时候
 		  path: '*',

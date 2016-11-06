@@ -1,0 +1,46 @@
+.case-list-box {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.case-list {
+    margin-bottom: 30px;
+}
+
+.case-list li {
+    display: inline-block;
+    margin: 0 30px;
+    width: 490px;
+    overflow: hidden;
+    color: #777777;
+    margin-bottom: 23px;
+    border-bottom: 1px solid #cccaca;
+    padding-bottom: 25px;
+}
+
+.case-list li .title-line {
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.case-list .title-line .go-detail {
+    color: #00b38a;
+    width: 80px;
+    font-size: 16px;
+    float: right;
+    cursor: pointer;
+    background: url(../../../img/arrow-right.png) no-repeat right center;
+}
+
+.case-list img {
+    margin-bottom: 25px;
+}
+
+.case-list .case-paragraph {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+}

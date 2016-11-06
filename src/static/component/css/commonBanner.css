@@ -1,0 +1,11 @@
+.common-banner {
+    width: 100%;
+    height: 180px;
+    line-height: 180px;
+    text-align: center;
+    font-size: 48px;
+    color: #fff;
+    background: url(../../../img/banner-common-question.jpg) 0 0 no-repeat;
+    background-size: 100% 180px;
+    margin-bottom: 57px;
+}

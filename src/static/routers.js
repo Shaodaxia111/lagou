@@ -13,12 +13,22 @@ const RootRoute ={
 		}, 'Home')
 	},
 	childRoutes: [
+		//index
 		{
 		  path: 'index',
 		  getComponent(nextState, cb) {
 		    require.ensure([], (require) => {
 		      cb(null, require('./views/index'))
 		    }, 'index')
+		  }
+		},
+		//完善企业主业
+		{
+		  path: 'recruit',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/recruit/recruit'))
+		    }, 'recruit')
 		  }
 		},
 		// common questions page

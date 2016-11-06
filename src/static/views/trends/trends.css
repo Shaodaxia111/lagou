@@ -1,5 +1,6 @@
 #ct .trend-content{
 	width:100%;
+	margin-bottom:250px;
 }
 #ct .trend-banner{
 	width:100%;
@@ -30,7 +31,35 @@
 	width:800px;
 	height:280px;
 	margin-top:30px;
+	position:relative;
 	border-bottom:1px solid #d8dae1;
+}
+#ct .trend-content .trend-item .erweimaBox{
+	width:150px;
+	height:180px;
+	position:absolute;
+	right:25px;
+	top:15px;
+	background-image:url(../../../img/trend-erweimaBg.jpg);
+	background-size:150px 180px;
+	z-index:101;
+}
+#ct .trend-content .trend-item .erweimaBox .erweima-img{
+	width:120px;
+	height:120px;
+	margin:25px 0 0 16px;
+}
+#ct .trend-content .trend-item.data .erweimaBox .erweima-img{
+	background:url(../../../img/data-erweima.jpg) 0 0 no-repeat;
+	background-size:120px 120px;
+}
+#ct .trend-content .trend-item.trend-salaryData .erweimaBox .erweima-img{
+	background:url(../../../img/salaryData-erweima.jpg) 0 0 no-repeat;
+	background-size:120px 120px;
+}
+#ct .trend-content .trend-item.trend-whiteBook .erweimaBox .erweima-img{
+	background:url(../../../img/whiteBook-erweima.jpg) 0 0 no-repeat;
+	background-size:120px 120px;
 }
 #ct .trend-content .trend-header{
 	height:30px;
@@ -48,4 +77,25 @@
 #ct .item-weixin,#ct .item-download{
 	color:#00b38a;
 	font-size:16px;
+	cursor:pointer;
+}
+#ct .trend-content .trend-item .item-content{
+	height:200px;
+	margin-top:25px;
+	padding-left:375px;
+}
+#ct .trend-content .trend-item .item-content .content-list p{
+	height:30px;
+	margin-bottom:18px;
+	font-size:14px;
+	color:#333333;
+}
+#ct .trend-content .trend-item.data .item-content{
+	background:url(../../../img/trend-data.jpg) 0 0 no-repeat;
+}
+#ct .trend-content .trend-item.trend-salaryData .item-content{
+	background:url(../../../img/trend-salaryData.jpg) 0 0 no-repeat;
+}
+#ct .trend-content .trend-item.trend-whiteBook .item-content{
+	background:url(../../../img/trend-whiteBook.jpg) 0 0 no-repeat;
 }

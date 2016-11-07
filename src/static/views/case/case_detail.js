@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Banner from '../../component/commonBanner'
+import ArticleBox from '../../component/ArticleBox'
 
 require("./case_detail.css");
 // 成功案例详情
@@ -24,24 +25,11 @@ class SuccessDetail extends React.Component{
     }
 
     render() {
-        const state = this.state
-        const contentDom = []
-        state.content.forEach(function (ele, index) {
-            if(ele.indexOf('img') > -1) {
-                contentDom.push(<img src = { ele } alt = '成功案例' key = { index }/ >)
-            } else {
-                contentDom.push(<span className = 'paragrapy' key = { index }>{ ele }</span>)
-            }
-         })
-
         return ( 
             < div >
                 <Banner backgroundImage = '/src/img/banner-case.jpg' title = '成功案例' />
                 <div className = 'case-detail-box'>
-                    <div className = 'article'>
-                        <div className = 'title'>{ state.title }</div>
-                        { contentDom }
-                    </div>
+                    <ArticleBox article = { this.state } />
                     <div className = 'btn-go-index'>返回首页</div>
                 </div>
             < /div>

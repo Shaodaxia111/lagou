@@ -1,0 +1,33 @@
+.article .title {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.article .articleLink {
+    cursor: pointer;
+    color: #00b38a;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.article .paragraph {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 23px;
+}
+
+.article img {
+    margin-bottom: 20px;
+}
+
+
+/*.article .line{
+    border-bottom: 1px solid #cccaca;
+    margin-bottom: 30px;
+}*/

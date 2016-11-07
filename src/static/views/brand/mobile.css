@@ -1,0 +1,19 @@
+#ct .brand-box {
+    width: 800px;
+    font-size: 18px;
+    margin: 0 auto;
+    /*border-bottom: 1px solid #cccaca;*/
+    padding-bottom: 30px;
+    margin-bottom: 180px
+}
+#ct .brand-box img{
+    margin-top: 0;
+}
+#ct .brand-box .article {
+    border-bottom: 1px solid #cccaca;
+    padding-bottom: 25px;
+}
+
+#ct .brand-box .article:last-child {
+    border-bottom: 0px;
+}

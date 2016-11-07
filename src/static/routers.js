@@ -78,11 +78,20 @@ const RootRoute ={
 		},
 		// 品牌建设
 		{
-		  path: 'brand/:type',
+		  path: 'brand_activity/:type',
 		  getComponent(nextState, cb) {
 		    require.ensure([], (require) => {
 		      cb(null, require('./views/brand/activity'))
 		    }, 'brandActivity')
+		  }
+		},
+		// 品牌移动页面
+		{
+		  path: 'brand_mobile/:type',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/brand/mobile'))
+		    }, 'brandMobile')
 		  }
 		},
 		// 人力资源管理

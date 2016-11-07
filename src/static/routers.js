@@ -76,6 +76,15 @@ const RootRoute ={
 		    }, 'cq')
 		  }
 		},
+		// 品牌建设
+		{
+		  path: 'brand/:type',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/brand/activity'))
+		    }, 'brandActivity')
+		  }
+		},
 		{//路由不匹配的时候
 		  path: '*',
           onEnter: (_, replaceState) => replaceState(null, "/")

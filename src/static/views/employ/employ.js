@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Banner from '../../component/commonBanner'
+import ArticleBox from '../../component/ArticleBox'
 
 require("./employ.css");
 // 按需雇佣
@@ -25,20 +26,11 @@ class Employ extends React.Component{
     }
 
     render() {
-        const content = this.state.content
-        const contentDom = []
-        content.forEach(function (ele, index) {
-            contentDom.push(<span className = 'paragraph' key = { index }>{ ele }</span>)
-         })
-
         return ( 
             < div >
                 <Banner backgroundImage = '/src/img/banner-employ.jpg' title = '拉勾企业服务·大鲲' />
                 <div className = 'employ-box'>
-                    <div className = 'article'>
-                        <div className = 'title'>{ this.state.title }</div>
-                        { contentDom }
-                    </div>
+                    <ArticleBox article = {this.state} />
                 </div>
             < /div>
         )

@@ -1,4 +1,5 @@
 import React from 'react';
+var LeftMenu = require('../../component/leftMenu');
 require("./trends.css");
 class Item extends React.Component{
   constructor(props) {
@@ -90,6 +91,7 @@ var Trend  = React.createClass({
           <div className="banner-content">
             <p className="trend-tit">拉勾企业服务·行业报告市场动态</p>
           </div>
+          <LeftMenu onOpen="人才招聘" style={{position:'absolute',top:100,left:100}} />
         </div>
         <div className="trend-list">
           {TrendList}

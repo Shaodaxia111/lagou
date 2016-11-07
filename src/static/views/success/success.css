@@ -1,0 +1,50 @@
+#ct .success-content{
+	width:100%;
+}
+#ct .success-banner{
+	width:100%;
+	height:180px;
+	position:relative;
+	background:url(../../../img/success_banner.jpg) 0 0 no-repeat;
+	background-size:100% 180px;
+}
+#ct .success-banner .banner-content{
+	width:100%;
+	height:180px;
+	position:absolute;
+	text-align:center;
+	top:0;
+	left: 0;
+}
+#ct .success-content .success-tit{
+	margin-top:54px;
+	color:#fff;
+	font-size:48px;
+}
+#ct .success-top{
+	width:100%;
+	height:225px;
+	padding-top:45px;
+	background:#fff;
+	text-align:center;
+}
+#ct .success-top .success-img{
+	width:80px;
+	height:80px;
+	display:block;
+	margin:0 auto;
+	background:url(../../../img/success-img.png) 0 0 no-repeat;
+	background-size:80px 80px;
+}
+#ct .success-top .p-tit{
+	line-height: 40px;
+	font-size:24px;
+	color:#555555;
+	text-align:center;
+}
+#ct .success-top .c-tit{
+	line-height: 25px;
+	font-size:16px;
+	color:#555555;
+	text-align:center;
+}

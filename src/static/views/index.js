@@ -13,7 +13,8 @@ var Index  = React.createClass({
     return (
       <div className="index-content">
          <IndexBanner />
-         <IndexTab />
+         <p className="use-tit">更多方案解决你所需</p>
+         <IndexTab style={{marginBottom:250}} />
          <ServerCompany />
          <Good />
       </div>

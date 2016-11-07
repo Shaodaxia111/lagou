@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router,hashHistory} from 'react-router';
+import { Router,useRouterHistory} from 'react-router';
+import {createHashHistory} from "history";
+var appHistory = useRouterHistory(createHashHistory)({queryKey:false});
 import routes from './routers';
 
 class Index extends React.Component {
@@ -9,7 +11,7 @@ class Index extends React.Component {
   }
   render() {
     return (
-      <Router history={hashHistory} routes={routes} />
+      <Router history={appHistory} routes={routes} />
     )
   }
 }

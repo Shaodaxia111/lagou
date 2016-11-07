@@ -60,7 +60,7 @@ class IndexBanner extends React.Component {
     return (
       <div className='banner' style={{overflow:'hidden',position:'relative'}}>
       <ReactSwipe ref="reactSwipe" swipeOptions={{continuous:true,speed: 400,auto:10000,callback:this.itemMove.bind(this)}}>
-        <div className="index-banner">
+        <div className="index-banner banner01">
             <div className="banner-content">
               <p className="banner-tit">拉勾企业服务·人才招聘</p>
               <ul>
@@ -71,26 +71,26 @@ class IndexBanner extends React.Component {
               <button className="view-btn">查看招聘人才产品以及解决方案</button>
             </div>
          </div>
-         <div className="index-banner">
+         <div className="index-banner banner02">
             <div className="banner-content">
-              <p className="banner-tit">拉勾企业服务·人才招聘</p>
+              <p className="banner-tit">拉勾企业服务·品牌建设</p>
               <ul>
-                <li>行业领先的垂直互联网招聘平台</li>
-                <li>1081万+的候选人才库</li>
-                <li>每月简历投递量472万+</li>
+                <li>专业团队策划完善的品牌建设和品牌推广方案</li>
+                <li>1081万+让人才切身体会企业的品牌情愫</li>
+                <li>让企业更好的树立品牌威信</li>
               </ul>
-              <button className="view-btn">查看招聘人才产品以及解决方案</button>
+              <button className="view-btn">查看品牌建设解决方案</button>
             </div>
          </div>
-         <div className="index-banner">
+         <div className="index-banner banner03">
             <div className="banner-content">
-              <p className="banner-tit">拉勾企业服务·人才招聘</p>
+              <p className="banner-tit">拉勾企业服务·人力资源管理</p>
               <ul>
-                <li>行业领先的垂直互联网招聘平台</li>
-                <li>1081万+的候选人才库</li>
-                <li>每月简历投递量472万+</li>
+                <li>成长型企业人力资源管理SaaS平台</li>
+                <li>一站解决企业招聘管理、人事管理、员工自助管理</li>
+                <li>帮助企业更高效的发展</li>
               </ul>
-              <button className="view-btn">查看招聘人才产品以及解决方案</button>
+              <button className="view-btn">查看人力资源管理SaaS产品&解决方案</button>
             </div>
          </div>
       </ReactSwipe>

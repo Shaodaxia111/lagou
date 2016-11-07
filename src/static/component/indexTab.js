@@ -58,7 +58,6 @@ class IndexTab extends React.Component {
     });
     return (
       <div className="use-content">
-        <p className="use-tit">更多方案解决你所需</p>
         <div className="use-info">
           {itemList}
         </div>

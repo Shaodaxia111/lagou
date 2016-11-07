@@ -85,6 +85,24 @@ const RootRoute ={
 		    }, 'brandActivity')
 		  }
 		},
+		// 人力资源管理
+		{
+		  path: 'renli',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/renli/renli'))
+		    }, 'renli')
+		  }
+		},
+		// 申请成功的页面
+		{
+		  path: 'success',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/success/success'))
+		    }, 'success')
+		  }
+		},
 		{//路由不匹配的时候
 		  path: '*',
           onEnter: (_, replaceState) => replaceState(null, "/")

@@ -1,9 +1,10 @@
 import React, {PropTypes, Component} from 'react';
 import ReactDOM from 'react-dom';
 
+import classnames from 'classnames'
 
 require("./css/ArticleBox.css");
-// 文章box
+// 文章box 引用方式可参考 views/brand/activity.js
 class ArticleBox extends Component{
     constructor(props) {
         super(props);
@@ -33,6 +34,7 @@ class ArticleBox extends Component{
 
     render() {
         let article = this.props.article
+        let cName = this.props.cName
         let contentDom = []
         article.content.forEach(function (ele, index) {
             if(ele.indexOf('img') > -1) {   // 图片
@@ -43,7 +45,7 @@ class ArticleBox extends Component{
          })
 
         return ( 
-            < div className = 'article'>
+            < div className={classnames("article",{[`${cName}`]: cName != undefined})}>
                { this.renderTitle(this.props.article) }
                { contentDom }
             < /div>

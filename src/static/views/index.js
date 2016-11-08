@@ -12,10 +12,10 @@ var Index  = React.createClass({
   render:function() {
     return (
       <div className="index-content">
-         <IndexBanner />
+         <IndexBanner {...this.props} />
          <p className="use-tit">更多方案解决你所需</p>
-         <IndexTab style={{marginBottom:250}} />
-         <ServerCompany />
+         <IndexTab {...this.props} style={{marginBottom:250}} />
+         <ServerCompany {...this.props} />
          <Good />
       </div>
     )

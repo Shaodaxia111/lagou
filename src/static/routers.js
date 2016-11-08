@@ -31,7 +31,7 @@ const RootRoute ={
 		    }, 'recruit')
 		  }
 		},
-		//完善企业主业
+		//拉勾企业服务
 		{
 		  path: 'trends',
 		  getComponent(nextState, cb) {

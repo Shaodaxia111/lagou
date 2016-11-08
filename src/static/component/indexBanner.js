@@ -1,5 +1,7 @@
 import React from 'react';
+var reactMixin = require('react-mixin');
 import ReactSwipe from 'react-swipe';
+var LinkTo =require("../mixins/linkto"); 
 require('./css/indexBanner.css');
 var mm;
 var dataSource = [
@@ -68,7 +70,13 @@ class IndexBanner extends React.Component {
                 <li>1081万+的候选人才库</li>
                 <li>每月简历投递量472万+</li>
               </ul>
-              <button className="view-btn">查看招聘人才产品以及解决方案</button>
+              <button 
+                data-url="/trends" 
+                data-lg-tj-id="" 
+                data-lg-tj-no="" 
+                data-lg-tj-cid="idnull" 
+                onClick={this.onLink.bind(this)}
+               className="view-btn">查看招聘人才产品以及解决方案</button>
             </div>
          </div>
          <div className="index-banner banner02">
@@ -103,4 +111,5 @@ class IndexBanner extends React.Component {
     )
   }
 }
+reactMixin(IndexBanner.prototype, LinkTo);
 module.exports = IndexBanner ;

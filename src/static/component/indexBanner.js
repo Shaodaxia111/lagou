@@ -51,7 +51,7 @@ class IndexBanner extends React.Component {
     var itemScroll = dataSource.map((item, index) => {
       var selectStatus = (index == this.state.scrollItem)?'on':'off'
       return (
-          <li onClick={this.setSlide.bind(this,index)} className={`${item.className} ${selectStatus}`}>
+          <li key={index} onClick={this.setSlide.bind(this,index)} className={`${item.className} ${selectStatus}`}>
             <i></i>
             <span>{item.title}</span>
           </li>

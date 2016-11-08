@@ -1,0 +1,30 @@
+.second-tab {
+    width: 800px;
+    color: #000;
+    /*color: #fff;
+    font-size: 18px;
+    height: 30px;
+    position: absolute;
+    margin: 0 auto;
+    top: 30px;*/
+}
+
+.second-tab div {
+    display: table-cell;
+    height: 30px;
+}
+
+
+/*.second-tab .selected {
+    color: #00b38a;
+}
+
+.second-tab span {
+    display: inline-block;
+    height: 100%;
+    line-height: 30px;
+}
+
+.second-tab .selected span {
+    border-bottom: 1px solid #00b38a;
+}*/

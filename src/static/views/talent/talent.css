@@ -1,0 +1,21 @@
+#ct .talent-box {
+    width: 800px;
+    font-size: 18px;
+    margin: 0 auto;
+    /*border-bottom: 1px solid #cccaca;*/
+    padding-bottom: 30px;
+    margin-bottom: 180px
+}
+
+#ct .talent-box img {
+    margin-top: 0;
+}
+
+#ct .talent-box .article {
+    border-bottom: 1px solid #cccaca;
+    padding-bottom: 25px;
+}
+
+#ct .talent-box .article:last-child {
+    border-bottom: 0px;
+}

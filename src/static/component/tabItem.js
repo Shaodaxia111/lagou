@@ -1,4 +1,6 @@
 import React from 'react';
+var reactMixin = require('react-mixin');
+var LinkTo =require("../mixins/linkto");
 require('./css/tabItem.css');
 
 class TabItem extends React.Component {
@@ -24,8 +26,8 @@ class TabItem extends React.Component {
     var opacity = this.state.opacity;
     if(this.props.hoverInfo){
         hoverContent = (
-          <div onClick={this.props.onClick} style={{opacity:opacity}} className="hover-content">
-              <span>{this.props.hoverInfo}</span>
+          <div {...this.props} style={{}} onClick={this.onLink.bind(this)} style={{opacity:opacity}} className="hover-content">
+              <span {...this.props} style={{}} onClick={this.onLink.bind(this)} >{this.props.hoverInfo}</span>
           </div>
         );
     }
@@ -34,11 +36,12 @@ class TabItem extends React.Component {
             <div className="item-content">
                 <i className="icon">{this.props.title}</i>
                 <p className="content">{this.props.content}</p>
-                <span onClick={this.props.onClick} className="go-arrow">{this.props.handle}</span>
+                <span {...this.props} style={{}} onClick={this.onLink.bind(this)} className="go-arrow">{this.props.handle}</span>
                 {hoverContent}
             </div>
         </div>
     )
   }
 }
+reactMixin(TabItem.prototype, LinkTo);
 module.exports = TabItem ;

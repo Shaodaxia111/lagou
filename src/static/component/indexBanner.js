@@ -71,7 +71,7 @@ class IndexBanner extends React.Component {
                 <li>每月简历投递量472万+</li>
               </ul>
               <button 
-                data-url="/trends" 
+                data-url="/talent/employ" 
                 data-lg-tj-id="" 
                 data-lg-tj-no="" 
                 data-lg-tj-cid="idnull" 
@@ -87,7 +87,13 @@ class IndexBanner extends React.Component {
                 <li>1081万+让人才切身体会企业的品牌情愫</li>
                 <li>让企业更好的树立品牌威信</li>
               </ul>
-              <button className="view-btn">查看品牌建设解决方案</button>
+              <button 
+                data-url="/brand_activity/activity" 
+                data-lg-tj-id="" 
+                data-lg-tj-no="" 
+                data-lg-tj-cid="idnull" 
+                onClick={this.onLink.bind(this)}
+              className="view-btn">查看品牌建设解决方案</button>
             </div>
          </div>
          <div className="index-banner banner03">
@@ -98,7 +104,13 @@ class IndexBanner extends React.Component {
                 <li>一站解决企业招聘管理、人事管理、员工自助管理</li>
                 <li>帮助企业更高效的发展</li>
               </ul>
-              <button className="view-btn">查看人力资源管理SaaS产品&解决方案</button>
+              <button 
+                data-url="/renli" 
+                data-lg-tj-id="" 
+                data-lg-tj-no="" 
+                data-lg-tj-cid="idnull" 
+                onClick={this.onLink.bind(this)}
+              className="view-btn">查看人力资源管理SaaS产品&解决方案</button>
             </div>
          </div>
       </ReactSwipe>

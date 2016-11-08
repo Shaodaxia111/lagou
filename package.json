@@ -42,9 +42,11 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "history": "^4.4.0",
     "jquery": "^2.1.4",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
+    "react-mixin": "^2.0.2",
     "react-router": "^2.8.1",
     "react-swipe": "^5.0.5",
     "reflux": "^0.4.1"

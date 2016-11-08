@@ -32,7 +32,9 @@ if(isProduction){
     plugins.push(extractCSS,
         new webpack.optimize.UglifyJsPlugin({//文件压缩
             compress: {
-                warnings: false
+                warnings: false,
+                drop_debugger: true,
+                drop_console: true
             },
             output: {
                 comments: false

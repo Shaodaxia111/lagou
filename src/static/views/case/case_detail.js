@@ -30,7 +30,7 @@ class SuccessDetail extends React.Component{
                 <Banner backgroundImage = '/src/img/banner-case.jpg' title = '成功案例' />
                 <div className = 'case-detail-box'>
                     <ArticleBox article = { this.state } />
-                    <div className = 'btn-go-index'>返回首页</div>
+                    <div className = 'btn-go-index'>返回案例列表页</div>
                 </div>
             < /div>
         )

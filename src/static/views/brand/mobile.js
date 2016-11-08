@@ -28,7 +28,7 @@ class Employ extends React.Component{
                     {
                         title: "企业权益",
                         content: [
-                            , "1.APP端核心聚焦位置推荐；"
+                            "1.APP端核心聚焦位置推荐；"
                             , "2.公司权重提升；"
                             , "3.定制公司招聘页面、H5页面。"
                         ]
@@ -36,7 +36,7 @@ class Employ extends React.Component{
                     {
                         title: "产品优势",
                         content: [
-                            , "1.核心聚焦位置：拉勾APP首页最大banner，浏览量高；"
+                            "1.核心聚焦位置：拉勾APP首页最大banner，浏览量高；"
                             , "2.权重提升：投放期间内，企业招聘职位权重全面提升，促进简历投递转化；"
                             , "3.全程活动策划跟进服务：了解企业品牌按品牌定制，曝光企业品牌，转化简历投递。"
                         ]
@@ -85,8 +85,8 @@ class Employ extends React.Component{
                     {
                         title: "首页banner案例展示",
                         content: [
-                            "/src/img/brand-mi5.jpg",
-                            "/src/img/brand-mi6.jpg"
+                            "/src/img/brand-mi5.jpg"
+                            , "/src/img/brand-mi6.jpg"
                         ]
                     }
                 ]

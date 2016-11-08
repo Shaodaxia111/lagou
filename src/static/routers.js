@@ -85,6 +85,15 @@ const RootRoute ={
 		    }, 'brandActivity')
 		  }
 		},
+		// 人才招聘
+		{
+		  path: 'talent/:type',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/talent/talent'))
+		    }, 'talent')
+		  }
+		},
 		// 品牌移动页面
 		{
 		  path: 'brand_mobile/:type',

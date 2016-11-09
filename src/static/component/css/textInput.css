@@ -1,0 +1,44 @@
+.apply-input {
+    background: #f5f6f8;
+    font-size: 14px;
+    margin-top: 70px;
+}
+
+.apply-input .apply-box {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.apply-box h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.apply-box .apply-tip {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.apply-box .input-item {
+    width: 470px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.apply-box .input-text {
+    color: #999;
+    margin: 15px 0 7px;
+}
+
+.apply-box input {
+    width: 470px;
+    height: 45px;
+    color: #000;
+    font-size: 14px;
+}

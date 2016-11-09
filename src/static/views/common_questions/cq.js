@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import reactMixin from 'react-mixin'
 
 import Banner from '../../component/commonBanner'
+
+import reactMixin from 'react-mixin'
 import LinkTo from '../../mixins/linkto'
 
 require("./cq.css");

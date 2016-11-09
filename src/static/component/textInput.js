@@ -107,14 +107,11 @@ class TextInput extends Component {
 				< /div >
             )
         })
-        return ( < div className = 'apply-input' >
-           			< div className = 'apply-box' >
-            			< h2 > 立即获得专属顾问一对一服务 < /h2> 
-						< span className = 'apply-tip' > 留下您的联系信息， 我们会有专业营销顾问与您联系， 一对一为您详细介绍拉勾相关产品和服务， 帮您更高效的招聘人才！ < /span > 
+        return ( 
+           		< div className = 'apply-box' style={this.props.style} >
 						{ inputDom } 
 						<span className = 'apply-submit' onClick = {this.handleSubmit.bind(this)}> 提交报名</span>
-					< /div>  
-				< /div >
+				< /div>  
         )
     }
 

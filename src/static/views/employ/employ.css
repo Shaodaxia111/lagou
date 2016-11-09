@@ -22,3 +22,15 @@
     line-height: 20px;
     margin-bottom: 0;
 }
+
+.employ-box .btn-go-more {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background: #00b38a;
+    margin: 30px auto 20px;
+    cursor: pointer;
+}

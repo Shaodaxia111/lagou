@@ -3,12 +3,12 @@
     font-size: 14px;
     margin-top: 70px;
 }
-
-.apply-input .apply-box {
-    width: 800px;
+.apply-box {
+    width:480px;
+    height:420px;
+    background: #fff;
     text-align: center;
     margin: 0 auto;
-    padding: 70px 0;
 }
 
 .apply-box h2 {
@@ -44,12 +44,13 @@
 }
 
 .apply-box .apply-submit {
+    display:block;
     width: 472px;
     background: #00b38a;
     color: #fff;
     text-align: center;
     line-height: 45px;
     height: 45px;
-    display: inline-block;
-    margin: 40px auto 0;
+    margin:0 auto;
+    margin-top:40px;
 }

@@ -91,7 +91,7 @@ var Trend  = React.createClass({
           <div className="banner-content">
             <p className="trend-tit">拉勾企业服务·行业报告市场动态</p>
           </div>
-          <LeftMenu onOpen="人才招聘" style={{position:'absolute',top:100,left:100}} />
+          <LeftMenu {...this.props} onOpen="市场动态" style={{position:'absolute',top:100,left:100}} />
         </div>
         <div className="trend-list">
           {TrendList}

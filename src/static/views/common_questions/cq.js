@@ -1,7 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import reactMixin from 'react-mixin'
 
 import Banner from '../../component/commonBanner'
+import LinkTo from '../../mixins/linkto'
 
 require("./cq.css");
 // 常见问题
@@ -12,28 +14,27 @@ class CommonQuestions extends React.Component{
             questions: {
                 item1: {
                     text: "人才招聘问题招聘",
-                    url: "",
                     onHover: false,
+                    "dataUrl": "https://www.lagou.com/qa.html?t=1",
+                    "dataId": "" ,
+                    "dataNo": "" ,
+                    "dataCid": "idnull"
                 },
                 item2: {
                     text: "简招常见问题",
-                    url: "",
                     onHover: false,
-                },
-                item3: {
-                    text: "人拉钩云常见问题",
-                    url: "",
-                    onHover: false,
+                    "dataUrl": "https://lagou.kf5.com/hc/",
+                    "dataId": "" ,
+                    "dataNo": "" ,
+                    "dataCid": "idnull"
                 },
                 item4: {
                     text: "大鲲常见问题",
-                    url: "",
                     onHover: false,
-                },
-                item5: {
-                    text: "拉钩+常见问题",
-                    url: "",
-                    onHover: false,
+                    "dataUrl": "https://pro.lagou.com/faq.html",
+                    "dataId": "" ,
+                    "dataNo": "" ,
+                    "dataCid": "idnull"
                 }
             }
         }
@@ -50,14 +51,18 @@ class CommonQuestions extends React.Component{
         for (let ele in questions) {
             let item = questions[ele]
             questionListDom.push(<li className = "question-item" data-url = {item.url}
-                onClick = {_this.handleClick.bind(this, ele.url)} key = {ele}>
+                data-url = { item.dataUrl }
+                data-lg-tj-id = { item.dataId }
+                data-lg-tj-no = { item.dataNo }
+                data-lg-tj-cid = { item.dataCid }
+                onClick = {_this.onLink.bind(_this)} key = {ele}>
                     {item.text}
                 </li>
             )
         }
 
         return ( 
-            < div >
+            < div {...this.props} >
                 <Banner backgroundImage = '/src/img/banner-common-question.jpg' title = '常见问题' />
                 <div className = 'common-question-box'>
                     <ul className = "question-box">
@@ -71,4 +76,6 @@ class CommonQuestions extends React.Component{
         )
     }
 }
+reactMixin(CommonQuestions.prototype, LinkTo);
+
 module.exports = CommonQuestions

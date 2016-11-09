@@ -26,10 +26,11 @@
 .case-detail-box .article {
     border-bottom: 1px solid #cccaca;
     margin-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .case-detail-box .btn-go-index {
-    width: 113px;
+    width: 130px;
     height: 40px;
     line-height: 40px;
     text-align: center;

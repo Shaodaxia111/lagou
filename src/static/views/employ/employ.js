@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Banner from '../../component/commonBanner'
 import ArticleBox from '../../component/ArticleBox'
+import LeftMenu from '../../component/leftMenu'
 
 require("./employ.css");
 // 按需雇佣
@@ -29,6 +30,7 @@ class Employ extends React.Component{
         return ( 
             < div >
                 <Banner backgroundImage = '/src/img/banner-employ.jpg' title = '拉勾企业服务·大鲲' />
+                <LeftMenu onOpen="按需雇佣" style={{position:'absolute',top:100,left:100}} />
                 <div className = 'employ-box'>
                     <ArticleBox article = {this.state} />
                 </div>

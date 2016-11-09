@@ -9,57 +9,78 @@ var Footer  = React.createClass({
             <div className="inner">
               <ul className="quick-link">
                 <li><p className="link-tit">关于我们</p></li>
-                <li "data-url":"/talent/employ", 
-                    "data-lg-tj-id":"" ,
-                    "data-lg-tj-no":"", 
+                <li "data-url":"/talent/employ"
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":"" 
                     "data-lg-tj-cid":"idnull"
                     onClick={this.onLink.bind(this)}
                 ><a>拉勾简招</a></li>
-                <li "data-url":"/talent/plus", 
-                    "data-lg-tj-id":"" ,
-                    "data-lg-tj-no":"", 
+                <li "data-url":"/talent/plus" 
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":""
                     "data-lg-tj-cid":"idnull"
                     onClick={this.onLink.bind(this)}
                 ><a>拉勾+</a></li>
-                <li "data-url":"/talent/pai", 
-                    "data-lg-tj-id":"" ,
-                    "data-lg-tj-no":"", 
+                <li "data-url":"/talent/pai"
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":"" 
                     "data-lg-tj-cid":"idnull"
                     onClick={this.onLink.bind(this)}
                 ><a>拉勾一拍</a></li>
-                <li "data-url":"/talent/recommend", 
-                    "data-lg-tj-id":"" ,
-                    "data-lg-tj-no":"", 
+                <li "data-url":"/talent/recommend" 
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":""
                     "data-lg-tj-cid":"idnull"
                     onClick={this.onLink.bind(this)}
                 ><a>拉勾精准推荐</a></li>
               </ul>
               <ul className="quick-link">
                 <li><p className="link-tit">品牌建设</p></li>
-                <li><a>广告产品</a></li>
-                <li><a>品牌活动</a></li>
+                <li "data-url":"/brand_mobile/index"
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":""
+                    "data-lg-tj-cid":"idnull"
+                    onClick={this.onLink.bind(this)}><a>广告产品</a></li>
+                <li "data-url":"/brand_activity/entrant"
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":""
+                    "data-lg-tj-cid":"idnull"
+                    onClick={this.onLink.bind(this)}><a>品牌活动</a></li>
                 <li><p className="link-tit">人力资源管理</p></li>
-                <li "data-url":"/renli", 
-                    "data-lg-tj-id":"" ,
-                    "data-lg-tj-no":"", 
+                <li "data-url":"/renli"
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":""
                     "data-lg-tj-cid":"idnull"
                     onClick={this.onLink.bind(this)}
                 ><a>拉勾云</a></li>
               </ul>
               <ul className="quick-link">
                 <li><p className="link-tit">解决方案</p></li>
-                <li "data-url":"/recruit", 
-                    "data-lg-tj-id":"" ,
-                    "data-lg-tj-no":"", 
+                <li "data-url":"/recruit"
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":""
                     "data-lg-tj-cid":"idnull"
                     onClick={this.onLink.bind(this)}
                 ><a>展现你的企业</a></li>
-                <li><a>满足你的招聘需求</a></li>
-                <li><a>对入职结果负责</a></li>
-                <li><a>了解你的候选人</a></li>
-                <li "data-url":"/employ", 
-                    "data-lg-tj-id":"" ,
-                    "data-lg-tj-no":"", 
+                <li "data-url":"/talent/plus"
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":""
+                    "data-lg-tj-cid":"idnull"
+                    onClick={this.onLink.bind(this)}
+                ><a>满足你的招聘需求</a></li>
+                <li "data-url":"/talent/pai" 
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":""
+                    "data-lg-tj-cid":"idnull"
+                ><a>对入职结果负责</a></li>
+                <li "data-url":"/talent/recommend"
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":"" 
+                    "data-lg-tj-cid":"idnull"
+                ><a>急聘解决方案</a></li>
+                <li "data-url":"/employ"
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":"" 
                     "data-lg-tj-cid":"idnull"
                     onClick={this.onLink.bind(this)}
                 ><a>按需雇佣平台</a></li>
@@ -72,16 +93,21 @@ var Footer  = React.createClass({
               </ul>
               <ul className="quick-link">
                 <li><p className="link-tit">帮助与支持</p></li>
-                <li><a>成功案例</a></li>
-                <li "data-url":"/cq", 
-                    "data-lg-tj-id":"" ,
-                    "data-lg-tj-no":"", 
+                <li "data-url":"/case_list" 
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":"" 
                     "data-lg-tj-cid":"idnull"
                     onClick={this.onLink.bind(this)}
-                     ><a>常见问题</a></li>
-                <li "data-url":"/sign", 
-                    "data-lg-tj-id":"" ,
-                    "data-lg-tj-no":"", 
+                ><a>成功案例</a></li>
+                <li "data-url":"/cq"
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":""
+                    "data-lg-tj-cid":"idnull"
+                    onClick={this.onLink.bind(this)}
+                ><a>常见问题</a></li>
+                <li "data-url":"/sign" 
+                    "data-lg-tj-id":"" 
+                    "data-lg-tj-no":"" 
                     "data-lg-tj-cid":"idnull"
                     onClick={this.onLink.bind(this)}
                 ><a>联系我们</a></li>

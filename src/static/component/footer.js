@@ -5,7 +5,7 @@ var LinkTo =require("../mixins/linkto");
 var Footer  = React.createClass({
   render:function() {
     return (
-        <div className="footer-content">
+        <div  className="footer-content">
             <div className="inner">
               <ul className="quick-link">
                 <li><p className="link-tit">关于我们</p></li>

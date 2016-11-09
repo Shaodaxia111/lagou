@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+var reactMixin = require('react-mixin');
+var LinkTo =require("../mixins/linkto"); 
 require('../common/common.css');
 import Header from './header';
 import Footer from './footer';
@@ -37,11 +39,14 @@ class Home extends React.Component {
       }); 
     }
   }
+  onGoTop(){//回到顶部
+    document.documentElement.scrollTop = document.body.scrollTop =0; 
+  }
   render() {
     return (
       <div className='main-content'>
         {this.props.children}
-        <Footer />
+        <Footer {...this.props} />
         <div className="fixed-box">
             <ul className="fixed-ul">
               <li className="baoming off" onMouseOver={this.onMouseOver.bind(this,'baoming')} onMouseOut={this.onMouseOut.bind(this,"baoming")}>
@@ -53,12 +58,23 @@ class Home extends React.Component {
                   <p className="phone-number">400-813-1117</p>
                 </div>
               </li>
-              <li className="gohome off" onMouseOver={this.onMouseOver.bind(this,'gohome')} onMouseOut={this.onMouseOut.bind(this,'gohome')}></li>
-              <li className="gotop off" onMouseOver={this.onMouseOver.bind(this,'gotop')} onMouseOut={this.onMouseOut.bind(this,'gotop')}></li>
+              <li className="gohome off"
+              data-url="/index" 
+              data-lg-tj-id="" 
+              data-lg-tj-no="" 
+              data-lg-tj-cid="idnull" 
+              onClick={this.onLink.bind(this)}
+              onMouseOver={this.onMouseOver.bind(this,'gohome')} onMouseOut={this.onMouseOut.bind(this,'gohome')}></li>
+              <li className="gotop off" 
+              onClick={this.onGoTop.bind(this)}
+              onMouseOver={this.onMouseOver.bind(this,'gotop')}
+              onMouseOut={this.onMouseOut.bind(this,'gotop')}>
+              </li>
             </ul>
         </div>
       </div>
     )
   }
 }
+reactMixin(Home.prototype, LinkTo);
 module.exports = Home ;

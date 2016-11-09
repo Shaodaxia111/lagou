@@ -1,6 +1,8 @@
 import React from 'react';
 require("./recruit.css");
-var Index  = React.createClass({
+var reactMixin = require('react-mixin');
+var LinkTo =require("../../mixins/linkto");
+var Recruit  = React.createClass({
   render:function() {
     return (
       <div className="recruit-content">
@@ -45,11 +47,24 @@ var Index  = React.createClass({
           <p className="operate-info">公司具体办公地点展示，支持设置多个办公地点。</p>
           <div className="img-bg recruit-bg09"></div>
           <div className="operate-btn">
-              <button className="setting-index">立即完善我的主页</button>
-              <button className="return-home">返回首页</button>
+              <button 
+              data-url = "/recruit"
+              data-lg-tj-id = "" 
+              data-lg-tj-no = "" 
+              data-lg-tj-cid = "idnull"
+              onClick={this.onLink.bind(this)}
+              className="setting-index">立即完善我的主页</button>
+              <button 
+              data-url = "/index"
+              data-lg-tj-id = "" 
+              data-lg-tj-no = "" 
+              data-lg-tj-cid = "idnull"
+              onClick={this.onLink.bind(this)}
+              className="return-home">返回首页</button>
           </div>
       </div>
     )
   }
 })
-module.exports = Index ;
+reactMixin(Recruit.prototype, LinkTo);
+module.exports = Recruit ;

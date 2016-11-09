@@ -15,7 +15,7 @@ var Success  = React.createClass({
             留下您的联系信息，我们会有专业营销顾问与您联系，一对一为您详细介绍拉勾相关产品和服务，帮您更高效的招聘人才！
           </p>
           <div className="sign-table">
-            
+            <TextInput style={{marginTop:50}} />
           </div>
           <p className="sign-otherTypes">
           </p>

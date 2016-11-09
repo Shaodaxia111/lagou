@@ -1,22 +1,19 @@
 .second-tab {
-    width: 800px;
-    color: #000;
-    /*color: #fff;
-    font-size: 18px;
-    height: 30px;
-    position: absolute;
-    margin: 0 auto;
-    top: 30px;*/
+    text-align: center;
+    color: #fff;
+    margin-top: -90px;
+    margin-bottom: 20px;
 }
 
-.second-tab div {
-    display: table-cell;
+.second-tab .tab-item {
+    display: inline-block;
+    padding: 0 20px;
     height: 30px;
 }
 
-
-/*.second-tab .selected {
+.second-tab .selected {
     color: #00b38a;
+    border-bottom: 1px solid #00b38a;
 }
 
 .second-tab span {
@@ -24,7 +21,3 @@
     height: 100%;
     line-height: 30px;
 }
-
-.second-tab .selected span {
-    border-bottom: 1px solid #00b38a;
-}*/

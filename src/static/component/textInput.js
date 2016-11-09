@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import classnames from 'classnames'
 
 class TextInput extends Component {
   constructor(props, context) {
@@ -34,8 +33,7 @@ class TextInput extends Component {
       <input 
         type="text"
         name = {this.props.name}
-        reg ={this.props.reg}
-        placeholder = this.props.placeholder}
+        placeholder = {this.props.placeholder}
         autoFocus = "true"
         value = {this.state.text}
         onBlur = {this.handleBlur.bind(this)}

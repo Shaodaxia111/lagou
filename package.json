@@ -49,6 +49,7 @@
     "react-mixin": "^2.0.2",
     "react-router": "^2.8.1",
     "react-swipe": "^5.0.5",
-    "reflux": "^0.4.1"
+    "reflux": "^0.4.1",
+    "superagent": "^2.3.0"
   }
 }

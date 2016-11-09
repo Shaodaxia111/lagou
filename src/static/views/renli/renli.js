@@ -1,5 +1,6 @@
 import React from 'react';
 var LeftMenu = require('../../component/leftMenu');
+import TextInput from '../../component/textInput'
 require("./renli.css");
 var dataSource = [
   {
@@ -68,7 +69,7 @@ var Renli  = React.createClass({
           <div className="renli-content">
             <p className="renli-tit">拉勾企业服务·人力资源管理</p>
           </div>
-          <LeftMenu onOpen="人力资源管理" style={{position:'absolute',top:100,left:100}} />
+          <LeftMenu {...this.props} onOpen="人力资源管理" style={{position:'absolute',top:100,left:100}} />
         </div>
         <div className="renli-modal">
           <div className="list-box">

@@ -11,40 +11,28 @@ var itemMap = {
   "市场动态":"shichang",
   "按需雇佣":"anxu"
 };
-var stateInit = {
-  rencai:{
-    color:"#333333"
-  },
-  pinpaijianshe:{
-    color:"#333333",
-    display:"none",
-    stauts:"off"
-  },
-  guanggao:{
-    color:"#333333"
-  },
-  pinpaihuodong:{
-    color:"#333333"
-  },
-  renli:{
-    color:"#333333"
-  },
-  shichang:{
-    color:"#333333"
-  },
-  anxu:{
-    color:"#333333"
-  },
-}
+var stateInit = {};
 class LeftMenu extends React.Component {
   constructor(props) {
     super(props);
     this.state = stateInit;
   }
   componentDidMount(){
+    stateInit = {
+      rencai:{color:"#333333"},
+      pinpaijianshe:{
+        color:"#333333",
+        display:"none",
+        stauts:"off"
+      },
+      guanggao:{color:"#333333"},
+      pinpaihuodong:{color:"#333333"},
+      renli:{color:"#333333"},
+      shichang:{color:"#333333"},
+      anxu:{color:"#333333"},
+    }
    var openItem = this.props.onOpen;
    var itemKey = itemMap[openItem];
-    console.log(itemKey);
    stateInit[itemKey].color="#00b38a";
    if((itemKey=="pinpaijianshe")||(itemKey=="guanggao")||(itemKey=="pinpaihuodong")){
     stateInit.pinpaijianshe={

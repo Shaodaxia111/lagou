@@ -7,7 +7,7 @@ var dataList = [
           "hoverInfo":"创建完善的企业主页让候选人快速了解企业文化",
           "content":"创建自己的企业招聘页面",
           "handle":"点击开始",
-          "data-url":"/talent/employ", 
+          "data-url":"/recruit", 
           "data-lg-tj-id":"" ,
           "data-lg-tj-no":"", 
           "data-lg-tj-cid":"idnull" 
@@ -17,17 +17,17 @@ var dataList = [
           "hoverInfo":"职位无限发布，排名权重高，海量人才直接邀，VIP管理系统-招聘从未如此简单高效！",
           "content":"海量邀请合适人才投递",
           "handle":"立即使用",
-          "data-url":"/talent/employ", 
+          "data-url":"/talent/plus", 
           "data-lg-tj-id":"" ,
           "data-lg-tj-no":"", 
           "data-lg-tj-cid":"idnull"
         },
         {
-          "title":"展示你的企业",
+          "title":"急聘解决方案",
           "hoverInfo":"精准匹配人才，快速解决急招难题，招聘更高效",
           "content":"快速获取高质量高活跃的简历",
           "handle":"点击开始",
-          "data-url":"/talent/employ", 
+          "data-url":"/talent/recommend", 
           "data-lg-tj-id":"" ,
           "data-lg-tj-no":"", 
           "data-lg-tj-cid":"idnull"
@@ -37,7 +37,7 @@ var dataList = [
           "hoverInfo":"签约高端人才，快速发offer不让任何一个优秀的小伙伴落网！",
           "content":"签约高端人才快速发offer",
           "handle":"点击邀约",
-          "data-url":"/talent/employ", 
+          "data-url":"/talent/pai", 
           "data-lg-tj-id":"" ,
           "data-lg-tj-no":"", 
           "data-lg-tj-cid":"idnull"
@@ -47,7 +47,7 @@ var dataList = [
           "hoverInfo":"专业分析招聘行业动态趋势，告别被动小绵羊时代！",
           "content":"招聘行业动态趋势分析",
           "handle":"免费下载",
-          "data-url":"/talent/employ", 
+          "data-url":"/trends", 
           "data-lg-tj-id":"" ,
           "data-lg-tj-no":"", 
           "data-lg-tj-cid":"idnull"

@@ -88,7 +88,7 @@ class IndexBanner extends React.Component {
                 <li>让企业更好的树立品牌威信</li>
               </ul>
               <button 
-                data-url="/brand_activity/activity" 
+                data-url="/brand_mobile/index" 
                 data-lg-tj-id="" 
                 data-lg-tj-no="" 
                 data-lg-tj-cid="idnull" 

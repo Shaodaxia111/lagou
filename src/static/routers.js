@@ -88,7 +88,7 @@ const RootRoute ={
 		  }
 		},
 		// 人才招聘
-		
+		// 拉钩简招 employ; 拉钩+ plus; 一拍 pai; 精准推荐 recommend; 背景调查 background
 		{
 		  path: 'talent/:type',
 		  getComponent(nextState, cb) {
@@ -108,7 +108,7 @@ const RootRoute ={
 		  }
 		},
 		// 人力资源管理
-		// 拉钩简招 employ; 拉钩+ plus; 一拍 pai; 精准推荐 recommend; 背景调查 background
+		
 		{
 		  path: 'renli',
 		  getComponent(nextState, cb) {

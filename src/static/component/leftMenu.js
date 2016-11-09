@@ -83,10 +83,6 @@ class LeftMenu extends React.Component {
       this.setState(stateInit);
     }
   }
-  onClick(e){
-    var mouseKey = e.target.getAttribute("data-itemKey");
-    console.log(e);
-  }
   render() {
     return (
         <ul {...this.props} className="leftMenu">
@@ -95,11 +91,11 @@ class LeftMenu extends React.Component {
               data-url = "/talent/employ"
               data-lg-tj-id = "" 
               data-lg-tj-no = "" 
-              data-lg-tj-cid = "idnull">
+              data-lg-tj-cid = "idnull" onClick={this.onLink.bind(this)}>
               人才招聘
            </li> 
            <li style={{color:this.state.pinpaijianshe.color}}
-               onClick={this.onClick.bind(this)} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
+               onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
               className={`p-menu ${this.state.pinpaijianshe.stauts}`} data-itemKey="pinpaijianshe">
               品牌建设
            </li> 
@@ -109,7 +105,7 @@ class LeftMenu extends React.Component {
                 data-url = "/brand_mobile/index"
                 data-lg-tj-id = "" 
                 data-lg-tj-no = "" 
-                data-lg-tj-cid = "idnull">
+                data-lg-tj-cid = "idnull" onClick={this.onLink.bind(this)}>
                 广告
             </li>
             <li style={{color:this.state.pinpaihuodong.color}}  onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
@@ -117,7 +113,7 @@ class LeftMenu extends React.Component {
                 data-url = "/brand_activity/entrant"
                 data-lg-tj-id = "" 
                 data-lg-tj-no = "" 
-                data-lg-tj-cid = "idnull">
+                data-lg-tj-cid = "idnull" onClick={this.onLink.bind(this)}>
                 品牌活动
             </li>
            </ul>
@@ -126,7 +122,7 @@ class LeftMenu extends React.Component {
               data-url = "/renli"
               data-lg-tj-id = "" 
               data-lg-tj-no = "" 
-              data-lg-tj-cid = "idnull">
+              data-lg-tj-cid = "idnull" onClick={this.onLink.bind(this)}>
               人力资源管理
            </li> 
            <li style={{color:this.state.shichang.color}}  onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
@@ -134,7 +130,7 @@ class LeftMenu extends React.Component {
               data-url = "/trends"
               data-lg-tj-id = "" 
               data-lg-tj-no = "" 
-              data-lg-tj-cid = "idnull">
+              data-lg-tj-cid = "idnull" onClick={this.onLink.bind(this)}>
               市场动态
            </li>
            <li style={{color:this.state.anxu.color}}  onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
@@ -142,7 +138,7 @@ class LeftMenu extends React.Component {
               data-url = "/employ"
               data-lg-tj-id = "" 
               data-lg-tj-no = "" 
-              data-lg-tj-cid = "idnull">
+              data-lg-tj-cid = "idnull" onClick={this.onLink.bind(this)}>
               按需雇佣
            </li> 
         </ul>

@@ -31,7 +31,7 @@ const RootRoute ={
 		    }, 'recruit')
 		  }
 		},
-		//拉勾企业服务
+		//市场动态
 		{
 		  path: 'trends',
 		  getComponent(nextState, cb) {
@@ -115,6 +115,15 @@ const RootRoute ={
 		    require.ensure([], (require) => {
 		      cb(null, require('./views/renli/renli'))
 		    }, 'renli')
+		  }
+		},
+		// 总的报名页
+		{
+		  path: 'sign',
+		  getComponent(nextState, cb) {
+		    require.ensure([], (require) => {
+		      cb(null, require('./views/sign/sign'))
+		    }, 'sign')
 		  }
 		},
 		// 申请成功的页面

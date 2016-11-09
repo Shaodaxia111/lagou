@@ -1,5 +1,7 @@
 import React from 'react';
 require('./css/leftMenu.css');
+var reactMixin = require('react-mixin');
+var LinkTo =require("../mixins/linkto");
 var itemMap = {
   "人才招聘":"rencai",
   "品牌建设":"pinpaijianshe",
@@ -88,38 +90,64 @@ class LeftMenu extends React.Component {
   render() {
     return (
         <ul {...this.props} className="leftMenu">
-           <li style={{color:this.state.rencai.color}} onClick={this.onClick.bind(this)} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
-              className='p-menu' data-itemKey="rencai">
+           <li style={{color:this.state.rencai.color}} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
+              className='p-menu' data-itemKey="rencai"
+              "data-url":"/talent/employ"
+              "data-lg-tj-id":"" 
+              "data-lg-tj-no":"" 
+              "data-lg-tj-cid":"idnull">
               人才招聘
            </li> 
-           <li style={{color:this.state.pinpaijianshe.color}} onClick={this.onClick.bind(this)} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
+           <li style={{color:this.state.pinpaijianshe.color}}
+               onClick={this.onClick.bind(this)} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
               className={`p-menu ${this.state.pinpaijianshe.stauts}`} data-itemKey="pinpaijianshe">
               品牌建设
            </li> 
            <ul style={{display:this.state.pinpaijianshe.display}} className="c-menu">
-               <li style={{color:this.state.guanggao.color}} onClick={this.onClick.bind(this)} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
-                className='p-menu' data-itemKey="guanggao">
+               <li style={{color:this.state.guanggao.color}}  onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
+                className='p-menu' data-itemKey="guanggao" 
+                "data-url":"/brand_mobile/index"
+                "data-lg-tj-id":"" 
+                "data-lg-tj-no":"" 
+                "data-lg-tj-cid":"idnull">
                 广告
             </li>
-            <li style={{color:this.state.pinpaihuodong.color}} onClick={this.onClick.bind(this)} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
-                className='p-menu' data-itemKey="pinpaihuodong">
+            <li style={{color:this.state.pinpaihuodong.color}}  onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
+                className='p-menu' data-itemKey="pinpaihuodong"
+                "data-url":"/brand_activity/entrant"
+                "data-lg-tj-id":"" 
+                "data-lg-tj-no":"" 
+                "data-lg-tj-cid":"idnull">
                 品牌活动
             </li>
            </ul>
-           <li style={{color:this.state.renli.color}} onClick={this.onClick.bind(this)} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
-              className='p-menu' data-itemKey="renli">
+           <li style={{color:this.state.renli.color}}  onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
+              className='p-menu' data-itemKey="renli"
+              "data-url":"/renli"
+              "data-lg-tj-id":"" 
+              "data-lg-tj-no":"" 
+              "data-lg-tj-cid":"idnull">
               人力资源管理
            </li> 
-           <li style={{color:this.state.shichang.color}} onClick={this.onClick.bind(this)} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
-              className='p-menu' data-itemKey="shichang">
+           <li style={{color:this.state.shichang.color}}  onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
+              className='p-menu' data-itemKey="shichang"
+              "data-url":"/trends"
+              "data-lg-tj-id":"" 
+              "data-lg-tj-no":"" 
+              "data-lg-tj-cid":"idnull">
               市场动态
            </li>
-           <li style={{color:this.state.anxu.color}} onClick={this.onClick.bind(this)} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
-              className='p-menu' data-itemKey="anxu">
+           <li style={{color:this.state.anxu.color}}  onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
+              className='p-menu' data-itemKey="anxu"
+              "data-url":"/employ"
+              "data-lg-tj-id":"" 
+              "data-lg-tj-no":"" 
+              "data-lg-tj-cid":"idnull">
               按需雇佣
            </li> 
         </ul>
     )
   }
 }
+reactMixin(LeftMenu.prototype, LinkTo);
 module.exports = LeftMenu ;

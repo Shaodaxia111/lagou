@@ -22,7 +22,7 @@ class SecondTab extends Component{
         console.log(tabs)
         tabs.forEach(function (ele, index) {
             let _name = ele.name
-            tabsDom.push(<div className = {classnames({selected : _name == curName})} 
+            tabsDom.push(<div className = {classnames("tab-item", {selected : _name == curName})} 
                             data-url = { ele.url } key = { index }>
                             <span> { ele.name } </span>
                         </div>)
@@ -30,7 +30,7 @@ class SecondTab extends Component{
 
         return ( 
             < div className = 'second-tab' >
-                { tabsDom } 
+                { tabsDom }
             < /div>
         )
     }

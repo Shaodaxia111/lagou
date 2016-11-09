@@ -157,7 +157,6 @@ class Employ extends React.Component{
     }
 
     render() {
-        // 拉勾企业服务·品牌建设
         let state = this.state
         let type = this.props.params.type;
         let articles = state[type].articles
@@ -177,8 +176,8 @@ class Employ extends React.Component{
         })
         return ( 
             < div >
-                <Banner backgroundImage = '/src/img/banner-brand.jpg' title = '' />
-                <SecTab tabs = { tabList } curName = { state[type].name } width = "800px"/>
+                <Banner backgroundImage = '/src/img/banner-brand.jpg' title = '拉勾企业服务·品牌建设' />
+                <SecTab tabs = { tabList } curName = { state[type].name }/>
                 <div className = "talent-box ">
                     { articlesDom }
                 </div>

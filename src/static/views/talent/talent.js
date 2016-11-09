@@ -157,6 +157,7 @@ class Employ extends React.Component{
     }
 
     render() {
+        
         let state = this.state
         let type = this.props.params.type;
         let articles = state[type].articles

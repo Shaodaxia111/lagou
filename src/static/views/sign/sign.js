@@ -1,6 +1,6 @@
 import React from 'react';
 var LeftMenu = require('../../component/leftMenu');
-require("./trends.css");
+require("./sign.css");
 class Item extends React.Component{
   constructor(props) {
     super(props);

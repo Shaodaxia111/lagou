@@ -42,3 +42,14 @@
     color: #000;
     font-size: 14px;
 }
+
+.apply-box .apply-submit {
+    width: 472px;
+    background: #00b38a;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    display: inline-block;
+    margin: 40px auto 0;
+}

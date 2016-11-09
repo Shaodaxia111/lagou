@@ -5,10 +5,6 @@ require("./css/textInput.css");
 class TextInput extends Component {
     constructor(props, context) {
         super(props, context)
-            // this.state = {
-            //   text: this.props.text || '',
-            //   hasChecked: false
-            // }
         this.state = {
             action: "",
             type: "get",
@@ -17,63 +13,83 @@ class TextInput extends Component {
                 {
                     name: "name",
                     text: "联系人姓名",
-                    testAndFail: false,
-                    value: ""
+                    checked: false,
+                    value: "",
+                    type: 'text'
                 },
                 // 联系人手机
                 {
                     name: "tel",
                     text: "联系人手机",
-                    testAndFail: false,
-                    value: ""
+                    checked: false,
+                    value: "",
+                    type: 'number',
+                    reg: "^1[0-9]{10}$"
                 },
                 // 公司所在地
-				{
+                {
                     name: "address",
                     text: "公司所在地",
-                    testAndFail: false,
-                    value: ""
+                    checked: false,
+                    value: "",
+                    type: 'text'
                 },
                 // 公司名称
-				{
+                {
                     name: "company",
                     text: "公司名称",
-                    testAndFail: false,
-                    value: ""
+                    checked: false,
+                    value: "",
+                    type: 'text'
                 }
             ]
         }
     }
 
-    handleSubmit(e) {
-        const text = e.target.value.trim()
-        if (e.which === 13) {
-            this.props.onSave(text)
-            if (this.props.newTodo) {
-                this.setState({ text: '' })
+    handleSubmit() {
+        let list = this.state.list
+        let checkedAll = true
+        list.forEach(function(ele) {
+            if (!ele.checked) {
+                checkedAll = false
             }
-        }
+        })
+        if (checkedAll) {
+            console.log('checked all')
+        } else {
+			console.log('not')
+		}
     }
 
-    handleChange(e) {
-        this.setState({ text: e.target.value })
+    handleChange(index, e) {
+        let val = e.target.value
+        this.setState(function(previousState) {
+            let input = previousState.list[index]
+			input.checked = this.regInput(val, input.reg)
+            input.value = val
+            return previousState
+        })
     }
-
-    handleBlur(e) {
-        let reg = this.props.reg || "^[\s\S]+$"
-        regArr = reg.split('#')
+    // handleBlur(index, e) {
+    //     this.setState(function(previousState) {
+    //         let input = previousState.list[index]
+    //         input.checked = this.regInput(input.value, input.reg)
+    //         return previousState
+    //     })
+    // }
+    regInput(val, reg) {
+        let _reg = reg ||  "^[\\w\\W]+"
+        let regArr = _reg.split("#")
         for (let i = 0; i < regArr.length; i++) {
-            let regex = new RegExp(regArr[i], "g")
-            let result = regex.test(item.value)
-            if (!result || result == "false") {
-                checkFlag = false;
-                $.zheui.toast(error);
+            let regex = new RegExp(regArr[i], "g");
+            if (!regex.test(val)) {
+				console.log(regex,val)
+                return false
             }
         }
-        if (!this.props.newTodo) {
-            this.props.onSave(e.target.value)
-        }
+        return true
     }
+
 
     render() {
         let inputList = this.state.list
@@ -82,16 +98,23 @@ class TextInput extends Component {
         inputList.forEach(function(ele, index) {
             inputDom.push( < div className = 'input-item'
                 key = { index } >
-                < div className = 'input-text' > { ele.text } < /div>  < input type = "text"
-                name = { ele.name }
-                onBlur = { _this.handleBlur.bind(this) }
-                onKeyDown = { _this.handleSubmit.bind(this) }
-                /> < /div>
+                < div className = 'input-text' > { ele.text } < /div>   
+				< input type = "text"
+					name = { ele.name }
+					type = { ele.type }
+					onChange = { _this.handleChange.bind(_this, index) }
+                /> 
+				< /div >
             )
         })
         return ( < div className = 'apply-input' >
-            < div className = 'apply-box' >
-            < h2 > 立即获得专属顾问一对一服务 < /h2> < span className = 'apply-tip' > 留下您的联系信息， 我们会有专业营销顾问与您联系， 一对一为您详细介绍拉勾相关产品和服务， 帮您更高效的招聘人才！ < /span> { inputDom } < /div>  < /div>
+           			< div className = 'apply-box' >
+            			< h2 > 立即获得专属顾问一对一服务 < /h2> 
+						< span className = 'apply-tip' > 留下您的联系信息， 我们会有专业营销顾问与您联系， 一对一为您详细介绍拉勾相关产品和服务， 帮您更高效的招聘人才！ < /span > 
+						{ inputDom } 
+						<span className = 'apply-submit' onClick = {this.handleSubmit.bind(this)}> 提交报名</span>
+					< /div>  
+				< /div >
         )
     }
 

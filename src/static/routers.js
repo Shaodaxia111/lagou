@@ -76,7 +76,9 @@ const RootRoute ={
 		    }, 'cq')
 		  }
 		},
-		// 品牌建设
+		// 品牌建设 - 品牌活动
+		// type: 极速入职	entrant;梦想合伙人	partner;实力派 power;往期活动 activity;野心时代:times
+
 		{
 		  path: 'brand_activity/:type',
 		  getComponent(nextState, cb) {
@@ -86,6 +88,7 @@ const RootRoute ={
 		  }
 		},
 		// 人才招聘
+		
 		{
 		  path: 'talent/:type',
 		  getComponent(nextState, cb) {
@@ -95,6 +98,7 @@ const RootRoute ={
 		  }
 		},
 		// 品牌移动页面
+		// type: 首页热门职位 position;  移动banner banner; 首页 logo按钮展示 logo;  首页banner index
 		{
 		  path: 'brand_mobile/:type',
 		  getComponent(nextState, cb) {
@@ -104,6 +108,7 @@ const RootRoute ={
 		  }
 		},
 		// 人力资源管理
+		// 拉钩简招 employ; 拉钩+ plus; 一拍 pai; 精准推荐 recommend; 背景调查 background
 		{
 		  path: 'renli',
 		  getComponent(nextState, cb) {

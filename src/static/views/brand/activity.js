@@ -10,6 +10,40 @@ class Employ extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
+            // 极速入职
+            entrant: {
+                articles: [
+                    {
+                        title: "极速入职--职场最快24小时入职",
+                        link: {
+                            name: "查看线上案例",
+                            url: ""
+                        },
+                        content: [
+                            "/src/img/brand-entrant1.jpg"
+                            , "专为企业急招职位打造，以“24小时入职”引爆求职者快速投递；同时企业24小时内迅速响应，集中处理简历、发起面试，极大缩短招聘周期。"
+                            , "周期：两个月一期；"
+                            , "服务企业：急招职位企业。"
+                        ]
+                    },
+                    {
+                        title: "受邀企业特权：",
+                        content: [
+                            "线上专场：亮点包装，突出优势&急招职位"
+                            , "急招职位曝光：“极速职位top10”榜单实时更新"
+                            , "职位搜索推荐：专场职位搜索权重提升"
+                            , "站内外同步推广：丰富的广告位，精准站内推送，外部新媒体推广"
+                        ]
+                    },
+                    {
+                        title: "页面展示",
+                        content: [
+                            "/src/img/brand-entrant2.jpg"
+                            , "/src/img/brand-entrant3.jpg"
+                        ]
+                    }
+                ]
+            },
             // 往期活动
             activity: {
                 articles: [
@@ -101,40 +135,7 @@ class Employ extends React.Component{
                     }
                 ]
             },
-            // 极速入职
-            entrant: {
-                articles: [
-                    {
-                        title: "极速入职--职场最快24小时入职",
-                        link: {
-                            name: "查看线上案例",
-                            url: ""
-                        },
-                        content: [
-                            "/src/img/brand-entrant1.jpg"
-                            , "专为企业急招职位打造，以“24小时入职”引爆求职者快速投递；同时企业24小时内迅速响应，集中处理简历、发起面试，极大缩短招聘周期。"
-                            , "周期：两个月一期；"
-                            , "服务企业：急招职位企业。"
-                        ]
-                    },
-                    {
-                        title: "受邀企业特权：",
-                        content: [
-                            "线上专场：亮点包装，突出优势&急招职位"
-                            , "急招职位曝光：“极速职位top10”榜单实时更新"
-                            , "职位搜索推荐：专场职位搜索权重提升"
-                            , "站内外同步推广：丰富的广告位，精准站内推送，外部新媒体推广"
-                        ]
-                    },
-                    {
-                        title: "页面展示",
-                        content: [
-                            "/src/img/brand-entrant2.jpg"
-                            , "/src/img/brand-entrant3.jpg"
-                        ]
-                    }
-                ]
-            },
+            
             // 实力派
             power: {
                 articles: [

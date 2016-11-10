@@ -14,7 +14,8 @@ var isProduction = process.env.NODE_ENV ==='production' ? true : false;
 //配置模板目录
 var plugins = [];
 var entryJs={
-    'index' : STATIC_PATH + '/index.js'
+    'index' : STATIC_PATH + '/index.js',
+    'imgConfig': STATIC_PATH + '/common/imgConfig.js'
 };
 var conf = {
     template: './src/template/index.html',
@@ -83,7 +84,7 @@ module.exports={
             },
             {//处理图片等静态文件
                 test:/\.(jpe?g|png|gif)$/,
-                loader:'url?limit=8192&name=img/[name].[ext]'//<= 8kb 的图自动转换成base64编码 dataurl 
+                loader:'url?limit=892&name=img/[name].[ext]'//<=  dataurl 
             },
             {//添加对es6的支持 and js语法标准检测
               test: /\.js|jsx$/,

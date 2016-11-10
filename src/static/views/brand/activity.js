@@ -5,6 +5,7 @@ import Banner from '../../component/commonBanner'
 import ArticleBox from '../../component/ArticleBox'
 import SecTab from '../../component/secTab'
 import LeftMenu from '../../component/leftMenu'
+import CommonInput from '../../component/commonInput'
 
 require("./activity.css");
 // 按需雇佣
@@ -239,6 +240,7 @@ class Employ extends React.Component{
                 <div className = "brand-box ">
                     { articlesDom }
                 </div>
+                <CommonInput />
             < /div>
         )
     }

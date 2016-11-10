@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import Banner from '../../component/commonBanner'
 import SecTab from '../../component/secTab'
 import ArticleBox from '../../component/ArticleBox'
-import TextInput from '../../component/textInput'
+import CommonInput from '../../component/commonInput'
 
 require("./talent.css");
 // 按需雇佣
@@ -182,7 +182,7 @@ class Employ extends React.Component{
                 <div className = "talent-box ">
                     { articlesDom }
                 </div>
-                <TextInput />
+                <CommonInput />
             < /div>
         )
     }

@@ -54,7 +54,7 @@ if(isProduction){
      new webpack.DefinePlugin({//注入参数
         "process.env": { 
             NODE_ENV: JSON.stringify(process.env.NODE_ENV) 
-        };
+        },
         "commonPath":"/src/"
     }),
 	extractCSS = new ExtractTextPlugin('css/[name].css');//css独立出来

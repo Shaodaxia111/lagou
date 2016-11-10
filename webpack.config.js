@@ -41,10 +41,10 @@ if(isProduction){
             }
         }),
         new webpack.DefinePlugin({//注入参数
+            "commonPath":JSON.stringify("http://bxu2359100290.my3w.com/lagou/"),
             "process.env": { 
                 NODE_ENV: JSON.stringify(process.env.NODE_ENV) 
             },
-            "commonPath":"http://bxu2359100290.my3w.com/lagou/"
         }),
         new webpack.optimize.DedupePlugin(),//去重
         new webpack.optimize.OccurrenceOrderPlugin(),

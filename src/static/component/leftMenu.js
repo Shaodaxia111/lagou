@@ -11,7 +11,19 @@ var itemMap = {
   "市场动态":"shichang",
   "按需雇佣":"anxu"
 };
-var stateInit = {};
+var stateInit = {
+  rencai:{color:"#333333"},
+  pinpaijianshe:{
+    color:"#333333",
+    display:"none",
+    stauts:"off"
+  },
+  guanggao:{color:"#333333"},
+  pinpaihuodong:{color:"#333333"},
+  renli:{color:"#333333"},
+  shichang:{color:"#333333"},
+  anxu:{color:"#333333"},
+};
 class LeftMenu extends React.Component {
   constructor(props) {
     super(props);

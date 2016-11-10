@@ -1,0 +1,40 @@
+开发文档
+
+----技术选型----
+技术：react+reac-router
+构建工具:webpack
+
+----结构----
+导致目前项目结构如下
+--dist //打包完成后生成的静态资源地址
+--src //项目源代码
+  --img
+  --static
+  	--common 公用的部分
+  	--component 可复用的组件
+  	--mixins 跳转的mixins模块
+  	--views  
+  --template 模板
+  	--index.html
+--index.html 打包完成后生成的模板
+--package.json
+--webpack.config.json webpack配置
+--eslintrc 语法检查器
+--gitignore git配置
+
+----How to start development----
+1. npm install
+2.如果开发工具是windows的话，多一步  npm install webpack -g
+3. npm run build-dev
+4. npm run start
+稍等片刻，打开浏览器窗口输入地址`localhost:3000`
+当你修改/src下的任意文件时，浏览器页面会自动刷新。
+
+----How to publish----
+1.注意事项，因为通过webpack项目进行构建线上版本的时候，防止模板与静态资源分离，静态资源的
+  引用都是使用的绝对地址，目前因为项目的布置位置为我自己的测试服务器
+  我使用的测试地址为：http://bxu2359100290.my3w.com/lagou/ 故你们只需要将此值进行修改即可
+  涉及到的地方为: webpack.config.js(两处)
+
+2. npm run build-inline 
+发布时将 app/dist文件夹中的文件和/index.html模板上传到服务器即可。

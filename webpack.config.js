@@ -40,16 +40,23 @@ if(isProduction){
                 comments: false
             }
         }),
-        new webpack.DefinePlugin({//接收参数
+        new webpack.DefinePlugin({//注入参数
             "process.env": { 
                 NODE_ENV: JSON.stringify(process.env.NODE_ENV) 
-            }
+            },
+            "commonPath":"http://bxu2359100290.my3w.com/lagou/"
         }),
         new webpack.optimize.DedupePlugin(),//去重
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.NoErrorsPlugin()//允许错误不打断程序
     ); 
 }else{
+     new webpack.DefinePlugin({//注入参数
+        "process.env": { 
+            NODE_ENV: JSON.stringify(process.env.NODE_ENV) 
+        };
+        "commonPath":"/src/"
+    }),
 	extractCSS = new ExtractTextPlugin('css/[name].css');//css独立出来
     plugins.push(extractCSS,new webpack.HotModuleReplacementPlugin()); 
 }

@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 
 import classnames from 'classnames'
 
+import reactMixin from 'react-mixin'
+import LinkTo from '../mixins/linkto'
+
 require("./css/secTab.css");
 // 文章box 引用方式可参考 views/brand/activity.js
 class SecondTab extends Component{
@@ -19,12 +22,17 @@ class SecondTab extends Component{
         let curName = this.props.curName
         let width = this.props.width
         let tabsDom = []
-        console.log(tabs)
+        let _this = this
         tabs.forEach(function (ele, index) {
             let _name = ele.name
             tabsDom.push(<div className = {classnames("tab-item", {selected : _name == curName})} 
-                            data-url = { ele.url } key = { index }>
-                            <span> { ele.name } </span>
+                            data-url = { ele.dataUrl }
+                            data-lg-tj-id = { ele.dataId }
+                            data-lg-tj-no = { ele.dataNo }
+                            data-lg-tj-cid = { ele.dataCid }
+                            onClick = {_this.onLink.bind(_this)}
+                            key = { index }>
+                            { ele.name } 
                         </div>)
          })
 
@@ -40,5 +48,5 @@ SecondTab.propTypes = {
     tabs: PropTypes.array.isRequired,
     curName: PropTypes.string.isRequired
 }
-
+reactMixin(SecondTab.prototype, LinkTo);
 module.exports = SecondTab

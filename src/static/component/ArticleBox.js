@@ -2,6 +2,8 @@ import React, {PropTypes, Component} from 'react';
 import ReactDOM from 'react-dom';
 
 import classnames from 'classnames'
+import reactMixin from 'react-mixin'
+import LinkTo from '../mixins/linkto'
 
 require("./css/ArticleBox.css");
 // 文章box 引用方式可参考 views/brand/activity.js
@@ -18,8 +20,11 @@ class ArticleBox extends Component{
         let _this = this
         if(props.link) {
             linkDom.push(<div className = 'articleLink'
-                                data-url = { props.link.url }
-                                onClick = { _this.handleClick.bind(this) }
+                                data-url = { props.link.dataUrl }
+                                data-lg-tj-id = { props.link.dataId }
+                                data-lg-tj-no = { props.link.dataNo }
+                                data-lg-tj-cid = { props.link.dataCid }
+                                onClick = {_this.onLink.bind(this)}
                                 key = 'link'>
                             { props.link.name } 
                          </div>)
@@ -56,5 +61,5 @@ class ArticleBox extends Component{
 ArticleBox.propTypes = {
     article: PropTypes.object.isRequired
 }
-
+reactMixin(ArticleBox.prototype, LinkTo);
 module.exports = ArticleBox

@@ -31,7 +31,7 @@ class Employ extends React.Component{
     render() {
         return ( 
             < div >
-                <Banner backgroundImage = '/src/img/banner-employ.jpg' title = '拉勾企业服务·大鲲' />
+                <Banner backgroundImage = {commonPath + 'img/banner-employ.jpg'} title = '拉勾企业服务·大鲲' />
                 <LeftMenu onOpen="按需雇佣" style={{position:'absolute',top:100,left:100}} />
                 <div className = 'employ-box'>
                     <ArticleBox article = {this.state} />

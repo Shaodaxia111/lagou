@@ -51,14 +51,17 @@ if(isProduction){
         new webpack.NoErrorsPlugin()//允许错误不打断程序
     ); 
 }else{
-     new webpack.DefinePlugin({//注入参数
-        "process.env": { 
-            NODE_ENV: JSON.stringify(process.env.NODE_ENV) 
-        },
-        "commonPath":"/src/"
-    }),
+     
 	extractCSS = new ExtractTextPlugin('css/[name].css');//css独立出来
-    plugins.push(extractCSS,new webpack.HotModuleReplacementPlugin()); 
+    plugins.push(extractCSS,
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.DefinePlugin({//注入参数
+            "process.env": { 
+                NODE_ENV: JSON.stringify(process.env.NODE_ENV) 
+            },
+            "commonPath":"/src/"
+        })
+    ); 
 }
 module.exports={
 	//项目的入口文件

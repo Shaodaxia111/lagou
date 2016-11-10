@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Banner from '../../component/commonBanner'
 import SecTab from '../../component/secTab'
 import ArticleBox from '../../component/ArticleBox'
+import LeftMenu from '../../component/leftMenu'
 import CommonInput from '../../component/commonInput'
 
 require("./talent.css");
@@ -19,7 +20,7 @@ class Employ extends React.Component{
                         title: "拉勾简招",
                         content: [
                             "免费招聘协作系统"
-                            , "/src/img/talents-jz1.jpg"
+                            , commonPath + "img/talents-jz1.jpg"
                         ]
                     },
                     {
@@ -32,12 +33,15 @@ class Employ extends React.Component{
                         title: "解决问题",
                         content: [
                             "从候选人获取到新员工入职，全一站式的招聘体验，帮助HR从繁琐的事务性工作中脱身，聚焦专业能力，提升企业招聘效率。"
-                            , "/src/img/talents-jz2.jpg"
+                            , commonPath + "img/talents-jz2.jpg"
                         ]
                     }
                 ],
-                name: "拉钩简招",
-                url: ""
+                dataUrl: "/talent/employ",
+                dataId: "" ,
+                dataNo: "" ,
+                dataCid: "idnull",
+                name: '拉钩简招'
             },
             // 拉钩+
             plus: {
@@ -51,12 +55,15 @@ class Employ extends React.Component{
                     {
                         title: "拉勾加企业特权",
                         content: [
-                           "/src/img/talents-plus1.jpg"
+                           commonPath + "img/talents-plus1.jpg"
                         ]
                     }
                 ],
-                name: "拉钩+",
-                url: ""
+                dataUrl: "/talent/plus",
+                dataId: "" ,
+                dataNo: "" ,
+                dataCid: "idnull",
+                name: '拉钩+'
             },
             // 一拍
             pai: {
@@ -65,7 +72,7 @@ class Employ extends React.Component{
                         title: "靠谱、高活跃、中高级人才就在拉勾“一拍”",
                         content: [
                             "由具有人力资源背景的资深职业顾问对全网技术、产品、运营、设计、市场岗位的中高端人才进行筛选，并进行一对一专访深入沟通，了解候选人基础素质、工作经验、求职意向。符合一拍人才条件的优质候选人在拉勾一拍精英会场进行为期七天的展示，供企业挑选，顾问撮合跟进、缩短招聘周期，促进达成offer。"
-                            , "/src/img/talents-p1.jpg"
+                            , commonPath + "img/talents-p1.jpg"
                         ]
                     },
                     {
@@ -79,18 +86,21 @@ class Employ extends React.Component{
                         content: [
                            "收到的简历辛辛苦苦一封封筛选，大部分都不合适，太浪费精力浪费感情"
                            , "一拍精英会场中的中、高端候选人全部经过职业顾问层层筛选。在拉勾一拍挑人，简历初筛这道工作，顾问就帮你完成了。"
-                           , "/src/img/talents-p2.jpg"
+                           , commonPath + "img/talents-p2.jpg"
                            , "自己找到的中高端人才，可是人家根本没有换工作的意思，对你不理不睬"
                            , "一拍精英会场中的候选人，全部由职业顾问亲自沟通，确保候选人当前有强烈求职意愿，勾搭起来自然不费劲儿~"
-                           , "/src/img/talents-p3.jpg"
+                           , commonPath + "img/talents-p3.jpg"
                            , "好容易看中一个靠谱候选人，可是人家特抢手，怎么办？"
                            , "一拍职业顾问与候选人都保持良好线下沟通，可为企业提供撮合服务。有专业职业顾问帮你说话，牛人入职的概率肯定又多一成！"
-                           , "/src/img/talents-p4.jpg"
+                           , commonPath + "img/talents-p4.jpg"
                         ]
                     }
                 ],
-                name: "一拍",
-                url: ""
+                dataUrl: "/talent/pai",
+                dataId: "" ,
+                dataNo: "" ,
+                dataCid: "idnull",
+                name: '一拍'
             },
             // 精准推荐
             recommend: {
@@ -98,7 +108,7 @@ class Employ extends React.Component{
                     {
                         title: "如何避免无效的投放？有质量超活跃的简历如何获取？",
                         content: [
-                            "/src/img/talents-tj1"
+                            commonPath + "img/talents-tj1.jpg"
                         ]
                     },
                     {
@@ -112,12 +122,15 @@ class Employ extends React.Component{
                     {
                         title: "移动端banner案例展示",
                         content: [
-                            "/src/img/brand-mi2.jpg"
+                            commonPath + "img/talents-tj2.jpg"
                         ]
                     }
                 ],
-                name: "精准推荐",
-                url: ""
+                dataUrl: "/talent/recommend",
+                dataId: "" ,
+                dataNo: "" ,
+                dataCid: "idnull",
+                name: '精准推荐'
             },
             // 背景调查
             background: {
@@ -126,13 +139,13 @@ class Employ extends React.Component{
                         title: "背景调查",
                         content: [
                             "拉勾背景调查是基于互联网SaaS模式的背景调查，在拉勾招聘模块的基础之上，为企业不同级别候选人提供背景调查解决方案，帮企业快速精准、更低成本地识别可靠人才，从而降低雇佣风险，提高招聘质量。"
-                            , "/src/img/talents-bj1.jpg"
+                            , commonPath + "img/talents-bj1.jpg"
                         ]
                     },
                     {
                         title: "亮点",
                         content: [
-                            "/src/img/talents-bj2.jpg"
+                            commonPath + "img/talents-bj2.jpg"
                         ]
                     },
                     {
@@ -141,15 +154,16 @@ class Employ extends React.Component{
                             "一键秒查项目：身份信息查询、学历信息核实（最高学历）、法院诉讼核查、金融风险核查、商业利益冲突核查、职业资质核实。"
                             , "背调报告项目：2-3段工作履历核实、1-2段工作表现核查、1位自主寻访证明人访谈、青藤联盟（HR互助社群）"
                             , "背景调查适用候选人，涵盖了基层岗位、中层管理岗位、敏感岗位、高层管理岗位、核心岗位、企业合伙人、VP等，让候选人的简历说话。"
-                            , "/src/img/talents-bj3.jpg"
+                            , commonPath + "img/talents-bj3.jpg"
                         ]
-                    },
+                    }
                 ],
-                name: "背景调查",
-                url: ""
+                dataUrl: "/talent/background",
+                dataId: "" ,
+                dataNo: "" ,
+                dataCid: "idnull",
+                name: '背景调查'
             }
-            
-            
         }
     }
     handleClick (ele) {
@@ -167,7 +181,10 @@ class Employ extends React.Component{
             let e = state[n]
             tabList.push({
                 name: e.name,
-                url: e.url
+                dataUrl: e.dataUrl,
+                dataId: e.dataId ,
+                dataNo: e.dataNo ,
+                dataCid: e.dataCid
             })
         }
         articles.forEach(function(ele, index) {
@@ -177,8 +194,9 @@ class Employ extends React.Component{
         })
         return ( 
             < div >
-                <Banner backgroundImage = '/src/img/banner-brand.jpg' title = '拉勾企业服务·品牌建设' />
-                <SecTab tabs = { tabList } curName = { state[type].name }/>
+                <Banner backgroundImage = {commonPath + 'img/banner-brand.jpg'} title = '拉勾企业服务·品牌建设' />
+                <SecTab tabs = { tabList } curName = { state[type].name } {...this.props}/>
+                <LeftMenu onOpen="人才招聘" style={{position:'absolute',top:100,left:100}} />
                 <div className = "talent-box ">
                     { articlesDom }
                 </div>

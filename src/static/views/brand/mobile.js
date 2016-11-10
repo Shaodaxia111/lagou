@@ -37,8 +37,7 @@ class Employ extends React.Component{
                     {
                         title: "首页banner案例展示",
                         content: [
-                            "/src/img/brand-mi5.jpg"
-                            , "/src/img/brand-mi6.jpg"
+                            commonPath + "img/brand-mi6.jpg"
                         ]
                     }
                 ],
@@ -55,7 +54,7 @@ class Employ extends React.Component{
                         title: "首页 logo按钮展示",
                         content: [
                             "首页logo展示（190*190），可展示企业品牌logo以及slogan，双面轮播，彰显企业个性文化。"
-                            , "/src/img/brand-mi3.jpg"
+                            , commonPath + "img/brand-mi3.jpg"
                         ]
                     }
                 ],
@@ -72,7 +71,7 @@ class Employ extends React.Component{
                         title: "首页热门职位展示",
                         content: [
                             "拉勾网首页--热门职位推广展示，根据企业地域进行投放，直接把招聘职位、薪资福利、公司企业文化展示在用户面前，每小时循环轮播，提高职位曝光率。"
-                            , "/src/img/brand-mi1.jpg"
+                            , commonPath + "img/brand-mi1.jpg"
                         ]
                     }
                 ],
@@ -105,7 +104,7 @@ class Employ extends React.Component{
                     {
                         title: "拉钩APP首页banner",
                         content: [
-                            "/src/img/brand-mi2.jpg"
+                            commonPath + "img/brand-mi2.jpg"
                         ]
                     }
                 ],
@@ -119,7 +118,6 @@ class Employ extends React.Component{
             
             
         }
-        console.log(this.props.params.type)
     }
     handleClick (ele) {
 

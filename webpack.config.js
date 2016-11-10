@@ -28,7 +28,7 @@ plugins.push(new HtmlwebpackPlugin(conf));
 var extractCSS ;
 //配置环境(测试环境 or 生产环境)
 if(isProduction){
-	extractCSS = new ExtractTextPlugin('[name]/[name].[hash].css');//css独立出来
+	extractCSS = new ExtractTextPlugin('css/[name].[hash].css');//css独立出来
     plugins.push(extractCSS,
         new webpack.optimize.UglifyJsPlugin({//文件压缩
             compress: {
@@ -50,7 +50,7 @@ if(isProduction){
         new webpack.NoErrorsPlugin()//允许错误不打断程序
     ); 
 }else{
-	extractCSS = new ExtractTextPlugin('[name]/[name].css');//css独立出来
+	extractCSS = new ExtractTextPlugin('css/[name].css');//css独立出来
     plugins.push(extractCSS,new webpack.HotModuleReplacementPlugin()); 
 }
 module.exports={
@@ -61,9 +61,9 @@ module.exports={
 	//项目输出的文件配置
 	output:{
 		path:DIST_PATH,
-		filename : isProduction ? '[name].[hash].js' : '[name].js',
-    	publicPath:isProduction ? '/dist/':'/dist/',
-        chunkFilename: isProduction ? '[name].[hash].js' : '[name].js'
+		filename : isProduction ? 'js/[name].[hash].js' : 'js/[name].js',
+    	publicPath:isProduction ? 'http://bxu2359100290.my3w.com/lagou/':'/dist/',
+        chunkFilename: isProduction ? 'js/[name].[hash].js' : 'js/[name].js'
 	},
 	module: {
 	    loaders: [
@@ -94,7 +94,7 @@ module.exports={
  	plugins:[//添加插件
 		new webpack.optimize.CommonsChunkPlugin({//将公共模块提取
 	        name:['vender'],
-	        filename:'[name]/[name].js',
+	        filename:'js/[name].js',
 	        minChunks: Infinity
     	}),
         new webpack.ProvidePlugin({//提供全局的变量，在模块中使用无需用require引入

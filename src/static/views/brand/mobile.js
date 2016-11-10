@@ -146,7 +146,7 @@ class Employ extends React.Component{
         })
         return ( 
             < div >
-                <Banner backgroundImage = '/src/img/banner-brand.jpg' title = '拉勾企业服务·品牌建设' />
+                <Banner backgroundImage = {commonPath + 'img/banner-brand.jpg'} title = '拉勾企业服务·品牌建设' />
                 <LeftMenu onOpen="品牌活动" style={{position:'absolute',top:100,left:100}} />
                 <SecTab tabs = { tabList } curName = { state[type].name } {...this.props}/>
                 <div className = "brand-box ">

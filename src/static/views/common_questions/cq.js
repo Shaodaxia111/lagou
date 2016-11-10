@@ -64,7 +64,7 @@ class CommonQuestions extends React.Component{
 
         return ( 
             < div {...this.props} >
-                <Banner backgroundImage = '/src/img/banner-common-question.jpg' title = '常见问题' />
+                <Banner backgroundImage = {commonPath + 'img/banner-common-question.jpg'} title = '常见问题' />
                 <div className = 'common-question-box'>
                     <ul className = "question-box">
                         {questionListDom}

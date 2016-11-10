@@ -9,6 +9,7 @@
     display: inline-block;
     padding: 0 20px;
     height: 30px;
+    cursor: pointer;
 }
 
 .second-tab .selected {

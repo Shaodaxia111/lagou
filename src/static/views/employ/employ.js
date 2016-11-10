@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 
 import Banner from '../../component/commonBanner'
 import ArticleBox from '../../component/ArticleBox'
+import LeftMenu from '../../component/leftMenu'
+import reactMixin from 'react-mixin'
+import LinkTo from '../../mixins/linkto'
 
 require("./employ.css");
 // 按需雇佣
@@ -29,11 +32,20 @@ class Employ extends React.Component{
         return ( 
             < div >
                 <Banner backgroundImage = '/src/img/banner-employ.jpg' title = '拉勾企业服务·大鲲' />
+                <LeftMenu onOpen="按需雇佣" style={{position:'absolute',top:100,left:100}} />
                 <div className = 'employ-box'>
                     <ArticleBox article = {this.state} />
+                    <div className = 'btn-go-more'
+                    data-url = "https://pro.lagou.com/enterprise.html"
+                    data-lg-tj-id = ""
+                    data-lg-tj-no = ""
+                    data-lg-tj-cid = "idnull"
+                    onClick = {this.onLink.bind(this)}>查看更多</div>
                 </div>
+                
             < /div>
         )
     }
 }
+reactMixin(Employ.prototype, LinkTo);
 module.exports = Employ

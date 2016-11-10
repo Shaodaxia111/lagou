@@ -50,8 +50,9 @@ const RootRoute ={
 		  }
 		},
 		// 成功案例详情 
+		// type 全民升职记 promotion; 梦想者集市 market; 风暴周 week; 跳槽月  month
 		{
-		  path: 'case_detail',
+		  path: 'case_detail/:type',
 		  getComponent(nextState, cb) {
 		    require.ensure([], (require) => {
 		      cb(null, require('./views/case/case_detail'))

@@ -2,6 +2,7 @@
 var LinkTo = {
   onLink: function (e) {
       //统计数据
+      console.log(e.target.getAttribute('data-url'))
       var dataId =e.target.getAttribute('data-lg-tj-id')||"";
       var dataNo =e.target.getAttribute('data-lg-tj-no')||"";
       var dataCid =e.target.getAttribute('data-lg-tj-cid')||"idnull";

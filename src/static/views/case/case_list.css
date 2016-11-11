@@ -16,6 +16,7 @@
     margin-bottom: 23px;
     border-bottom: 1px solid #cccaca;
     padding-bottom: 25px;
+    min-height: 389px;
 }
 
 .case-list li .title-line {

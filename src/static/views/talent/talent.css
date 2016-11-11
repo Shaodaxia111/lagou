@@ -6,8 +6,9 @@
     padding-bottom: 20px;
 }
 
-#ct .talent-box img {
-    margin-top: 0;
+
+#ct .talent-box .article .title {
+    margin-bottom: 20px;
 }
 
 #ct .talent-box .article {
@@ -17,4 +18,10 @@
 
 #ct .talent-box .article:last-child {
     border-bottom: 0px;
+}
+
+.talent-bold {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
 }

@@ -26,9 +26,16 @@ class SuccessDetail extends React.Component{
 
             // 全民升职记
             promotion: {
-                title: "U-Cloud X 拉勾：HelloWorld 我是传奇",
+                title: "10万个OFFER-全民升职季",
                 content: [
-                    commonPath + "img/case-detail-pro5.png"
+                    commonPath + "img/case-detail-pro1.png"
+                    , "2月29日，拉勾网“10万个OFFER-全民升职季”活动正式上线，超过65万人次互联网人通过拉勾网进行简历投递，刷新了互联网招聘行业数据新高。"
+                    , commonPath + "img/case-detail-pro2.jpg"
+                    , commonPath + "img/case-detail-pro3.png"
+                    , "本次活动有超过10万家互联网企业参加，网站开辟了顶级互联网公司、豪门公司、成长型企业、娱乐明星公司、十二星座求职者等多个专场活动，并开设“CXO在线直聊”欢迎，邀请知名互联网公司高管与求职者通过拉勾app在线1V1交流。活动吸引了大量求职者的关注，投递情况异常火爆。"
+                    , commonPath + "img/case-detail-pro4.png"
+                    , "2月29号零点，活动上线十分钟内，拉勾网的投递量便超过了1万。到上午11点，拉勾网的投递量达到30万，打破了自己的单日最高投递数。活动首日结束时，拉勾的全网投递量突破65万，创下了互联网招聘行业的新纪录。"
+                    , commonPath + "img/case-detail-pro5.png"
                     , "真格基金创始人徐小平，果壳网CEO姬十三等业界大佬拍摄视频为拉勾助阵，互联网行业内逾百位CEO专门拍摄拉勾手势的海报，表达对这次活动的支持，并深入一线与求职者交流，以期在招聘行业旺季吸引优秀人才加盟。"
                 ]
             },
@@ -67,7 +74,6 @@ class SuccessDetail extends React.Component{
                     , commonPath + "img/case-detail-mou2.png"
                     , commonPath + "img/case-detail-mou3.png"
                     , commonPath + "img/case-detail-mou4.png"
-                    , commonPath + "img/case-detail-mou5.png"
                     , commonPath + "img/case-detail-mou5.png"
                     , commonPath + "img/case-detail-mou6.png"
                     , commonPath + "img/case-detail-mou7.png"

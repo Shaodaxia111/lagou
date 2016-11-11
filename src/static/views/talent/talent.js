@@ -6,6 +6,7 @@ import SecTab from '../../component/secTab'
 import ArticleBox from '../../component/ArticleBox'
 import LeftMenu from '../../component/leftMenu'
 import CommonInput from '../../component/commonInput'
+import LinkTo from '../../mixins/linkto'
 
 require("./talent.css");
 // 按需雇佣
@@ -13,7 +14,7 @@ class Employ extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            // 拉钩简招
+            // 拉勾简招
             employ: {
                 articles: [
                     {
@@ -26,7 +27,7 @@ class Employ extends React.Component{
                     {
                         title: "什么叫拉勾简招？",
                         content: [
-                            "拉勾简招是拉勾云为企业免费提供的一站式招聘系统（ATS），帮助企业更高效地管理招聘渠道及人才库，从发布职位、面试全流程安排、发送offer到员工入职，优化招聘全流程，并用产品驱动HR及用人部门协同处理简历，让企业招聘到最合适的人才。拉勾简招还包含背景调查的功能，帮助企业找到优秀人才的同时降低用人风险。"
+                            "拉勾简招是拉勾云的招聘管理模块，是拉勾云为企业免费提供的招聘系统（ATS），帮助企业更高效地管理招聘渠道及人才库，跟进候选人，优化招聘流程，用技术手段驱动HR及用人部门的协同，提升招聘效率的同时，让企业招聘到更合适的人才。"
                         ]
                     },
                     {
@@ -41,15 +42,15 @@ class Employ extends React.Component{
                 dataId: "" ,
                 dataNo: "" ,
                 dataCid: "idnull",
-                name: '拉钩简招'
+                name: '拉勾简招'
             },
-            // 拉钩+
+            // 拉勾+
             plus: {
                 articles: [
                     {
                         title: "如何海量发布职位？如何搜索候选人简历？如何提高招聘效率？",
                         content: [
-                            "企业版拉勾加lagou+ 是拉勾网推出的垂直互联网招聘一站式解决方案，有效的提高招聘效率，建立公司简历库、长期获人才途径的招募伙伴，方便管理、12个月的有效期使您达成可持续性的招聘目标。"
+                            <div className = 'paragraph'><span className = 'talent-bold'>拉勾+ </span>是拉勾网推出的垂直互联网招聘一站式解决方案。有效地提高招聘效率，便捷建立公司简历库，建立长期人才获取阵地；管理方便、简单高效，使您达成可持续性的招聘目标。</div>
                         ]
                     },
                     {
@@ -63,7 +64,7 @@ class Employ extends React.Component{
                 dataId: "" ,
                 dataNo: "" ,
                 dataCid: "idnull",
-                name: '拉钩+'
+                name: '拉勾+'
             },
             // 一拍
             pai: {
@@ -84,13 +85,14 @@ class Employ extends React.Component{
                     {
                         title: "企业问题",
                         content: [
-                           "收到的简历辛辛苦苦一封封筛选，大部分都不合适，太浪费精力浪费感情"
+                           <div className = 'paragraph just-bold'>收到的简历辛辛苦苦一封封筛选，大部分都不合适，太浪费精力浪费感情?</div>
                            , "一拍精英会场中的中、高端候选人全部经过职业顾问层层筛选。在拉勾一拍挑人，简历初筛这道工作，顾问就帮你完成了。"
                            , commonPath + "img/talents-p2.jpg"
-                           , "自己找到的中高端人才，可是人家根本没有换工作的意思，对你不理不睬"
+                           , <div className = 'paragraph just-bold'>自己找到的中高端人才，可是人家根本没有换工作的意思，对你不理不睬?</div>
                            , "一拍精英会场中的候选人，全部由职业顾问亲自沟通，确保候选人当前有强烈求职意愿，勾搭起来自然不费劲儿~"
                            , commonPath + "img/talents-p3.jpg"
-                           , "好容易看中一个靠谱候选人，可是人家特抢手，怎么办？"
+                           , <div className = 'paragraph just-bold'>好容易看中一个靠谱候选人，可是人家特抢手，怎么办？?</div>
+                           , ""
                            , "一拍职业顾问与候选人都保持良好线下沟通，可为企业提供撮合服务。有专业职业顾问帮你说话，牛人入职的概率肯定又多一成！"
                            , commonPath + "img/talents-p4.jpg"
                         ]
@@ -120,7 +122,7 @@ class Employ extends React.Component{
                         ]
                     },
                     {
-                        title: "移动端banner案例展示",
+                        title: "APP精准推荐示例",
                         content: [
                             commonPath + "img/talents-tj2.jpg"
                         ]
@@ -193,10 +195,10 @@ class Employ extends React.Component{
             )
         })
         return ( 
-            < div >
-                <Banner backgroundImage = {commonPath + 'img/banner-brand.jpg'} title = '拉勾企业服务·品牌建设' />
+            < div>
+                <Banner backgroundImage = {commonPath + 'img/banner-talent.jpg'} title = '拉勾企业服务·品牌建设' />
                 <SecTab tabs = { tabList } curName = { state[type].name } {...this.props}/>
-                <LeftMenu onOpen="人才招聘" style={{position:'absolute',top:100,left:100}} />
+                <LeftMenu onOpen="人才招聘" style={{position:'absolute',top:100,left:100}} {...this.props}/>
                 <div className = "talent-box ">
                     { articlesDom }
                 </div>
@@ -205,4 +207,5 @@ class Employ extends React.Component{
         )
     }
 }
+reactMixin(Employ.prototype, LinkTo);
 module.exports = Employ

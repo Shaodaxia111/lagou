@@ -78,7 +78,7 @@ var Renli  = React.createClass({
               立即获得专属顾问一对一服务
           </p>
           <p className="baoming-ctit">
-             留下您的联系信息，我们会有专业营销顾问与您联系，一对一为您详细介绍拉勾相关产品和服务，帮您更高效的招聘人才！ 
+             留下您的联系信息，我们会有专业营销顾问与您联系，一对一为您详细介绍拉勾相关产品和服务，帮您更加高效的工作！ 
           </p>
           <TextInput style={{background:"#f5f6f8",marginTop:70}} />
         </div>

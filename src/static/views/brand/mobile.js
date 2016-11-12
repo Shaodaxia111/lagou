@@ -17,7 +17,8 @@ class Employ extends React.Component{
             index: {
                 articles: [
                     {
-                        title: "企业权益：",
+                        title: "拉勾网首页Banner",
+                        secTitle: "企业权益：",
                         content: [
                             "1.核心聚焦位置推荐"
                             , "2.”潜力未来 拉勾推荐“ 标示"
@@ -37,7 +38,14 @@ class Employ extends React.Component{
                     {
                         title: "首页banner案例展示",
                         content: [
-                            commonPath + "img/brand-mi6.jpg"
+                            commonPath + "img/brand-mi4.jpg"
+                        ]
+                    },
+                    {
+                        title: "定制招聘页面&H5页面示例",
+                        content: [
+                            commonPath + "img/brand-mi5.jpg"
+                            , commonPath + "img/brand-mi6.jpg"
                         ]
                     }
                 ],
@@ -81,7 +89,7 @@ class Employ extends React.Component{
                 dataNo: "" ,
                 dataCid: "idnull"
             },
-            // 拉钩APP首页banner
+            // 拉勾APP首页banner
             banner: {
                 articles: [
                     {
@@ -102,13 +110,13 @@ class Employ extends React.Component{
                         ]
                     },
                     {
-                        title: "拉钩APP首页banner",
+                        title: "拉勾APP首页banner",
                         content: [
                             commonPath + "img/brand-mi2.jpg"
                         ]
                     }
                 ],
-                name: '拉钩APP首页banner',
+                name: '拉勾APP首页banner',
                 dataUrl: "/brand_mobile/banner",
                 dataId: "" ,
                 dataNo: "" ,
@@ -147,7 +155,7 @@ class Employ extends React.Component{
         return ( 
             < div >
                 <Banner backgroundImage = {commonPath + 'img/banner-brand.jpg'} title = '拉勾企业服务·品牌建设' />
-                <LeftMenu onOpen="品牌活动" style={{position:'absolute',top:100,left:100}} />
+                <LeftMenu onOpen="广告" style={{position:'absolute',top:100,left:100}} {...this.props}/>
                 <SecTab tabs = { tabList } curName = { state[type].name } {...this.props}/>
                 <div className = "brand-box ">
                     { articlesDom }

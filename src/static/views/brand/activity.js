@@ -9,7 +9,7 @@ import CommonInput from '../../component/commonInput'
 
 require("./activity.css");
 // 按需雇佣
-class Employ extends React.Component{
+class BrandActivity extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -28,6 +28,7 @@ class Employ extends React.Component{
                         content: [
                             commonPath + "img/brand-entrant1.jpg"
                             , "专为企业急招职位打造，以“24小时入职”引爆求职者快速投递；同时企业24小时内迅速响应，集中处理简历、发起面试，极大缩短招聘周期。"
+                            , <br />
                             , "周期：两个月一期；"
                             , "服务企业：急招职位企业。"
                         ]
@@ -35,10 +36,10 @@ class Employ extends React.Component{
                     {
                         title: "受邀企业特权：",
                         content: [
-                            "线上专场：亮点包装，突出优势&急招职位"
-                            , "急招职位曝光：“极速职位top10”榜单实时更新"
-                            , "职位搜索推荐：专场职位搜索权重提升"
-                            , "站内外同步推广：丰富的广告位，精准站内推送，外部新媒体推广"
+                            <div className = 'paragraph'><span className='just-bold'>线上专场</span>：亮点包装，突出优势&急招职位</div>
+                            , <div className = 'paragraph'><span className='just-bold'>急招职位曝光</span>：极速职位top10”榜单实时更新</div>
+                            , <div className = 'paragraph'><span className='just-bold'>职位搜索推荐</span>：专场职位搜索权重提升</div>
+                            , <div className = 'paragraph'><span className='just-bold'>站内外同步推广</span>：丰富的广告位，精准站内推送，外部新媒体推广</div>
                         ]
                     },
                     {
@@ -69,7 +70,8 @@ class Employ extends React.Component{
                         },
                         content: [
                             commonPath + "img/brand-partner1.jpg"
-                            , "根据初创型公司的招聘痛点以及需求，摒弃“雇主”的提法，推出“合伙人”的概念，定制化解决方案。"
+                            , "根据初创型公司的招聘痛点以及需求，摒弃“雇主”的说法，推出“合伙人”的概念，定制化解决方案。"
+                            , <br />
                             , "周期：两个月一期"
                             , "服务企业:B轮以下企业"
                         ]
@@ -77,10 +79,10 @@ class Employ extends React.Component{
                     {
                         title: "受邀企业特权：",
                         content: [
-                            "线上企业专场：一期"
-                            , "梦想拉勾加：职位发布20个、主动邀约20个、权重提高"
-                            , "线上微课堂：一期"
-                            , "传媒支持：站内推送、app端展示、言职覆盖、新媒体传播"
+                            <div className = 'paragraph'><span className='just-bold'>线上企业专场</span>：一期</div>
+                            , <div className = 'paragraph'><span className='just-bold'>梦想拉勾加</span>：职位发布20个、主动邀约20个、权重提高</div>
+                            , <div className = 'paragraph'><span className='just-bold'>线上微课堂</span>：一期</div>
+                            , <div className = 'paragraph'><span className='just-bold'>传媒支持</span>：站内推送、app端展示、言职覆盖、新媒体传播</div>
                         ]
                     },
                     {
@@ -140,11 +142,14 @@ class Employ extends React.Component{
                         title: "野心时代",
                         link: {
                             name: "查看线上案例",
-                            url: ""
+                            dataUrl: "http://ca.lagou.com/careerism/index",
+                            dataId: "" ,
+                            dataNo: "" ,
+                            dataCid: "idnull"
                         },
                         content: [
                             commonPath + "img/brand-time1.jpg"
-                            , "实力派，拉勾网迎接金九银十新招聘高峰的巨作。2015年“实力派梦想升值季”是拉勾网首次在北上广深4地同时发动的大型招聘专场；联合600家知名互联网公司CEO共同传播，刷爆微信社交圈。2016年实力派，将加入多玩法，联合88家媒体与122家合作伙伴，打造声势最为浩大的互联网招聘周。"
+                            , "“野心时代”的年终策划，拉勾网年度最大规模活动盛典。连续两年，联合互联网核心领域权威媒体、知名投资机构、多家合作伙伴、10多位科技、天文、艺术大咖，共同建立全新的雇主评选生态、打造年度互联网圈的最后一次大规模招聘、呈现互联网人密度最高的线下盛典。"
                         ]
                     },
                     {
@@ -189,6 +194,13 @@ class Employ extends React.Component{
                     },
                     {
                         title: "梦想者市集",
+                        link: {
+                            name: "查看线上案例",
+                            dataUrl: "/case_detail/market",
+                            dataId: "" ,
+                            dataNo: "" ,
+                            dataCid: "idnull"
+                        },
                         content: [
                             commonPath + "img/brand-activity2.jpg"
                             ,"“梦想者市集”作为拉勾品牌活动自2015年起连续举办两届，在行业内形成了巨大的声量传播"
@@ -211,6 +223,7 @@ class Employ extends React.Component{
     }
 
     render() {
+        let _this = this
         let state = this.state
         let type = this.props.params.type;
         let articles = state[type].articles
@@ -229,13 +242,13 @@ class Employ extends React.Component{
         }
         articles.forEach(function(ele, index) {
             articlesDom.push(
-                <ArticleBox article = { ele } key = { index } cName = { type }/>
+                <ArticleBox article = { ele } key = { index } cName = { type } {..._this.props}/>
             )
         })
         return ( 
             < div >
                 <Banner backgroundImage = {commonPath + 'img/banner-brand.jpg'} title = '拉勾企业服务·品牌建设' />
-                <LeftMenu onOpen="品牌活动" style={{position:'absolute',top:100,left:100}} />
+                <LeftMenu onOpen="品牌活动" style={{position:'absolute',top:100,left:100}} {...this.props} />
                 <SecTab tabs = { tabList } curName = { state[type].name } {...this.props}/>
                 <div className = "brand-box ">
                     { articlesDom }
@@ -245,4 +258,4 @@ class Employ extends React.Component{
         )
     }
 }
-module.exports = Employ
+module.exports = BrandActivity

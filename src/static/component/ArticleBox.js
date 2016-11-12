@@ -17,6 +17,7 @@ class ArticleBox extends Component{
     }
     renderTitle(props) {
         let linkDom = []
+        let secTitleDom = []
         let _this = this
         if(props.link) {
             linkDom.push(<div className = 'articleLink'
@@ -29,10 +30,17 @@ class ArticleBox extends Component{
                             { props.link.name } 
                          </div>)
         }
+        if(props.secTitle) {
+            secTitleDom = <div className = 'title'> {props.secTitle}</div>
+        }
+
         return (
-            <div className = 'title'>
-                { props.title }
-                { linkDom }
+            <div>
+                <div className = 'title'>
+                    { props.title }
+                    { linkDom }
+                </div>
+                {secTitleDom}
             </div>
         ) 
     }
@@ -41,13 +49,25 @@ class ArticleBox extends Component{
         let article = this.props.article
         let cName = this.props.cName
         let contentDom = []
-        article.content.forEach(function (ele, index) {
-            if(ele.indexOf('img') > -1) {   // 图片
-                contentDom.push(<img src = { ele } alt = '拉钩商业图片' key = { index }/ >)
-            } else {    // 段落
-                contentDom.push(<span className = 'paragraph' key = { index }>{ ele }</span>)
-            }
-         })
+        if(article.content != undefined) {
+            article.content.forEach(function (ele, index) {
+                if(typeof ele === 'string') {
+                    if(ele.indexOf('img') > -1) {   // 图片
+                        contentDom.push(<img src = { ele } alt = '拉钩商业图片' key = { index }/ >)
+                    } else {    // 段落
+                        contentDom.push(<span className = 'paragraph' key = { index }>{ ele }</span>)
+                    }
+                } else {
+                    if(ele.type == 'br'){
+                        contentDom.push(<br key = { index } />)
+                    } else if(ele.type == 'span'){
+                        contentDom.push(<span className = {ele.props.className} key = {index}>{ele.props.children}</span>)
+                    } else if(ele.type == 'div') {
+                        contentDom.push(<div className = {ele.props.className} key = {index}>{ele.props.children}</div>)
+                    }
+                }
+            })
+        }
 
         return ( 
             < div className={classnames("article",{[`${cName}`]: cName != undefined})}>

@@ -84,7 +84,7 @@ class IndexBanner extends React.Component {
               <p className="banner-tit">拉勾企业服务·品牌建设</p>
               <ul>
                 <li>专业团队策划完善的品牌建设和品牌推广方案</li>
-                <li>1081万+让人才切身体会企业的品牌情愫</li>
+                <li>让人才切身体会企业的品牌情愫</li>
                 <li>让企业更好的树立品牌威信</li>
               </ul>
               <button 

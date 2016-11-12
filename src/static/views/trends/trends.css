@@ -38,7 +38,7 @@
 	width:150px;
 	height:180px;
 	position:absolute;
-	right:25px;
+	right:90px;
 	top:15px;
 	background-image:url(../../../img/trend-erweimaBg.jpg);
 	background-size:150px 180px;
@@ -50,11 +50,11 @@
 	margin:25px 0 0 16px;
 }
 #ct .trend-content .trend-item.data .erweimaBox .erweima-img{
-	background:url(../../../img/data-erweima.jpg) 0 0 no-repeat;
+	background:url(../../../img/data-erweima.png) 0 0 no-repeat;
 	background-size:120px 120px;
 }
 #ct .trend-content .trend-item.trend-salaryData .erweimaBox .erweima-img{
-	background:url(../../../img/salaryData-erweima.jpg) 0 0 no-repeat;
+	background:url(../../../img/salaryData-erweima.png) 0 0 no-repeat;
 	background-size:120px 120px;
 }
 #ct .trend-content .trend-item.trend-whiteBook .erweimaBox .erweima-img{

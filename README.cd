@@ -38,3 +38,6 @@
 
 2. npm run build-inline 
 发布时将 app/dist文件夹中的文件和/index.html模板上传到服务器即可。
+
+注：
+由于市场动态下面 白皮书链接还未给，故目前没有生成二维码，如果修改生成二维码的图片直接替换img文件夹下面whiteBook-erweima.jpg即可

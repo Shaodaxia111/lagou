@@ -21,13 +21,23 @@ class TabItem extends React.Component {
     });
   }
   render() {
+    var $this = this;
     var index=this.props.index;
     var hoverContent = null;
     var opacity = this.state.opacity;
     if(this.props.hoverInfo){
+      var hoverInfo = this.props.hoverInfo;
         hoverContent = (
           <div {...this.props} style={{}} onClick={this.onLink.bind(this)} style={{opacity:opacity}} className="hover-content">
-              <span {...this.props} style={{}} onClick={this.onLink.bind(this)} >{this.props.hoverInfo}</span>
+            <span {...this.props} style={{}}>
+              {
+                hoverInfo.split("、").map(function(item,index){
+                  return(
+                     <p key={index} {...$this.props} style={{}}>{item}</p>
+                  );
+                })
+              }
+             </span>
           </div>
         );
     }

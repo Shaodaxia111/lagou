@@ -14,7 +14,7 @@ class Good extends React.Component {
               <p className="item-tit">愿景</p>
               <ul>
                 <li>拉勾不只是一家招聘网站</li>
-                <li>更是致力于连接人与企业，</li>
+                <li>更致力于连接人与企业</li>
                 <li>提供更多元的服务，</li>
                 <li>以实现“帮助企业和互联网人更好</li>
                 <li>的成长”的愿景</li>
@@ -25,9 +25,9 @@ class Good extends React.Component {
               <ul>
                 <li>1081万+人才的职业机会平台</li>
                 <li>已服务140437家企业</li>
-                <li>每月简历投递量 472万+</li>
-                <li>每8份简历即可成功，</li>
-                <li>邀请1名候选人面试</li>
+                <li>每月简历投递量达 472万+</li>
+                <li>每8份简历即可成功邀请</li>
+                <li>1名候选人面试</li>
               </ul>
           </li>
           <li className="third item">

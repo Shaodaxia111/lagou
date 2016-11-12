@@ -17,7 +17,7 @@
 	background:url('../../../img/item_bg.png') 0 0 no-repeat;
 	background-size:170px 45px;
 	color:#fff;
-	padding-left:15px;
+	padding-left:10px;
 	font-style:normal;
 	font-size:16px;
 }
@@ -45,6 +45,7 @@
 	width:270px;
 	height:105px;
 	line-height:105px;
+	text-align:center;
 	top:45px;
 	left:30px;
 	color:#333333;
@@ -64,9 +65,10 @@
 	display:block;
 	width:270px;
 	height:40px;
+	text-align:center;
 	margin:0 auto;
 	margin-top:80px;
-	line-height:20px;
+	line-height:25px;
 	color:#fff;
 	font-size:16px;
 }

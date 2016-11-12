@@ -23,7 +23,7 @@ class TextInput extends Component {
                     text: "联系人手机",
                     checked: false,
                     value: "",
-                    type: 'number',
+                    type: 'text',
                     reg: "^1[0-9]{10}$"
                 },
                 // 公司所在地
@@ -110,7 +110,7 @@ class TextInput extends Component {
         return ( 
            		< div className = 'apply-box' style={this.props.style} >
 						{ inputDom } 
-						<span className = 'apply-submit' onClick = {this.handleSubmit.bind(this)}> 提交报名</span>
+						<span className = 'apply-submit' onClick = {this.handleSubmit.bind(this)}> 提交</span>
 				< /div>  
         )
     }

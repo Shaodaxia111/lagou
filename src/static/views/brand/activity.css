@@ -4,11 +4,13 @@
     margin: 0 auto;
     /*border-bottom: 1px solid #cccaca;*/
     padding-bottom: 30px;
-    margin-bottom: 180px
+    margin-bottom: 70px
 }
-#ct .brand-box img{
+
+#ct .brand-box img {
     margin-top: 0;
 }
+
 #ct .brand-box .article {
     border-bottom: 1px solid #cccaca;
     padding-bottom: 25px;

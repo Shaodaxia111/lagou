@@ -1,0 +1,303 @@
+#shuffling {
+    width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#shuffling .list-con {
+    display: block;
+    height: 122px;
+}
+
+#shuffling .list-con li {
+    float: left;
+    font-size: 18px;
+    color: #c8cacc;
+    cursor: pointer;
+    margin-right: 90px;
+    text-align: center
+}
+
+#shuffling .list-con li i {
+    margin: 0 auto 22px;
+    display: block
+}
+
+#shuffling .invite {
+    width: 100px
+}
+
+#shuffling .invite i {
+    width: 50px;
+    height: 51px;
+    background: url(../../../img/contact_01_93b9587.png) no-repeat;
+    margin-bottom: 18px!important
+}
+
+#shuffling .job_publish {
+    width: 135px
+}
+
+#shuffling li.job_publish i {
+    width: 59px;
+    height: 27px;
+    background: url(../../../img/icon_4066e7e.png) no-repeat;
+    background-position: -60px -80px;
+    margin: 10px auto 32px
+}
+
+#shuffling .ranking {
+    width: 80px
+}
+
+#shuffling li.ranking i {
+    width: 40px;
+    height: 54px;
+    background: url(../../../img/icon_4066e7e.png) no-repeat;
+    background-position: -128px -70px;
+    margin: 0 auto 15px
+}
+
+#shuffling .senior {
+    width: 110px
+}
+
+#shuffling li.senior i {
+    width: 54px;
+    height: 47px;
+    background: url(../../../img/icon_4066e7e.png) no-repeat;
+    background-position: -179px -70px
+}
+
+#shuffling li .line {
+    border-bottom: 1px solid #e3e6e6;
+    margin: 25px -999px 0 auto;
+    position: relative
+}
+
+#shuffling .line span {
+    position: absolute;
+    width: 15px;
+    height: 9px;
+    top: -8px
+}
+
+#shuffling .list-con li.active {
+    color: #37bc98
+}
+
+#shuffling .invite.active i {
+    background: url(../../../img/contact_02_577cf44.png) no-repeat
+}
+
+#shuffling .job_publish.active i {
+    background-position: -61px -11px
+}
+
+#shuffling .ranking.active i {
+    background-position: -128px 0
+}
+
+#shuffling .senior.active i {
+    background-position: -179px 0
+}
+
+#shuffling .invite span.active {
+    left: 50px;
+    background: #fff url(../../../img/icon_4066e7e.png) -260px 0 no-repeat
+}
+
+#shuffling .job_publish span.active {
+    left: 60px;
+    background: #fff url(../../../img/icon_4066e7e.png) -260px 0 no-repeat
+}
+
+#shuffling .ranking span.active {
+    left: 30px;
+    background: #fff url(../../../img/icon_4066e7e.png) -260px 0 no-repeat
+}
+
+#shuffling .senior span.active {
+    left: 45px;
+    background: #fff url(../../../img/icon_4066e7e.png) -260px 0 no-repeat
+}
+
+#shuffling .react-swipe-container  {
+    width: 800px;
+    overflow: hidden
+}
+
+#shuffling .describe {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+    line-height: normal;
+}
+
+#shuffling .react-swipe-container  li {
+    float: left;
+    width: 800px;
+    list-style: none
+}
+
+#shuffling .react-swipe-container  .img {
+    margin-top: 50px;
+    padding-left: 0;
+    position: relative
+}
+
+#shuffling .react-swipe-container  .img img {
+    display: block;
+    vertical-align: bottom
+}
+
+#shuffling .react-swipe-container  .img span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #37bc98;
+    position: absolute;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #a4dfcf;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name: breathe;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate
+}
+
+#shuffling .react-swipe-container  .img span.o_breathe {
+    right: 305px;
+    top: 85px
+}
+
+#shuffling .react-swipe-container  .img span.t_breathe {
+    right: 232px;
+    top: 191px
+}
+
+#shuffling .react-swipe-container  .img span.h_breathe {
+    right: 277px;
+    bottom: 89px
+}
+
+#shuffling .react-swipe-container  .img span.th_breathe {
+    left: 360px;
+    top: 20px
+}
+
+#shuffling .react-swipe-container  .img span.f_breathe {
+    right: 80px;
+    top: 130px
+}
+
+#shuffling .react-swipe-container  .img span.five_breathe {
+    left: 520px;
+    top: 65px
+}
+
+#shuffling .react-swipe-container  .img span.six_breathe {
+    right: 270px;
+    top: 170px
+}
+
+#shuffling .react-swipe-container  .img span.sev_breathe {
+    left: 280px;
+    top: 110px
+}
+
+@-webkit-keyframes breathe {
+    0% {
+        opacity: .8;
+        transform: scale(1, 1);
+        border: 1px solid #d3eee6
+    }
+    100% {
+        opacity: .4;
+        transform: scale(1.8, 1.8)
+    }
+}
+
+@-moz-keyframes breathe {
+    0% {
+        opacity: .8;
+        transform: scale(1, 1);
+        border: 1px solid #d3eee6
+    }
+    100% {
+        opacity: .4;
+        transform: scale(1.8, 1.8)
+    }
+}
+
+#shuffling .react-swipe-container  .txt {
+    margin: 30px auto 0;
+    text-align: center;
+    font-size: 20px
+}
+
+.enough-w {
+    width: 5000px
+}
+
+#msgBox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999
+}
+
+#msgBox #msgShelter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .6;
+    filter: alpha(opacity=40);
+    background-color: #a9a9a9
+}
+
+#msgBox #msgContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 490px;
+    margin-top: -130px;
+    margin-left: -250px;
+    padding: 50px 0;
+    border: 5px solid rgba(0, 0, 0, .4);
+    background-color: #fff;
+    text-align: center;
+    -webkit-box-shadow: outset 0 0 3px rgba(0, 0, 0, .6);
+    box-shadow: outset 0 0 3px rgba(0, 0, 0, .6)
+}
+
+#msgBox #msgContent p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #a9a9a2
+}
+
+#msgBox #msgContent a {
+    display: block;
+    margin: 50px auto 0;
+    width: 100px;
+    height: 45px;
+    background-color: #00a57f;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px
+}

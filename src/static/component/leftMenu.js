@@ -88,7 +88,7 @@ class LeftMenu extends React.Component {
         <ul {...this.props} className="leftMenu">
            <li style={{color:this.state.rencai.color}} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
               className='p-menu' data-itemKey="rencai"
-              data-url = "/employ"
+              data-url = "/talent/employ"
               data-lg-tj-id = "" 
               data-lg-tj-no = "" 
               data-lg-tj-cid = "idnull" onClick={this.onLink.bind(this)}>

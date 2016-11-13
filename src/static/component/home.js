@@ -49,7 +49,13 @@ class Home extends React.Component {
         <Footer {...this.props} />
         <div className="fixed-box">
             <ul className="fixed-ul">
-              <li className="baoming off" onMouseOver={this.onMouseOver.bind(this,'baoming')} onMouseOut={this.onMouseOut.bind(this,"baoming")}>
+              <li className="baoming off" 
+                data-url="/sign" 
+                data-lg-tj-id="" 
+                data-lg-tj-no="" 
+                data-lg-tj-cid="idnull" 
+                onClick={this.onLink.bind(this)}
+              onMouseOver={this.onMouseOver.bind(this,'baoming')} onMouseOut={this.onMouseOut.bind(this,"baoming")}>
                 <div style={{opacity:this.state.baoming}} 
                 data-url="/sign" 
                 data-lg-tj-id="" 

@@ -66,7 +66,7 @@ var Renli  = React.createClass({
           <div className="list-box">
             <p className="list-ptit">拉勾云-创业公司的第一个人事管理平台</p>
             <p className="list-ctit">
-                为企业提供包括招聘管理、人事全模块管理、员工自助及企业服务平台在内的人事管理SaaS平台，帮助<br/>企业释放更高的生产力。
+                为企业提供包括招聘管理、人事全模块管理、员工自助及企业服务平台在内的人事管理SaaS平台，帮助企业释放更高的生产力。
             </p>
             <ul className="renli-list">
               {ListArray}

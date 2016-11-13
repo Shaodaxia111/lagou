@@ -29,7 +29,7 @@ class TabItem extends React.Component {
       var hoverInfo = this.props.hoverInfo;
         hoverContent = (
           <div {...this.props} style={{}} onClick={this.onLink.bind(this)} style={{opacity:opacity}} className="hover-content">
-            <span {...this.props} style={{}}>
+            <span {...this.props} style={{marginTop:parseInt((200-hoverInfo.split("、").length*25)/2)}}>
               {
                 hoverInfo.split("、").map(function(item,index){
                   return(

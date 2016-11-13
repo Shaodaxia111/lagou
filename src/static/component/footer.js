@@ -47,11 +47,7 @@ var Footer  = React.createClass({
                     data-lg-tj-cid = "idnull"
                     onClick={this.onLink.bind(this)}>品牌活动</a></li>
                 <li><p className="link-tit">人力资源管理</p></li>
-                <li><a data-url = "/renli"
-                    data-lg-tj-id = "" 
-                    data-lg-tj-no = ""
-                    data-lg-tj-cid = "idnull"
-                    onClick={this.onLink.bind(this)}>拉勾云</a></li>
+                <li><a>拉勾云</a></li>
              </ul>
               <ul className="quick-link">
                 <li><p className="link-tit">解决方案</p></li>
@@ -85,9 +81,24 @@ var Footer  = React.createClass({
                </ul>
               <ul className="quick-link">
                 <li><p className="link-tit">动态资讯</p></li>
-                <li><a>市场分析</a></li>
-                <li><a>资本寒冬</a></li>
-                <li ><a>行业白皮书</a></li>
+                <li><a data-url = "/trends"
+                    data-lg-tj-id = "" 
+                    data-lg-tj-no = "" 
+                    data-lg-tj-cid = "idnull"
+                    onClick={this.onLink.bind(this)}
+                >市场分析</a></li>
+                <li><a data-url = "/trends"
+                    data-lg-tj-id = "" 
+                    data-lg-tj-no = "" 
+                    data-lg-tj-cid = "idnull"
+                    onClick={this.onLink.bind(this)}
+                >资本寒冬</a></li>
+                <li ><a data-url = "/trends"
+                    data-lg-tj-id = "" 
+                    data-lg-tj-no = "" 
+                    data-lg-tj-cid = "idnull"
+                    onClick={this.onLink.bind(this)}
+                >行业白皮书</a></li>
               </ul>
               <ul className="quick-link">
                 <li><p className="link-tit">帮助与支持</p></li>
@@ -113,7 +124,7 @@ var Footer  = React.createClass({
                 <li><a>邮箱: gogo@lagou.com</a></li>
               </ul>
                <ul className="quick-link">
-                <li><p className="link-tit">帮助与支持</p></li>
+                <li><p className="link-tit">关注我们</p></li>
                 <li className="erweima"></li>
               </ul>
             </div>

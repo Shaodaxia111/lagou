@@ -3,6 +3,9 @@
 	background:#fff;
 	z-index: 101;
 	border:1px solid #d8dae1;
+	position: fixed;
+    top: 100px;
+    left: 100px;
 }
 #ct .leftMenu .p-menu{
 	width:106px;

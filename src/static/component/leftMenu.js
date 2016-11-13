@@ -69,15 +69,18 @@ class LeftMenu extends React.Component {
   }
   onMouseOut(e){
     var mouseKey = e.target.getAttribute("data-itemKey");
-    if(mouseKey == itemMap[this.props.onOpen]){
+    if((mouseKey == itemMap[this.props.onOpen])){
       return ;
     }else{
       stateInit[mouseKey].color="#333333";
       if((mouseKey=="pinpaijianshe")||(mouseKey=="guanggao")||(mouseKey=="pinpaihuodong")){
-        stateInit.pinpaijianshe={
-          cololr:"#333333",
-          display:"none",
-          stauts:"off"
+        stateInit["pinpaijianshe"].color="#00b38a";
+        if((itemMap[this.props.onOpen]!="pinpaijianshe")&&(itemMap[this.props.onOpen]!="guanggao")&&(itemMap[this.props.onOpen]!="pinpaihuodong")){
+          stateInit.pinpaijianshe={
+            cololr:"#333333",
+            display:"none",
+            stauts:"off"
+          }
         }
       }
       this.setState(stateInit);
@@ -85,7 +88,7 @@ class LeftMenu extends React.Component {
   }
   render() {
     return (
-        <ul {...this.props} className="leftMenu">
+        <ul className="leftMenu">
            <li style={{color:this.state.rencai.color}} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
               className='p-menu' data-itemKey="rencai"
               data-url = "/talent/employ"

@@ -1,4 +1,6 @@
 import React from 'react';
+import reactMixin from 'react-mixin'
+import LinkTo from '../../mixins/linkto'
 var LeftMenu = require('../../component/leftMenu');
 require("./trends.css");
 class Item extends React.Component{
@@ -33,7 +35,13 @@ class Item extends React.Component{
           <p className="right-set">
             <span className="item-weixin" onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}>转发微信</span>
             <span className="item-split">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
-            <span className="item-download">下载</span>
+            <span className="item-download" 
+              data-url = {this.props.url}
+              data-lg-tj-id = "" 
+              data-lg-tj-no = "" 
+              data-lg-tj-cid = "idnull"
+              onClick={this.onLink.bind(this)}
+            >查看完整报告</span>
           </p>
           <div style={{opacity:this.state.opacity}} className="erweimaBox">
             <div className="erweima-img"></div>
@@ -56,6 +64,7 @@ var sourceList = [
       "可直到此时，我们仍被各方声音所干扰，不确信的来源使我们对信息缺乏准确的判断。",
       "“资本寒冬”是否已经浸入到创业公司的骨髓？程度有多深？对我们的工作又有多少影响？"
     ],
+    url:"http://activity.lagou.com/topic/baogao.html",
     type:"data"
   },
   {
@@ -66,6 +75,7 @@ var sourceList = [
       "哪一类型的公司给程序员的工资更高？",
       "拉勾互联网人才薪酬报告全方位为你解答2016年互联网人才的薪资问题。"
     ],
+    url:"http://mp.weixin.qq.com/s?__biz=MzAxNzEyODA2NQ==&mid=2650182913&idx=1&sn=b8babc20ce25554449fa4541b4c8e0ed&scene=1&srcid=0819CmP3WaD41CBIdIdeMx1B#wechat_redirectl",
     type:"trend-salaryData"
   },
   {
@@ -75,6 +85,7 @@ var sourceList = [
       "数据知道！",
       "拉勾网携手多家调研公司以及业内顶级数据分析师，倾力打造【互联网职场生态白皮书】，致力于帮你解决职场中的每一个难题，发掘最优解。没有教诲，杜绝唠叨，一切只看：这个圈子里的人，他们都怎么玩儿。"
     ],
+    url:"",
     type:"trend-whiteBook"
   }
 ];
@@ -100,4 +111,6 @@ var Trend  = React.createClass({
     )
   }
 })
+reactMixin(Item.prototype, LinkTo);
+reactMixin(Trend.prototype, LinkTo);
 module.exports = Trend ;

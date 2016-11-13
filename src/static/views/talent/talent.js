@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+var reactMixin = require('react-mixin');
 import Banner from '../../component/commonBanner'
 import SecTab from '../../component/secTab'
 import ArticleBox from '../../component/ArticleBox'
@@ -202,7 +202,7 @@ class Employ extends React.Component{
         })
         return ( 
             < div>
-                <Banner backgroundImage = {commonPath + 'img/banner-talent.jpg'} title = '拉勾企业服务·品牌建设' />
+                <Banner backgroundImage = {commonPath + 'img/banner-talent.jpg'} title = '拉勾企业服务·人才招聘' />
                 <SecTab tabs = { tabList } curName = { state[type].name } {...this.props}/>
                 <LeftMenu onOpen="人才招聘" style={{position:'absolute',top:100,left:100}} {...this.props}/>
                 <div className = "talent-box ">

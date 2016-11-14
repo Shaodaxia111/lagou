@@ -4,7 +4,8 @@ html {
     background:#ffffff;
 }
 body {
-    min-width: 1200px;
+    min-width: 1145px;
+    overflow-x:auto;
 }
 html,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
     margin:0;
@@ -25,7 +26,7 @@ button{
     box-sizing: border-box;
 }
 #ct{
-	min-width: 1200px;
+	min-width: 1145px;
 }
 #ct .fixed-box{
 	width:55px;
@@ -68,10 +69,10 @@ button{
 	background:url('../../img/fixed_on.png') 0 12px no-repeat;
 }
 #ct .fixed-box .fixed-ul  .phone.on{
-	background:url('../../img/fixed_on.png') 0 -40px no-repeat;
+	background:url('../../img/fixed_on.png') 1px -40px no-repeat;
 }
 #ct .fixed-box .fixed-ul  .gohome.on{
-	background:url('../../img/fixed_on.png') 0 -95px no-repeat;
+	background:url('../../img/fixed_on.png') 1px -95px no-repeat;
 }
 #ct .fixed-box .fixed-ul  .gotop.on{
 	background:url('../../img/fixed_on.png') 0 -145px no-repeat;

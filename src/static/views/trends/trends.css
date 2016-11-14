@@ -4,21 +4,21 @@
 }
 #ct .trend-banner{
 	width:100%;
-	height:180px;
 	position:relative;
-	background:url(../../../img/trend_banner.jpg) 0 0 no-repeat;
-	background-size:100% 180px;
 }
-#ct .trend-banner .banner-content{
+#ct .trend-banner img{
 	width:100%;
-	height:180px;
+	height:auto;
+	display:block;
+}
+#ct .trend-banner .content-trend{
+	width:100%;
 	position:absolute;
 	text-align:center;
 	top:0;
 	left: 0;
 }
 #ct .trend-content .trend-tit{
-	margin-top:54px;
 	color:#fff;
 	font-size:48px;
 }
@@ -33,6 +33,10 @@
 	margin-top:30px;
 	position:relative;
 	border-bottom:1px solid #d8dae1;
+}
+#ct .trend-content .trend-item .item-title{
+	font-size:20px;
+	color:#333333;
 }
 #ct .trend-content .trend-item .erweimaBox{
 	width:150px;

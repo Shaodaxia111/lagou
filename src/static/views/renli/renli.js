@@ -2,6 +2,7 @@ import React from 'react';
 var LeftMenu = require('../../component/leftMenu');
 import TextInput from '../../component/textInput'
 require("./renli.css");
+var bannerBg = commonPath + "img/renli_banner.jpg";
 var dataSource = [
   {
     imgClss:"zhaopin",
@@ -48,6 +49,11 @@ class ListItem extends React.Component {
 }
 
 var Renli  = React.createClass({
+  getInitialState:function(){
+      return {
+        bannerHeight:parseInt(document.body.clientWidth*180/1920)
+      }
+  },
   render:function() {
     var ListArray = dataSource.map(function(item,index){
       return(
@@ -57,7 +63,8 @@ var Renli  = React.createClass({
     return (
       <div className="renli-content">
         <div className="renli-banner">
-          <div className="renli-content">
+          <img src={bannerBg} alt = '立即获得专属顾问一对一服务'/>
+          <div style={{lineHeight:this.state.bannerHeight+"px"}} className="renli-content">
             <p className="renli-tit">拉勾企业服务·人力资源管理</p>
           </div>
           <LeftMenu {...this.props} onOpen="人力资源管理" style={{position:'absolute',top:100,left:100}} />
@@ -80,7 +87,7 @@ var Renli  = React.createClass({
           <p className="baoming-ctit">
              留下您的联系信息，我们会有专业营销顾问与您联系，一对一为您详细介绍拉勾相关产品和服务，帮您更加高效的工作！ 
           </p>
-          <TextInput style={{background:"#f5f6f8",marginTop:70}} />
+          <TextInput style={{background:"#f5f6f8",marginTop:60}} />
         </div>
       </div>
     )

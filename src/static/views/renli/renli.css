@@ -3,27 +3,27 @@
 }
 #ct .renli-banner{
 	width:100%;
-	height:180px;
 	position:relative;
-	background:url(../../../img/renli_banner.jpg) 0 0 no-repeat;
-	background-size:100% 180px;
+}
+#ct .renli-banner img{
+	width:100%;
+	height:auto;
+	display:block;
 }
 #ct .renli-banner .renli-content{
 	width:100%;
-	height:180px;
 	position:absolute;
 	text-align:center;
 	top:0;
 	left: 0;
 }
 #ct .renli-content .renli-tit{
-	margin-top:54px;
 	color:#fff;
 	font-size:48px;
 }
 #ct .renli-content .renli-modal{
 	width:100%;
-	height:960px;
+	height:920px;
 	padding-top:40px;
 	background:#fff;
 }
@@ -38,6 +38,7 @@
 	color:#333333;
 }
 #ct .renli-content .renli-modal .list-box .list-ctit{
+	margin:5px 0;
 	font-size:14px;
 	line-height:20px;
 	color:#777777;
@@ -46,7 +47,7 @@
 
 #ct .renli-content .baoming-box{
 	width:100%;
-	height:740px;
+	height:680px;
 	padding-top:70px;
 	background:#f5f6f8;
 }
@@ -57,7 +58,7 @@
 	text-align:center;
 }	
 #ct .renli-content .baoming-box .baoming-ctit{
-	line-height:30px;
+	line-height:40px;
 	color:#555555;
 	font-size:14px;
 	text-align:center;
@@ -112,7 +113,7 @@
 #ct .renli-content .renli-item .item-info{
 	width:300px;
 	margin:0 auto;
-	margin-top:10px;
+	margin-top:15px;
 	font-size:14px;
 	line-height:20px;
 	color:#777777;

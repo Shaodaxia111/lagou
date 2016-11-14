@@ -3,28 +3,29 @@
 }
 #ct .recruit-banner{
 	width:100%;
-	height:180px;
 	position:relative;
-	background:url(../../../img/zhaopin_banner.jpg) 0 0 no-repeat;
-	background-size:100% 180px;
+	margin-bottom:35px;
 }
-#ct .recruit-banner .banner-content{
+#ct .recruit-banner img{
+	display:block;
 	width:100%;
-	height:180px;
+	height:auto;
+}
+#ct .recruit-banner .content-recruit{
+	width:100%;
 	position:absolute;
 	text-align:center;
 	top:0;
 	left: 0;
 }
 #ct .recruit-content .recruit-tit{
-	margin-top:54px;
 	color:#fff;
 	font-size:48px;
+	line-height:48px;
 }
 #ct .recruit-content .recruit-info{
 	color:#b5b5b5;
 	font-size:14px;
-	line-height:40px;
 }
 #ct .recruit-content .operate-tit{
 	width:810px;
@@ -84,13 +85,13 @@
 	background:url(../../../img/zhaopin_bg09.jpg) 0 0 no-repeat;
 }
 #ct .recruit-content .operate-btn{
-	width:330px;
-	height:140px;
+	width:340px;
+	height:190px;
 	padding-top:60px;
 	margin:0 auto;
 }
 #ct .recruit-content .operate-btn .setting-index{
-	width:170px;
+	width:178px;
 	height:40px;
 	line-height:40px;
 	text-align:center;

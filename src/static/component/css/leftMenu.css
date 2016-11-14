@@ -3,6 +3,7 @@
 	background:#fff;
 	z-index: 101;
 	border:1px solid #d8dae1;
+	border-radius:2px;
 	position: fixed;
     top: 100px;
     left: 25px;

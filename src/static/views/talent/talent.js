@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Banner from '../../component/commonBanner'
-import SecTab from '../../component/secTab'
 import ArticleBox from '../../component/ArticleBox'
 import LeftMenu from '../../component/leftMenu'
 import CommonInput from '../../component/commonInput'
@@ -112,14 +111,6 @@ class Employ extends React.Component{
                         ]
                     },
                     {
-                        title: "推荐示例",
-                        content: [
-                            , "1.核心聚焦位置：拉勾APP首页最大banner，浏览量高；"
-                            , "2.权重提升：投放期间内，企业招聘职位权重全面提升，促进简历投递转化；"
-                            , "3.全程活动策划跟进服务：了解企业品牌按品牌定制，曝光企业品牌，转化简历投递。"
-                        ]
-                    },
-                    {
                         title: "APP精准推荐示例",
                         content: [
                             commonPath + "img/talents-tj2.jpg"
@@ -201,8 +192,8 @@ class Employ extends React.Component{
         })
         return ( 
             < div>
-                <Banner backgroundImage = {commonPath + 'img/banner-talent.jpg'} title = '拉勾企业服务·人才招聘' />
-                <SecTab tabs = { tabList } curName = { state[type].name } {...this.props}/>
+                <Banner backgroundImage = {commonPath + 'img/banner-talent.jpg'} 
+                    title = '拉勾企业服务·人才招聘' tabs = { tabList } curName = { state[type].name } {...this.props}/>
                 <LeftMenu onOpen="人才招聘" style={{position:'absolute',top:100,left:100}} {...this.props}/>
                 <div className = "talent-box ">
                     { articlesDom }

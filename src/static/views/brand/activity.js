@@ -246,10 +246,10 @@ class BrandActivity extends React.Component{
             )
         })
         return ( 
-            < div >
-                <Banner backgroundImage = {commonPath + 'img/banner-brand.jpg'} title = '拉勾企业服务·品牌建设' />
+            < div>
+                <Banner backgroundImage = {commonPath + 'img/banner-brand.jpg'} 
+                    tabs = { tabList } curName = { state[type].name } title = '拉勾企业服务·品牌建设' {...this.props}/>
                 <LeftMenu onOpen="品牌活动" style={{position:'absolute',top:100,left:100}} {...this.props} />
-                <SecTab tabs = { tabList } curName = { state[type].name } {...this.props}/>
                 <div className = "brand-box ">
                     { articlesDom }
                 </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-var reactMixin = require('react-mixin');
 import Banner from '../../component/commonBanner'
 import SecTab from '../../component/secTab'
 import ArticleBox from '../../component/ArticleBox'

@@ -43,12 +43,12 @@
 }
 #ct .item-content .content{
 	position:absolute;
-	width:270px;
+	width:290px;
 	height:105px;
 	line-height:105px;
 	text-align:center;
 	top:45px;
-	left:30px;
+	left:20px;
 	color:#333333;
 	font-size:20px;
 	border-bottom:1px solid #f2f2f2;

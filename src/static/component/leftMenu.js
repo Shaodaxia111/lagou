@@ -104,7 +104,7 @@ class LeftMenu extends React.Component {
            </li> 
            <ul style={{display:this.state.pinpaijianshe.display}} className="c-menu">
                <li style={{color:this.state.guanggao.color}}  onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
-                className='p-menu' data-itemKey="guanggao" 
+                data-itemKey="guanggao" 
                 data-url = "/brand_mobile/index"
                 data-lg-tj-id = "" 
                 data-lg-tj-no = "" 
@@ -112,7 +112,7 @@ class LeftMenu extends React.Component {
                 广告
             </li>
             <li style={{color:this.state.pinpaihuodong.color}}  onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)}
-                className='p-menu' data-itemKey="pinpaihuodong"
+               data-itemKey="pinpaihuodong"
                 data-url = "/brand_activity/entrant"
                 data-lg-tj-id = "" 
                 data-lg-tj-no = "" 

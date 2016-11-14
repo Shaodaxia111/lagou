@@ -1,10 +1,11 @@
-#ct .item-content{
+#ct .tabItem .item-content{
 	width:330px;
 	height:200px;
-	border-radius:3px;
+	border-radius:4px;
 	background:#fff;
 	position:relative;
 	cursor:pointer;
+	box-shadow:0px 2px 5px #e8e9ed;
 }
 #ct .item-content .icon{
 	width:170px;
@@ -42,14 +43,14 @@
 }
 #ct .item-content .content{
 	position:absolute;
-	width:270px;
+	width:290px;
 	height:105px;
 	line-height:105px;
 	text-align:center;
 	top:45px;
-	left:30px;
+	left:20px;
 	color:#333333;
-	font-size:18px;
+	font-size:20px;
 	border-bottom:1px solid #f2f2f2;
 }
 #ct .item-content .hover-content{

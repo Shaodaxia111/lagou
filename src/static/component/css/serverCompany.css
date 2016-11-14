@@ -1,10 +1,10 @@
 #ct .server-list{
 	width:100%;
-	height:560px;
+	height:585px;
+	padding-top:75px;
 }
 #ct .server-tit{
 	text-align:center;
-	margin-top:75px;
 }
 #ct .server-tit .tit-main{
 	font-size:30px;
@@ -16,12 +16,12 @@
 	color:#999999;
 }
 #ct .server-list .list{
-	width:980px;
+	width:1030px;
 	margin:0 auto;
 }
 #ct .server-list .list ul{
 	float:left;
-	margin-right:40px;
+	margin-right:50px;
 }
 #ct .server-list .list ul:last-child{
 	margin-right:0;

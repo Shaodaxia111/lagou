@@ -2,9 +2,9 @@
 	min-width: 1024px;
 	width:100%;
     clear: both;
-    height: 220px;
-    margin-top:30px;
-	background:url('../../../img/footer_bg.jpg') 0 120px no-repeat;
+    height: 245px;
+    margin-top:70px;
+	background:url('../../../img/footer_bg.jpg') 0 145px no-repeat;
 	background-size:100% 100px;
 }
 #ct .inner{

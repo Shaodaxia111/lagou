@@ -1,47 +1,37 @@
 #ct .index-banner{
 	width:100%;
-	min-height:360px;
 	position:relative;
 }
-#ct .banner01{
-	background:url(../../../img/index_banner01.jpg) 0 0 no-repeat;
-	background-size:100% 100%;
-}
-#ct .banner02{
-	background:url(../../../img/index_banner02.jpg) 0 0 no-repeat;
-	background-size:100% 100%;
-}
-#ct .banner03{
-	background:url(../../../img/index_banner03.jpg) 0 0 no-repeat;
-	background-size:100% 100%;
+#ct .index-banner img{
+	width:100%;
+	height:auto;
+	display:block;
 }
 #ct .banner-content{
 	width:100%;
-	height:360px;
 	position:absolute;
 	text-align:center;
 }
 #ct .banner-tit{
-	margin-top:50px;
 	color:#fff;
+	height:52px;
+	line-height:52px;
 	font-size:52px;
 }
 #ct .banner-content ul{
 	color:#fff;
-	line-height:40px;
-	font-size:18px;
-	margin-top:20px;
+	line-height:30px;
+	font-size:16px;
 	text-align:center;
 }
 #ct .banner-content .view-btn{
 	width:340px;
-	height:60px;
-	line-height:60px;
-	margin-top:20px;
+	height:50px;
+	line-height:50px;
 	background:#00b38a;
 	border-radius:30px;
 	color:#fff;
-	font-size:18px;
+	font-size:16px;
 	text-align:center;
 }
 #ct .index-tab{
@@ -52,13 +42,13 @@
 }
 #ct .index-tab ul{
 	margin:0 auto;
-	width:830px;
+	width:880px;
 	height:119px;
 }
 #ct .index-tab ul li{
-	width:170px;
+	width:220px;
 	height:119px;
-	margin-right:160px;
+	margin-right:110px;
 	text-align:center;
 	float:left;
 	cursor:pointer;
@@ -71,7 +61,7 @@
 	width:40px;
 	height:40px;
 	margin-top:30px;
-	margin-left:65px;
+	margin-left:90px;
 }
 #ct .index-tab li span{
 	display:block;
@@ -79,7 +69,7 @@
 	font-size:18px;
 }
 #ct .index-tab li.on{
-	background:url('../../../img/tab-arrow.png') 75px 0 no-repeat;
+	background:url('../../../img/tab-arrow.png') 100px 0 no-repeat;
 	background-size:20px 12px;
 	border-bottom:1px solid #00b38a;
 }

@@ -5,15 +5,15 @@
 }
 #ct .banner01{
 	background:url(../../../img/index_banner01.jpg) 0 0 no-repeat;
-	background-size:100% auto;
+	background-size:100% 100%;
 }
 #ct .banner02{
 	background:url(../../../img/index_banner02.jpg) 0 0 no-repeat;
-	background-size:100% auto;
+	background-size:100% 100%;
 }
 #ct .banner03{
 	background:url(../../../img/index_banner03.jpg) 0 0 no-repeat;
-	background-size:100% auto;
+	background-size:100% 100%;
 }
 #ct .banner-content{
 	width:100%;

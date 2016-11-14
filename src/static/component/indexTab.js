@@ -14,7 +14,7 @@ var dataList = [
         },
         {
           "title":"满足你的招聘需求",
-          "hoverInfo":"职位无限发布，排名权重高、海量人才直接邀、VIP管理系统-招聘从未如此简单高效！",
+          "hoverInfo":"职位无限发布，排名权重高、海量人才直接邀，VIP管理系统、招聘从未如此简单高效！",
           "content":"海量邀请合适人才投递",
           "handle":"立即使用",
           "data-url":"/talent/plus", 

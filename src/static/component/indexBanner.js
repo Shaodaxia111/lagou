@@ -96,7 +96,7 @@ class IndexBanner extends React.Component {
               className="view-btn">查看品牌建设解决方案</button>
             </div>
          </div>
-         <div className="index-banner banner04">
+         <div className="index-banner banner03">
             <div className="banner-content">
               <p className="banner-tit">拉勾企业服务·人力资源管理</p>
               <ul>

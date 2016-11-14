@@ -106,6 +106,7 @@ var Footer  = React.createClass({
                     data-lg-tj-id = "" 
                     data-lg-tj-no = "" 
                     data-lg-tj-cid = "idnull"
+                    data-target = "_blank"
                     onClick={this.onLink.bind(this)}>成功案例</a></li>
                 <li><a data-url = "/cq"
                     data-lg-tj-id = "" 

@@ -3,28 +3,27 @@
 }
 #ct .success-banner{
 	width:100%;
-	height:180px;
 	position:relative;
-	background:url(../../../img/success_banner.jpg) 0 0 no-repeat;
-	background-size:100% 180px;
 }
-#ct .success-banner .banner-content{
+#ct .success-banner img{
 	width:100%;
-	height:180px;
+	height:auto;
+}
+#ct .success-banner .content{
+	width:100%;
 	position:absolute;
 	text-align:center;
 	top:0;
 	left: 0;
 }
 #ct .success-content .success-tit{
-	margin-top:54px;
 	color:#fff;
 	font-size:48px;
 }
 #ct .success-top{
 	width:100%;
 	height:225px;
-	padding-top:45px;
+	padding-top:55px;
 	background:#fff;
 	text-align:center;
 }
@@ -47,4 +46,10 @@
 	font-size:16px;
 	color:#555555;
 	text-align:center;
+}
+#ct .success-tab{
+	width:100%;
+	height:595px;
+	padding-top:40px;
+	background:#f5f6f8;
 }

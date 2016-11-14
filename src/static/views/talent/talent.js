@@ -6,6 +6,8 @@ import SecTab from '../../component/secTab'
 import ArticleBox from '../../component/ArticleBox'
 import LeftMenu from '../../component/leftMenu'
 import CommonInput from '../../component/commonInput'
+import SwipeArticle from '../../component/swipeArticle'
+import reactMixin from 'react-mixin'
 import LinkTo from '../../mixins/linkto'
 
 require("./talent.css");
@@ -55,9 +57,6 @@ class Employ extends React.Component{
                     },
                     {
                         title: "拉勾加企业特权",
-                        content: [
-                           commonPath + "img/talents-plus1.jpg"
-                        ]
                     }
                 ],
                 dataUrl: "/talent/plus",
@@ -154,7 +153,9 @@ class Employ extends React.Component{
                         title: "服务简介",
                         content: [
                             "一键秒查项目：身份信息查询、学历信息核实（最高学历）、法院诉讼核查、金融风险核查、商业利益冲突核查、职业资质核实。"
+                            , <br />
                             , "背调报告项目：2-3段工作履历核实、1-2段工作表现核查、1位自主寻访证明人访谈、青藤联盟（HR互助社群）"
+                            , <br />
                             , "背景调查适用候选人，涵盖了基层岗位、中层管理岗位、敏感岗位、高层管理岗位、核心岗位、企业合伙人、VP等，让候选人的简历说话。"
                             , commonPath + "img/talents-bj3.jpg"
                         ]
@@ -170,6 +171,11 @@ class Employ extends React.Component{
     }
     handleClick (ele) {
 
+    }
+    renderOrther () {
+        if(this.props.params.type == 'plus') {
+            return <SwipeArticle />
+        }
     }
 
     render() {
@@ -202,6 +208,7 @@ class Employ extends React.Component{
                 <div className = "talent-box ">
                     { articlesDom }
                 </div>
+                {this.renderOrther()}
                 <CommonInput />
             < /div>
         )

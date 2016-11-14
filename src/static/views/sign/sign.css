@@ -35,7 +35,7 @@
 	text-align:center;
 }
 #ct .signContent .sign-table{
-	height:500px;
+	min-height:500px;
 	margin:0 auto;
 	overflow:hidden;
 }

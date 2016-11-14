@@ -3,9 +3,10 @@
     font-size: 14px;
     margin-top: 70px;
 }
+
 .apply-box {
-    width:480px;
-    height:420px;
+    width: 480px;
+    min-height: 420px;
     background: #fff;
     text-align: center;
     margin: 0 auto;
@@ -44,13 +45,47 @@
 }
 
 .apply-box .apply-submit {
-    display:block;
+    display: block;
     width: 472px;
     background: #00b38a;
     color: #fff;
     text-align: center;
     line-height: 45px;
     height: 45px;
-    margin:0 auto;
-    margin-top:40px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.apply-box .danger-tip {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #f94e4e;
+    text-indent: 24px;
+    background: url(../../../img/danger-tip.jpg) 0 0 no-repeat;
+    margin-top: 5px;
+}
+
+.apply-box .submit-seccess {
+    margin-top: 90px;
+    text-align: center;
+    color: #555;
+}
+
+.apply-box .submit-seccess i {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: url(../../../img/big-smile.jpg) 0 0 no-repeat;
+    margin-bottom: 10px;
+}
+
+.apply-box .submit-seccess h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.apply-box .submit-seccess span {
+    font-size: 16px;
 }

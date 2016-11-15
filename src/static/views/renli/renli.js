@@ -49,11 +49,6 @@ class ListItem extends React.Component {
 }
 
 var Renli  = React.createClass({
-  getInitialState:function(){
-      return {
-        bannerHeight:parseInt(document.body.clientWidth*180/1920)
-      }
-  },
   render:function() {
     var ListArray = dataSource.map(function(item,index){
       return(
@@ -63,8 +58,7 @@ var Renli  = React.createClass({
     return (
       <div className="renli-content">
         <div className="renli-banner">
-          <img src={bannerBg} alt = '立即获得专属顾问一对一服务'/>
-          <div style={{lineHeight:this.state.bannerHeight+"px"}} className="renli-content">
+          <div className="renli-content">
             <p className="renli-tit">拉勾企业服务·人力资源管理</p>
           </div>
           <LeftMenu {...this.props} onOpen="人力资源管理" style={{position:'absolute',top:100,left:100}} />

@@ -1,7 +1,7 @@
 #ct .tabItem .item-content{
 	width:330px;
 	height:200px;
-	border-radius:4px;
+	border-radius:8px;
 	background:#fff;
 	position:relative;
 	cursor:pointer;
@@ -29,7 +29,7 @@
 	font-size:16px;
 	position:absolute;
 	padding-left:20px;
-	bottom:20px;
+	bottom:15px;
 	right:20px;
 }
 #ct .item-content .go-arrow:after{
@@ -58,7 +58,7 @@
 	height:200px;
 	position:absolute;
 	top:0;
-	left:0;
+	left:-1px;
 	background:url(../../../img/hoverContent_bg.png) 0 0 no-repeat;
 	background-size:330px 200px;
 }

@@ -2,21 +2,14 @@ import React from 'react';
 require("./recruit.css");
 var reactMixin = require('react-mixin');
 var LinkTo =require("../../mixins/linkto");
-var bannerBg = commonPath + "img/zhaopin_banner.jpg";
 var Recruit  = React.createClass({
-  getInitialState:function(){
-      return {
-        bannerHeight:parseInt(document.body.clientWidth*180/1920)
-      }
-  },
   render:function() {
     return (
       <div className="recruit-content">
         <div className="recruit-banner">
-          <img src={bannerBg} alt = '完善企业主页'/>
           <div className="content-recruit">
-            <p style={{marginTop:parseInt((this.state.bannerHeight-68)/2)+"px"}} className="recruit-tit">完善企业主页</p>
-            <p style={{lineHeight:'40px'}}className="recruit-info">企业主页是展示企业风采和雇主品牌的地方，主页中完善的企业信息，能给求职者带来更高的信任感，极大提高求职者加入企业的意愿！</p>
+            <p className="recruit-tit">完善企业主页</p>
+            <p className="recruit-info">企业主页是展示企业风采和雇主品牌的地方，主页中完善的企业信息，能给求职者带来更高的信任感，极大提高求职者加入企业的意愿！</p>
           </div>
         </div>
           <p className="operate-tit">公司主页入口</p>

@@ -3,15 +3,14 @@
 }
 #ct .success-banner{
 	width:100%;
+	height:180px;
 	position:relative;
-}
-#ct .success-banner img{
-	display:block;
-	width:100%;
-	height:auto;
+	background:url("../../../img/success_banner.jpg") no-repeat top center;
 }
 #ct .success-banner .content{
 	width:100%;
+	height:180px;
+	line-height:180px;
 	position:absolute;
 	text-align:center;
 	top:0;

@@ -91,11 +91,6 @@ var sourceList = [
   }
 ];
 var Trend  = React.createClass({
-  getInitialState:function(){
-      return {
-        bannerHeight:parseInt(document.body.clientWidth*180/1920)
-      }
-  },
   render:function() {
     var TrendList = sourceList.map(function(item,index){
       return (
@@ -105,8 +100,7 @@ var Trend  = React.createClass({
     return (
       <div className="trend-content">
         <div className="trend-banner">
-          <img src={bannerBg} alt = '拉勾企业服务·行业报告市场动态'/>
-          <div style={{lineHeight:this.state.bannerHeight+"px"}} className="content-trend">
+          <div className="content-trend">
             <p className="trend-tit">拉勾企业服务·行业报告市场动态</p>
           </div>
           <LeftMenu {...this.props} onOpen="市场动态" style={{position:'absolute',top:100,left:100}} />

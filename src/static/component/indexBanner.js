@@ -25,8 +25,6 @@ class IndexBanner extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-      "bannerWidth":parseInt(document.body.clientWidth),
-      "bannerHeight":parseInt(document.body.clientWidth*500/1920),
       "scrollItem":0,
     }
   }
@@ -36,6 +34,7 @@ class IndexBanner extends React.Component {
     });
   }
   setSlide(index){
+    console.log(index);
     var $this = this;
     clearInterval(mm) 
     this.refs.reactSwipe.slide(index,400);
@@ -43,8 +42,9 @@ class IndexBanner extends React.Component {
       "scrollItem":index,
     });
     mm = setInterval(function(){
-      index ++;
-      if(index==4){
+      console.log(index);
+      ++index;
+      if(index==3){
         index = 0;
       }
       $this.refs.reactSwipe.next();
@@ -55,7 +55,6 @@ class IndexBanner extends React.Component {
 
   }
   render() {
-    var marginItem = parseInt((this.state.bannerHeight -200)/6);
     var itemScroll = dataSource.map((item, index) => {
       var selectStatus = (index == this.state.scrollItem)?'on':'off'
       return (
@@ -68,15 +67,15 @@ class IndexBanner extends React.Component {
     return (
       <div className='banner' style={{width:this.state.bannerWidth,overflow:'hidden',position:'relative'}}>
       <ReactSwipe ref="reactSwipe" swipeOptions={{continuous:true,speed: 400,auto:10000,callback:this.itemMove.bind(this)}}>
-          <div className="index-banner" style={{width:this.state.bannerWidth}}>
+          <div className="index-banner banner01">
             <div className="banner-content">
-                <p style={{marginTop:marginItem*2}} className="banner-tit">拉勾企业服务·人才招聘</p>
-                <ul style={{marginTop:marginItem}} >
+                <p className="banner-tit">拉勾企业服务·人才招聘</p>
+                <ul >
                   <li>行业领先的垂直互联网招聘平台</li>
                   <li>1081万+的候选人才库</li>
                   <li>每月简历投递量472万+</li>
                 </ul>
-                <button style={{marginTop:marginItem}}
+                <button
                 data-url="/talent/employ" 
                 data-lg-tj-id="" 
                 data-lg-tj-no="" 
@@ -84,17 +83,16 @@ class IndexBanner extends React.Component {
                 onClick={this.onLink.bind(this)}
                className="view-btn">查看招聘人才产品以及解决方案</button>
             </div>
-            <img src={banner01} alt = '拉勾企业服务·人才招聘'/>
           </div>
-         <div className="index-banner">
-            <div style={{height:this.state.bannerHeight}} className="banner-content">
-                <p style={{marginTop:marginItem*2}} className="banner-tit">拉勾企业服务·品牌建设</p>
-                <ul style={{marginTop:marginItem}}>
+         <div className="index-banner banner02">
+            <div className="banner-content">
+                <p className="banner-tit">拉勾企业服务·品牌建设</p>
+                <ul>
                   <li>专业团队策划完善的品牌建设和品牌推广方案</li>
                   <li>让人才切身体会企业的品牌情愫</li>
                   <li>让企业更好的树立品牌威信</li>
                 </ul>
-                <button style={{marginTop:marginItem}}
+                <button
                   data-url="/brand_mobile/index" 
                   data-lg-tj-id="" 
                   data-lg-tj-no="" 
@@ -102,17 +100,16 @@ class IndexBanner extends React.Component {
                   onClick={this.onLink.bind(this)}
                 className="view-btn">查看品牌建设解决方案</button>
             </div>
-            <img src={banner02} alt = '拉勾企业服务·品牌建设'/>
          </div>
-         <div className="index-banner">
-            <div style={{height:this.state.bannerHeight}} className="banner-content">
-              <p style={{marginTop:marginItem*2}} className="banner-tit">拉勾企业服务·人力资源管理</p>
-              <ul style={{marginTop:marginItem}}>
+         <div className="index-banner banner03">
+            <div className="banner-content">
+              <p className="banner-tit">拉勾企业服务·人力资源管理</p>
+              <ul>
                 <li>成长型企业人力资源管理SaaS平台</li>
                 <li>一站解决企业招聘管理、人事管理、员工自助管理</li>
                 <li>帮助企业更高效的发展</li>
               </ul>
-              <button style={{marginTop:marginItem}}
+              <button
                 data-url="/renli" 
                 data-lg-tj-id="" 
                 data-lg-tj-no="" 
@@ -120,7 +117,6 @@ class IndexBanner extends React.Component {
                 onClick={this.onLink.bind(this)}
               className="view-btn">查看人力资源管理SaaS产品&解决方案</button>
             </div>
-          <img src={banner03} alt = '拉勾企业服务·人力资源管理'/>
          </div>
       </ReactSwipe>
          <div className="index-tab">

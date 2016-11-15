@@ -3,17 +3,11 @@ require("./sign.css");
 import TextInput from '../../component/textInput'
 var bannerBg = commonPath + "img/success_banner.jpg";
 var Success  = React.createClass({
-  getInitialState:function(){
-      return {
-        bannerHeight:parseInt(document.body.clientWidth*180/1920)
-      }
-  },
   render:function() {
     return (
       <div className="success-content">
         <div className="success-banner">
-          <img src={bannerBg} alt = '立即获得专属顾问一对一服务'/>
-          <div style={{lineHeight:this.state.bannerHeight+"px"}} className="content-sign">
+          <div className="content-sign">
             <p className="success-tit">立即获得专属顾问一对一服务</p>
           </div>
         </div>

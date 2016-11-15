@@ -31,6 +31,7 @@
 #ct .footer-content .inner a {
     font-size: 14px;
     color: #484848;
+    -webkit-font-smoothing:antialiased;
 }
 #ct .footer-content .link-tit {
     color: #333333;

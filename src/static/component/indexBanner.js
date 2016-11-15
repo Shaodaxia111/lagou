@@ -25,6 +25,7 @@ class IndexBanner extends React.Component {
   constructor(props) {
     super(props);
     this.state={
+      "bannerWidth":parseInt(document.body.clientWidth),
       "bannerHeight":parseInt(document.body.clientWidth*500/1920),
       "scrollItem":0,
     }
@@ -65,10 +66,10 @@ class IndexBanner extends React.Component {
       )
     });
     return (
-      <div className='banner' style={{overflow:'hidden',position:'relative'}}>
+      <div className='banner' style={{width:this.state.bannerWidth,overflow:'hidden',position:'relative'}}>
       <ReactSwipe ref="reactSwipe" swipeOptions={{continuous:true,speed: 400,auto:10000,callback:this.itemMove.bind(this)}}>
-          <div className="index-banner">
-            <div style={{height:this.state.bannerHeight}} className="banner-content">
+          <div className="index-banner" style={{width:this.state.bannerWidth}}>
+            <div className="banner-content">
                 <p style={{marginTop:marginItem*2}} className="banner-tit">拉勾企业服务·人才招聘</p>
                 <ul style={{marginTop:marginItem}} >
                   <li>行业领先的垂直互联网招聘平台</li>

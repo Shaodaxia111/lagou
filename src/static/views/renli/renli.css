@@ -48,9 +48,10 @@
 
 #ct .renli-content .baoming-box{
 	width:100%;
-	height:680px;
-	padding-top:70px;
+	height:610px;
+	padding:70px 0;
 	background:#f5f6f8;
+	overflow:auto;
 }
 #ct .renli-content .baoming-box .baoming-ptit{
 	line-height:40px;

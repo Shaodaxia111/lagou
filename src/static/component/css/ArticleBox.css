@@ -7,6 +7,8 @@
 }
 
 .article .articleLink {
+    height: 30px;
+    line-height: 32px;
     cursor: pointer;
     color: #00b38a;
     display: inline-block;
@@ -22,12 +24,16 @@
     line-height: 20px;
 }
 
-.article img {
+.article .img-div {
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.article img {
     width: 100%;
 }
-.just-bold{
+
+.just-bold {
     font-weight: bold;
 }
 

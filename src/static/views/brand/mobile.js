@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 
 import Banner from '../../component/commonBanner'
 import ArticleBox from '../../component/ArticleBox'
-import SecTab from '../../component/secTab'
 import LeftMenu from '../../component/leftMenu'
 import CommonInput from '../../component/commonInput'
 
@@ -93,7 +92,8 @@ class Employ extends React.Component{
             banner: {
                 articles: [
                     {
-                        title: "企业权益",
+                        title: "拉勾首页APP首页banner",
+                        secTitle: "企业权益",
                         content: [
                             "1.定制化轮播banner图展示"
                             , "2.针对企业招聘区域+候选人期望工作地点定向曝光"
@@ -110,7 +110,7 @@ class Employ extends React.Component{
                         ]
                     },
                     {
-                        title: "拉勾APP首页banner",
+                        title: "拉勾APP首页banner示例",
                         content: [
                             commonPath + "img/brand-mi2.jpg"
                         ]
@@ -154,9 +154,9 @@ class Employ extends React.Component{
         })
         return ( 
             < div >
-                <Banner backgroundImage = {commonPath + 'img/banner-brand.jpg'} title = '拉勾企业服务·品牌建设' />
+                <Banner backgroundImage = {commonPath + 'img/banner-brand.jpg'} 
+                    title = '拉勾企业服务·品牌建设' tabs = { tabList } curName = { state[type].name } {...this.props}/>
                 <LeftMenu onOpen="广告" style={{position:'absolute',top:100,left:100}} {...this.props}/>
-                <SecTab tabs = { tabList } curName = { state[type].name } {...this.props}/>
                 <div className = "brand-box ">
                     { articlesDom }
                 </div>

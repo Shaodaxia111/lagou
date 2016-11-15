@@ -8,6 +8,7 @@ var LinkTo = {
       var target = e.target.getAttribute('data-target')||"_self";
       //跳转url
       var url = e.target.getAttribute('data-url');
+      console.log(url)
       //跳转至站外
       if((url.indexOf("http://")==0)||(url.indexOf("https://")==0)){
         window.open(url);

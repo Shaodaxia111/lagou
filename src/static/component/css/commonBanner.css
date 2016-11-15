@@ -1,11 +1,23 @@
+.banner-box {
+    text-align: center;
+    color: #fff;
+    /*margin-bottom: 55px;*/
+    position: relative
+}
+
 .common-banner {
     width: 100%;
-    height: 180px;
-    line-height: 180px;
-    text-align: center;
+}
+
+
+/*为什么banner-box要比img高18px*/
+
+.banner-text {
+    width: 100%;
+    position: absolute;
+    height: 60px;
+    line-height: 60px;
+    top: 50%;
+    margin-top: -39px;
     font-size: 48px;
-    color: #fff;
-    background: url(../../../img/banner-common-question.jpg) 0 0 no-repeat;
-    background-size: 100% 180px;
-    margin-bottom: 57px;
 }

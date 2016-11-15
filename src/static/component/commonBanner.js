@@ -1,6 +1,7 @@
 import React, { PropTypes, Component }from 'react';
 import ReactDOM from 'react-dom';
 // import classnames from 'classnames'
+import SecTab from './secTab'
 
 require("./css/commonBanner.css");
 
@@ -12,9 +13,15 @@ class CommonBanner extends Component{
 
     render() {
         let props = this.props
+        let secTabDom = []
+        if(props.tabs != undefined) {
+            secTabDom = <SecTab {...this.props}/>
+        }
         return ( 
-            < div >
-                <div className = "common-banner" style = {{backgroundImage: 'url(' + props.backgroundImage + ')'}}>{props.title}</div>
+            < div className = 'banner-box'>
+                <img className = 'common-banner' src = { props.backgroundImage } alt = ''/>
+                <div className = "banner-text">{props.title}</div>
+                { secTabDom }
             < /div>
         )
     }

@@ -53,7 +53,7 @@ class ArticleBox extends Component{
             article.content.forEach(function (ele, index) {
                 if(typeof ele === 'string') {
                     if(ele.indexOf('img') > -1) {   // 图片
-                        contentDom.push(<img src = { ele } alt = '拉钩商业图片' key = { index }/ >)
+                        contentDom.push(<div className ='img-div'  key = { index }><img src = { ele } alt = '拉钩商业图片'/ ></div>)
                     } else {    // 段落
                         contentDom.push(<span className = 'paragraph' key = { index }>{ ele }</span>)
                     }

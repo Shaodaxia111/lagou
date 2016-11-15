@@ -1,7 +1,7 @@
 .case-detail-box {
     width: 800px;
     font-size: 18px;
-    margin: 0 auto;
+    margin: 0 auto 150px;
 }
 
 .case-detail-box .title {
@@ -19,13 +19,9 @@
     margin-bottom: 23px;
 }
 
-.case-detail-box img {
-    margin-bottom: 20px;
-}
-
 .case-detail-box .article {
     border-bottom: 1px solid #cccaca;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     padding-bottom: 30px;
 }
 
@@ -37,6 +33,6 @@
     color: #fff;
     font-size: 16px;
     background: #00b38a;
-    margin: 0 auto 140px;
+    margin: 0 auto;
     cursor: pointer;
 }

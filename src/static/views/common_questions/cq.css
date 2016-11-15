@@ -1,23 +1,12 @@
-.banner-cq {
-    width: 100%;
-    height: 180px;
-    line-height: 180px;
-    text-align: center;
-    font-size: 48px;
-    color: #fff;
-    background: url(../../../img/banner-common-question.jpg) 0 0 no-repeat;
-    background-size: 100% 180px;
-    margin-bottom: 57px;
-}
-
 .common-question-box {
     width: 475px;
     font-size: 18px;
     margin: 0 auto;
+    margin-top: 37px;
 }
 
-.middle-box .question-box {
-    margin-bottom: 10px;
+.common-question-box .question-box {
+    margin-bottom: 37px;
 }
 
 .question-box .question-item {
@@ -36,8 +25,8 @@
 }
 
 .customer-tips {
-    height: 44px;
-    padding-top: 44px;
+    height: 53px;
+    padding-top: 53px;
     background: url(../../../img/halving-line.png) no-repeat top 10px left 0px;
 }
 
@@ -50,4 +39,8 @@
     color: #00b38a;
     text-align: center;
     text-decoration: none;
+}
+
+.cq {
+    margin-bottom: 130px;
 }

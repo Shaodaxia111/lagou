@@ -1,11 +1,8 @@
 #ct .talent-box {
     width: 800px;
     font-size: 18px;
-    margin: 0 auto;
-    /*border-bottom: 1px solid #cccaca;*/
-    padding-bottom: 20px;
+    margin: 40px auto 70px;
 }
-
 
 #ct .talent-box .article .title {
     margin-bottom: 20px;
@@ -13,7 +10,7 @@
 
 #ct .talent-box .article {
     border-bottom: 1px solid #cccaca;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 
 #ct .talent-box .article:last-child {

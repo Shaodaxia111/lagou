@@ -25,14 +25,13 @@ class SecondTab extends Component{
         let _this = this
         tabs.forEach(function (ele, index) {
             let _name = ele.name
-            tabsDom.push(<div className = {classnames("tab-item", {selected : _name == curName})} 
-                            data-url = { ele.dataUrl }
-                            data-lg-tj-id = { ele.dataId }
-                            data-lg-tj-no = { ele.dataNo }
-                            data-lg-tj-cid = { ele.dataCid }
-                            onClick = {_this.onLink.bind(_this)}
-                            key = { index }>
-                            { ele.name } 
+            tabsDom.push(<div className = {classnames("tab-item", {selected : _name == curName})} key = { index }>
+                            <span data-url = { ele.dataUrl }
+                                data-lg-tj-id = { ele.dataId }
+                                data-lg-tj-no = { ele.dataNo }
+                                data-lg-tj-cid = { ele.dataCid }
+                                onClick = {_this.onLink.bind(_this)}>
+                                { ele.name } </span>
                         </div>)
          })
 

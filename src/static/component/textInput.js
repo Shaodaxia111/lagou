@@ -154,13 +154,17 @@ class TextInput extends Component {
             }
             inputDom.push( < div className = 'input-item'
                 key = { index } >
-                < div className = 'input-text' > { ele.text } < /div>  < input type = "text"
-                name = { ele.name }
-                type = { ele.type }
-                onFocus = { _this.handleFocus.bind(_this, index) }
-                onChange = { _this.handleChange.bind(_this, index) }
-                onBlur = { _this.handleBlur.bind(_this, index) }
-                /> { dangerTipDom } < /div >
+                < div className = 'input-text' > { ele.text } < /div>  
+                <div className = {classnames('input-div',{'active': ele.focus})}>
+                    < input type = "text"
+                    name = { ele.name }
+                    type = { ele.type }
+                    onFocus = { _this.handleFocus.bind(_this, index) }
+                    onChange = { _this.handleChange.bind(_this, index) }
+                    onBlur = { _this.handleBlur.bind(_this, index) }
+                    /> 
+                </div>
+                { dangerTipDom } < /div >
             )
         })
         if (!this.state.submitSuccess) {

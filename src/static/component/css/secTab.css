@@ -1,8 +1,8 @@
 .second-tab {
     text-align: center;
-    color: #fff;
-    margin-top: -90px;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-top: -38px;
+    z-index: 10;
 }
 
 .second-tab .tab-item {
@@ -12,9 +12,9 @@
     cursor: pointer;
 }
 
-.second-tab .selected {
+.second-tab .selected span {
     color: #00b38a;
-    border-bottom: 1px solid #00b38a;
+    border-bottom: 2px solid #00b38a;
 }
 
 .second-tab span {

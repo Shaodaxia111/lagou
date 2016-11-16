@@ -35,7 +35,7 @@
 #ct .banner-content .view-btn{
 	width:340px;
 	height:50px;
-	line-height:52px;
+	line-height:49px;
 	background:#00b38a;
 	border-radius:30px;
 	color:#fff;
@@ -80,8 +80,18 @@
 	margin-top:15px;
 	font-size:18px;
 }
-#ct .index-tab li.on{
-	background:url('../../../img/tab-arrow.png') 100px 0 no-repeat;
+#ct .index-tab .zhaopin.on{
+	background:url('../../../img/tab-arrow01.png') 100px 0 no-repeat;
+	background-size:20px 12px;
+	border-bottom:1px solid #00b38a;
+}
+#ct .index-tab .jianshe.on{
+	background:url('../../../img/tab-arrow02.png') 100px 0 no-repeat;
+	background-size:20px 12px;
+	border-bottom:1px solid #00b38a;
+}
+#ct .index-tab .guanli.on{
+	background:url('../../../img/tab-arrow03.png') 100px 0 no-repeat;
 	background-size:20px 12px;
 	border-bottom:1px solid #00b38a;
 }

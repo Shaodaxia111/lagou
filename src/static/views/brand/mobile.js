@@ -92,7 +92,7 @@ class Employ extends React.Component{
             banner: {
                 articles: [
                     {
-                        title: "拉勾首页APP首页banner",
+                        title: "拉勾APP首页banner",
                         secTitle: "企业权益",
                         content: [
                             "1.定制化轮播banner图展示"

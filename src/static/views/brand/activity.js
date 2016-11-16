@@ -60,7 +60,7 @@ class BrandActivity extends React.Component{
             partner: {
                 articles: [
                     {
-                        title: "梦想合伙人---寻找并肩作战的兄弟",
+                        title: "梦想合伙人--寻找并肩作战的兄弟",
                         link: {
                             name: "查看线上案例",
                             dataUrl: "http://activity.lagou.com/topic/dreampartner.html",

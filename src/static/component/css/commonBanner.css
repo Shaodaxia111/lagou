@@ -1,23 +1,13 @@
 .banner-box {
     text-align: center;
     color: #fff;
-    /*margin-bottom: 55px;*/
-    position: relative
+    position: relative;
+    line-height: 180px;
+    font-size: 48px;
 }
 
 .common-banner {
+    background-position: top center;
+    height: 180px;
     width: 100%;
-}
-
-
-/*为什么banner-box要比img高18px*/
-
-.banner-text {
-    width: 100%;
-    position: absolute;
-    height: 60px;
-    line-height: 60px;
-    top: 50%;
-    margin-top: -39px;
-    font-size: 48px;
 }

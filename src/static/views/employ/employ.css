@@ -1,11 +1,10 @@
 .employ-box {
     width: 800px;
     font-size: 18px;
-    margin: 0 auto;
+    margin: 47px auto 250px;
     background: url(../../../img/employ.jpg) no-repeat top 45px left;
     border-bottom: 1px solid #cccaca;
     padding-bottom: 30px;
-    margin-bottom: 250px
 }
 
 #ct .employ-box .title {

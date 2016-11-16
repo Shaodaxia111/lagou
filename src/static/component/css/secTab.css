@@ -1,14 +1,23 @@
-.second-tab {
+.second-tab-box {
+    position: absolute;
     text-align: center;
-    margin: 0 auto;
-    margin-top: -38px;
     z-index: 10;
+    font-size: 18px;
+    top: 146px;
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    width: 100%;
+}
+
+.second-tab {
+    margin: 0 auto;
 }
 
 .second-tab .tab-item {
     display: inline-block;
+    height: 32px;
     padding: 0 20px;
-    height: 30px;
     cursor: pointer;
 }
 
@@ -20,5 +29,4 @@
 .second-tab span {
     display: inline-block;
     height: 100%;
-    line-height: 30px;
 }

@@ -36,9 +36,11 @@ class SecondTab extends Component{
          })
 
         return ( 
-            < div className = 'second-tab' >
-                { tabsDom }
-            < /div>
+            <div className = 'second-tab-box'>
+                < div className = 'second-tab' >
+                    { tabsDom }
+                < /div>
+            </div>
         )
     }
 }

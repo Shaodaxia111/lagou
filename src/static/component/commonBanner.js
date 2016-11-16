@@ -15,12 +15,11 @@ class CommonBanner extends Component{
         let props = this.props
         let secTabDom = []
         if(props.tabs != undefined) {
-            secTabDom = <SecTab {...this.props}/>
+            secTabDom = <SecTab {...props}/>
         }
         return ( 
             < div className = 'banner-box'>
-                <img className = 'common-banner' src = { props.backgroundImage } alt = ''/>
-                <div className = "banner-text">{props.title}</div>
+                <div className = "common-banner" style = {{backgroundImage: 'url(' + props.backgroundImage + ')'}}>{props.title}</div>
                 { secTabDom }
             < /div>
         )
